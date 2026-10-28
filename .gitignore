@@ -1,0 +1,25 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Prototype scratch (keep committed run outputs explicitly with git add -f)
+prototype/.cache/
