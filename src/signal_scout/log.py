@@ -11,7 +11,7 @@ import logging
 import re
 import sys
 from collections.abc import MutableMapping
-from typing import Any
+from typing import Any, TextIO
 
 import structlog
 
@@ -35,10 +35,14 @@ def redact_secrets(_: Any, __: str, event_dict: MutableMapping[str, Any]) -> Mut
     return event_dict
 
 
-def configure_logging(level: str = "INFO") -> None:
-    """Configure structlog (and stdlib logging) to write JSON lines to stdout."""
+def configure_logging(level: str = "INFO", stream: TextIO | None = None) -> None:
+    """Configure structlog (and stdlib logging) to write JSON lines to stdout.
+
+    Pass `stream=sys.stderr` for processes whose stdout is a protocol channel (the MCP stdio server).
+    """
+    out = sys.stdout if stream is None else stream
     log_level = logging.getLevelNamesMapping().get(level.upper(), logging.INFO)
-    logging.basicConfig(format="%(message)s", stream=sys.stdout, level=log_level)
+    logging.basicConfig(format="%(message)s", stream=out, level=log_level)
     structlog.configure(
         processors=[
             structlog.contextvars.merge_contextvars,
@@ -49,7 +53,7 @@ def configure_logging(level: str = "INFO") -> None:
             structlog.processors.JSONRenderer(),
         ],
         wrapper_class=structlog.make_filtering_bound_logger(log_level),
-        logger_factory=structlog.PrintLoggerFactory(file=sys.stdout),
+        logger_factory=structlog.PrintLoggerFactory(file=out),
         cache_logger_on_first_use=True,
     )
 

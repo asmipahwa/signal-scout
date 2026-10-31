@@ -82,6 +82,19 @@ class S3BlobStore:
             body: bytes = await obj["Body"].read()
         return gzip.decompress(body)
 
+    async def presign_get(self, key: str, expires_s: int = 900) -> str:
+        """A time-limited GET URL for one object, so API clients can fetch raw bodies without S3 credentials."""
+        async with self._session.client("s3", **self._client_kwargs) as s3:
+            url: str = await s3.generate_presigned_url(
+                "get_object", Params={"Bucket": self._bucket, "Key": key}, ExpiresIn=expires_s
+            )
+        return url
+
+    async def ping(self) -> None:
+        """Raise unless the bucket is reachable with our credentials (used by the readiness probe)."""
+        async with self._session.client("s3", **self._client_kwargs) as s3:
+            await s3.head_bucket(Bucket=self._bucket)
+
     async def ensure_bucket(self) -> None:
         """Create the bucket if missing (compose's init container normally does this)."""
         async with self._session.client("s3", **self._client_kwargs) as s3:
@@ -107,3 +120,9 @@ class MemoryBlobStore:
 
     async def get(self, key: str) -> bytes:
         return gzip.decompress(self.objects[key])
+
+    async def presign_get(self, key: str, expires_s: int = 900) -> str:
+        return f"memory://{key}?expires={expires_s}"
+
+    async def ping(self) -> None:
+        return None

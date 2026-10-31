@@ -17,6 +17,8 @@ dependencies = [
     "feedparser>=6.0.14",
     "google-genai>=2.34,<3",
     "httpx>=0.28.1",
+    "mcp>=1.20",
+    "prometheus-client>=0.26.0",
     "pydantic>=2.14,<3",
     "pydantic-settings>=2.16.2",
     "python-dotenv>=1.2",
@@ -36,7 +38,7 @@ dev = [
     "pytest-cov>=7.1.0",
     "respx>=0.23.1",
     "ruff>=0.11",
-    "testcontainers[minio,postgres]>=4.15.0",
+    "testcontainers[elasticsearch,minio,postgres]>=4.15.0",
     "types-aioboto3[s3]>=15.5.0",
     "types-pyyaml>=6.0.12.20261030",
 ]
