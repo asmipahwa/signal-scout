@@ -19,6 +19,7 @@ from typing import Any
 from . import queue
 from .config import get_settings
 from .ingest.fetch_source import IngestContext, fetch_source
+from .ingest.watch_page import watch_page
 from .jobruns import RunStats, track_job_run
 from .log import configure_logging, get_logger, redact_text
 from .pipeline.alerts import deliver_webhook, send_alerts
@@ -33,6 +34,7 @@ Handler = Callable[[IngestContext, dict[str, Any], RunStats], Awaitable[None]]
 
 HANDLERS: dict[str, Handler] = {
     "fetch_source": fetch_source,
+    "watch_page": watch_page,
     "enrich_signals": enrich_signals,
     "build_insights": build_insights,
     "index_insights": index_insights,
