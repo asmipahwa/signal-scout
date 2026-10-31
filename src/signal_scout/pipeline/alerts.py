@@ -194,6 +194,7 @@ async def deliver_webhook(
                 values["delivered_at"] = datetime.now(UTC)
             await session.execute(update(WebhookDelivery).where(WebhookDelivery.id == delivery_id).values(**values))
             await session.commit()
+        run.details["delivery_status"] = "delivered" if ok else (final_status.value if final_status else "retry")
         if ok:
             run.items_out = 1
         elif final_status is None:

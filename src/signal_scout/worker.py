@@ -13,8 +13,11 @@ import contextlib
 import os
 import signal
 import socket
+import time
 from collections.abc import Awaitable, Callable, Mapping
 from typing import Any
+
+from prometheus_client import start_http_server
 
 from . import queue
 from .config import get_settings
@@ -22,10 +25,12 @@ from .ingest.fetch_source import IngestContext, fetch_source
 from .ingest.watch_page import watch_page
 from .jobruns import RunStats, track_job_run
 from .log import configure_logging, get_logger, redact_text
+from .metrics import REGISTRY
 from .pipeline.alerts import deliver_webhook, send_alerts
 from .pipeline.enrich import enrich_signals
 from .pipeline.index import index_insights
 from .pipeline.insights import build_insights
+from .pipeline.metrics import record_job
 from .runtime import ingest_context
 
 log = get_logger(__name__)
@@ -66,14 +71,20 @@ class Worker:
         if job is None:
             return False
         handler = self.handlers[job.kind]
+        started = time.monotonic()
+        run: RunStats | None = None
         try:
             async with track_job_run(self.ctx.sessions, job.kind, job_id=job.id, attempt=job.attempts) as run:
                 await handler(self.ctx, job.payload, run)
         except Exception as exc:
+            if run is not None:
+                record_job(run, time.monotonic() - started, failed=True)
             async with self.ctx.sessions() as session:
                 retry = await queue.fail(session, job, redact_text(f"{type(exc).__name__}: {exc}"))
             log.warning("job_will_retry" if retry else "job_dead_lettered", job_id=job.id, kind=job.kind)
         else:
+            if run is not None:
+                record_job(run, time.monotonic() - started, failed=False)
             async with self.ctx.sessions() as session:
                 await queue.complete(session, job.id)
         return True
@@ -103,6 +114,8 @@ def _stop_event() -> asyncio.Event:
 async def _main() -> None:
     settings = get_settings()
     configure_logging(settings.log_level)
+    # Expose pipeline metrics for Prometheus (job durations, signals, LLM tokens/spend, webhooks).
+    start_http_server(int(os.environ.get("METRICS_PORT", "9100")), registry=REGISTRY)
     async with ingest_context(settings) as ctx:
         await Worker(ctx, poll_s=settings.worker_poll_s).run_forever(_stop_event())
 

@@ -83,19 +83,20 @@ async def fetch_source(ctx: IngestContext, payload: dict[str, Any], run: RunStat
             competitor_name=competitor.name if competitor else None,
         )
         aliases = {c.name: c.aliases for c in (await session.execute(select(Competitor))).scalars()}
-    run.details.update(source_id=snapshot.id, source=snapshot.name)
+    run.details.update(source_id=snapshot.id, source=snapshot.name, source_type=snapshot.type.value)
 
     try:
         result = await ctx.http.get(snapshot.url, etag=snapshot.etag, last_modified=snapshot.last_modified)
         items = [] if result.not_modified else parse_items(snapshot.type, result.body)
     except (FetchError, FeedParseError) as exc:
-        await _record_poll(ctx, snapshot, succeeded=False, error=str(exc))
+        run.details["circuit_opened"] = await _record_poll(ctx, snapshot, succeeded=False, error=str(exc))
         raise
 
     run.items_in = len(items)
     run.details["http_status"] = result.status
     counts = await store_items(ctx, snapshot, items, CompetitorMatcher(aliases), run)
     run.details["statuses"] = dict(counts)
+    run.details["new_signals"] = sum(n for status, n in counts.items() if status != "already_stored")
     await _record_poll(
         ctx,
         snapshot,
@@ -200,7 +201,8 @@ async def _record_poll(
     error: str | None = None,
     etag: str | None = None,
     last_modified: str | None = None,
-) -> None:
+) -> bool:
+    """Record the outcome of a poll. Returns True if this failure tripped the circuit breaker."""
     decision = after_poll(
         source.consecutive_failures,
         succeeded=succeeded,
@@ -225,3 +227,4 @@ async def _record_poll(
     async with ctx.sessions() as session:
         await session.execute(update(Source).where(Source.id == source.id).values(**values))
         await session.commit()
+    return decision.tripped

@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help env up down migrate seed worker scheduler api mcp mcp-inspect test it lint format backfill reindex eval runs-report source-report observe
+.PHONY: help env up down migrate seed worker scheduler api mcp mcp-inspect test it lint format backfill reindex eval runs-report source-report observe app
 
 help: ## List targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*## "}; {printf "  %-10s %s\n", $$1, $$2}'
@@ -10,6 +10,10 @@ env: ## Create .env with random local-dev passwords (never overwrites existing v
 up: env ## Start postgres, elasticsearch, minio and create the bucket
 	docker compose up -d --wait postgres elasticsearch minio
 	docker compose run --rm minio-init
+
+app: ## Build the image and run the full stack in Docker (api, 2 workers, scheduler, mcp, prometheus, grafana)
+	docker compose build migrate
+	scripts/with-secrets.sh docker compose --profile app up -d
 
 observe: ## Start Prometheus and Grafana (dashboard: http://localhost:3000)
 	docker compose --profile observe up -d prometheus grafana

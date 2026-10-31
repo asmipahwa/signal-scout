@@ -119,6 +119,8 @@ async def enrich_signals(
     llm: LLMClient = client or llm_client_for(ctx.settings, competitors)
     near_dups = await _near_dup_index(ctx)
     outcomes: Counter[str] = Counter()
+    categories: Counter[str] = Counter()
+    tokens: Counter[str] = Counter()
     stop_reason: str | None = None
 
     for signal, source_type in rows:
@@ -229,6 +231,12 @@ async def enrich_signals(
         run.tokens += u.input_tokens + u.output_tokens + u.cache_read_tokens + u.cache_write_tokens + u.thinking_tokens
         run.cost_usd += Decimal(str(round(u.cost_usd, 6)))
         outcomes["enriched" if relevant else "not_relevant"] += 1
+        if relevant:
+            categories[e.category] += 1
+        tokens.update(
+            input=u.input_tokens, output=u.output_tokens, cache_read=u.cache_read_tokens,
+            cache_write=u.cache_write_tokens, thinking=u.thinking_tokens,
+        )  # fmt: skip
 
     run.details.update(
         outcomes=dict(outcomes), provider=llm.provider, model=llm.model, prompt_version=llm.prompt_version

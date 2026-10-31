@@ -62,12 +62,12 @@ async def watch_page(ctx: IngestContext, payload: dict[str, Any], run: RunStats)
                 .limit(1)
             )
         ).scalar_one_or_none()
-    run.details.update(source_id=source_id, source=snapshot.name)
+    run.details.update(source_id=source_id, source=snapshot.name, source_type=SourceType.webpage_watch.value)
 
     try:
         result = await ctx.http.get(snapshot.url)
     except FetchError as exc:
-        await _record_poll(ctx, snapshot, succeeded=False, error=str(exc))
+        run.details["circuit_opened"] = await _record_poll(ctx, snapshot, succeeded=False, error=str(exc))
         raise
     html = result.body.decode("utf-8", "replace")
     text = page_text(html)
@@ -123,5 +123,7 @@ async def watch_page(ctx: IngestContext, payload: dict[str, Any], run: RunStats)
             run.items_out = 1
         await session.commit()
     await _record_poll(ctx, snapshot, succeeded=True)
-    run.details.update(changed=True, baseline=previous is None, meaningful=change is not None)
+    run.details.update(
+        changed=True, baseline=previous is None, meaningful=change is not None, new_signals=1 if change else 0
+    )
     log.info("page_snapshot_stored", source_id=source_id, baseline=previous is None, meaningful=change is not None)
