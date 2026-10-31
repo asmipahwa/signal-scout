@@ -50,6 +50,7 @@ class Settings(BaseSettings):
     llm_rpm: int | None = None
     llm_rpd: int | None = None
     llm_state_dir: str = ".state"
+    llm_prompt_version: str = ""
     gemini_api_key: SecretStr = SecretStr("")
     anthropic_api_key: SecretStr = SecretStr("")
     slack_webhook_url: SecretStr = SecretStr("")

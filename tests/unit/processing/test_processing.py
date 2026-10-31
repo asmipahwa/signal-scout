@@ -8,11 +8,12 @@ import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
+from signal_scout.ingest.matching import CompetitorMatcher
 from signal_scout.processing.clustering import ClusterInput, cluster_signals
 from signal_scout.processing.near_dup import NearDuplicateIndex
 from signal_scout.processing.page_diff import content_hash, diff_pages
 from signal_scout.processing.ranking import RankingConfig, RankInput, rank_score
-from signal_scout.processing.relevance import CompetitorMatcher, decide
+from signal_scout.processing.relevance import decide
 
 MATCHER = CompetitorMatcher(
     {
@@ -60,7 +61,7 @@ def test_competitor_matching_respects_case_and_word_boundaries(text: str, expect
     ],
 )
 def test_low_value_titles_are_dropped_before_the_llm(title: str) -> None:
-    decision = decide(MATCHER, title, "")
+    decision = decide(title, MATCHER.match(title))
     assert not decision.keep
     assert decision.reason.startswith("low_value:")
 
@@ -75,16 +76,16 @@ def test_low_value_titles_are_dropped_before_the_llm(title: str) -> None:
     ],
 )
 def test_real_news_is_kept(title: str) -> None:
-    assert decide(MATCHER, title, "").keep
+    assert decide(title, MATCHER.match(title)).keep
 
 
 def test_official_feed_skips_matching_and_pattern_checks() -> None:
-    decision = decide(MATCHER, "How to use Plan Mode", "", known_competitors=["Notion"])
+    decision = decide("How to use Plan Mode", ["Notion"], official_source=True)
     assert decision.keep and decision.competitors == ["Notion"]
 
 
 def test_no_competitor_is_dropped() -> None:
-    assert decide(MATCHER, "Show HN: a new task app", "").reason == "no_competitor"
+    assert decide("Show HN: a new task app", MATCHER.match("Show HN: a new task app")).reason == "no_competitor"
 
 
 # --- Near-duplicates ----------------------------------------------------------------------------
