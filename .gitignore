@@ -24,3 +24,4 @@ htmlcov/
 # Prototype scratch (keep committed run outputs explicitly with git add -f)
 prototype/.cache/
 .state/
+prototype/output/
