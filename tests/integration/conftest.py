@@ -1,4 +1,4 @@
-"""Throwaway Postgres and MinIO containers (testcontainers) for integration tests.
+"""Throwaway Postgres, MinIO and Elasticsearch containers (testcontainers) for integration tests.
 
 Every test in this directory is marked `integration`. If Docker is not reachable, they are all
 skipped with a clear reason instead of erroring. Containers are started once per session; each
@@ -31,6 +31,7 @@ MINIO_IMAGE = "bitnamilegacy/minio:2025.7.23-debian-12-r5"
 MINIO_USER = "test-access-key"
 MINIO_PASSWORD = "test-secret-key-not-a-real-secret"  # throwaway container credential
 BUCKET = "signal-scout-test"
+ES_IMAGE = "docker.elastic.co/elasticsearch/elasticsearch:8.19.5"  # same as docker-compose.yml
 
 
 def _docker_available() -> bool:
@@ -89,6 +90,22 @@ def minio_endpoint() -> Iterator[str]:
     )
     with container:
         yield f"http://{container.get_container_host_ip()}:{container.get_exposed_port(9000)}"
+
+
+@pytest.fixture(scope="session")
+def es_url() -> Iterator[str]:
+    """Single-node Elasticsearch, security off, 512m heap (keeps the laptop and CI runner happy)."""
+    container = (
+        DockerContainer(ES_IMAGE)
+        .with_env("discovery.type", "single-node")
+        .with_env("xpack.security.enabled", "false")
+        .with_env("ES_JAVA_OPTS", "-Xms512m -Xmx512m")
+        .with_env("cluster.routing.allocation.disk.threshold_enabled", "false")
+        .with_exposed_ports(9200)
+        .waiting_for(HttpWaitStrategy(9200, "/_cluster/health").for_status_code(200))
+    )
+    with container:
+        yield f"http://{container.get_container_host_ip()}:{container.get_exposed_port(9200)}"
 
 
 @pytest.fixture
