@@ -17,3 +17,12 @@ database; the 68 matching signals were kept.
 
 The GDELT DOC API (historical news) answered HTTP 429 to every request from this network, including
 requests spaced well beyond its documented 1 request / 5 s, so it was not used.
+
+## Throughput
+
+`backfill-job-runs.txt`: 14,551 HN stories fetched and 12,595 new signals stored in 933.7 s of wall-clock
+time across 12 backfill runs, i.e. **48,561 new signals/hour** through the full ingestion path (HTTP,
+parsing, S3 put of raw + text, exact dedupe, alias matching, Postgres insert, `job_runs`), on the machine
+described in `docs/PERFORMANCE.md`. The 12,595 includes the 3,329 off-topic `Linear` signals deleted
+afterwards (above), so the net new signals kept from the backfill is 9,266. Throughput is bounded by the
+polite per-domain rate limit (0.5 requests/s to hn.algolia.com with a burst of 2), not by our code.

@@ -1,0 +1,38 @@
+uv run python -m signal_scout.reports runs
+# Signal Scout runs report (2026-10-31 04:43 UTC)
+
+## Job runs, last 24 h
+
+| job_type         | runs | ok | failed | items_in | items_out | tokens | cost_usd |
+|------------------|------|----|--------|----------|-----------|--------|----------|
+| backfill_hn      |   12 | 12 |      0 |    14551 |     12595 |      0 |   0.0000 |
+| build_insights   |    4 |  4 |      0 |        0 |         0 |      0 |   0.0000 |
+| enrich_signals   |   11 | 10 |      0 |      200 |         0 |      0 |   0.0000 |
+| fetch_source     |   25 | 25 |      0 |     1081 |      1051 |      0 |   0.0000 |
+| index_insights   |    4 |  4 |      0 |        0 |         0 |      0 |   0.0000 |
+| schedule_sources |   32 | 32 |      0 |        0 |        72 |      0 |   0.0000 |
+| seed             |    6 |  6 |      0 |      210 |       210 |      0 |   0.0000 |
+| send_alerts      |    4 |  4 |      0 |        0 |         0 |      0 |   0.0000 |
+| watch_page       |    8 |  8 |      0 |        8 |         0 |      0 |   0.0000 |
+
+## All signals ever ingested, by source type and pipeline status
+
+| source_type       | ingested | new  | filtered_out | duplicate | deferred | enrichment_failed | not_relevant | enriched |
+|-------------------|----------|------|--------------|-----------|----------|-------------------|--------------|----------|
+| blog_rss          |       15 |   15 |            0 |         0 |        0 |                 0 |            0 |        0 |
+| changelog_rss     |      407 |  407 |            0 |         0 |        0 |                 0 |            0 |        0 |
+| hn_search         |     9769 | 5379 |         3212 |      1173 |        2 |                 0 |            0 |        3 |
+| news_rss          |      106 |   57 |           34 |         0 |        1 |                 0 |            2 |       12 |
+| press_release_rss |       20 |    0 |           20 |         0 |        0 |                 0 |            0 |        0 |
+| TOTAL             |    10317 | 5858 |         3266 |      1173 |        3 |                 0 |            2 |       15 |
+
+## Funnel
+
+- ingested: 10317
+- after dedupe + relevance filters (sent or queued for the LLM): 5878
+- enriched by the LLM (any outcome): 17
+- relevant after enrichment: 15
+- insights: 0
+- LLM calls: 17, paid spend $0.0000
+- first signal fetched 2026-10-31 03:25, latest 2026-10-31 04:42 UTC
+
