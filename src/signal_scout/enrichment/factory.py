@@ -5,6 +5,7 @@ which providers exist, so switching providers is a config change, not a code cha
     LLM_MODEL=<model id>         (default per provider)
     LLM_RPM, LLM_RPD             (client-side request limits; default per provider)
     LLM_STATE_DIR                (where the daily request counter is persisted)
+    LLM_PROMPT_VERSION           (default: the current best version in prompt.py)
 """
 
 from __future__ import annotations
@@ -16,6 +17,7 @@ from pathlib import Path
 from .claude import DEFAULT_CLAUDE_MODEL, ClaudeClient
 from .client import BaseLLMClient
 from .gemini import DEFAULT_GEMINI_MODEL, GeminiClient
+from .prompt import PROMPT_VERSION
 from .rate_limit import RateLimiter
 
 # Conservative defaults. Gemini's real free-tier limits are per project and shown in AI Studio
@@ -40,6 +42,11 @@ def llm_client_from_env(competitors: list[str], env: Mapping[str, str] | None = 
     limiter = RateLimiter(rpm=rpm, rpd=rpd, state_path=state_dir / f"llm-quota-{provider}.json")
 
     model = env.get("LLM_MODEL", "").strip()
+    prompt_version = env.get("LLM_PROMPT_VERSION", "").strip() or PROMPT_VERSION
     if provider == "claude":
-        return ClaudeClient(competitors, model=model or DEFAULT_CLAUDE_MODEL, rate_limiter=limiter)
-    return GeminiClient(competitors, model=model or DEFAULT_GEMINI_MODEL, rate_limiter=limiter)
+        return ClaudeClient(
+            competitors, model=model or DEFAULT_CLAUDE_MODEL, rate_limiter=limiter, prompt_version=prompt_version
+        )
+    return GeminiClient(
+        competitors, model=model or DEFAULT_GEMINI_MODEL, rate_limiter=limiter, prompt_version=prompt_version
+    )

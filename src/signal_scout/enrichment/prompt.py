@@ -4,19 +4,21 @@ One prompt for all providers keeps evals comparable: if Gemini and Claude score 
 same eval set, the difference comes from the model, not from wording. The system prompt is stable
 across calls so providers can cache it (Claude explicitly, Gemini implicitly).
 
-Bump PROMPT_VERSION whenever the text changes, so stored results stay reproducible.
+Every version stays selectable (LLM_PROMPT_VERSION) so eval results stay reproducible and versions can
+be compared on the same labeled set. v2 is v1 plus three targeted edits; see docs/EVALS.md for why.
 """
 
 from __future__ import annotations
 
 from .models import CATEGORIES, SignalInput
 
-PROMPT_VERSION = "v1"
+PROMPT_VERSIONS = ("v1", "v2")
+PROMPT_VERSION = "v1"  # default; changed only when an eval shows a newer version is better
 
 MAX_TEXT_CHARS = 6000  # roughly 1,500 tokens
 
 
-def build_system_prompt(competitors: list[str]) -> str:
+def _v1(competitors: list[str]) -> str:
     # The few-shot examples use a made-up company ("Acme Boards") so the prompt never states
     # invented facts about a real competitor.
     return f"""You are a competitive-intelligence analyst for a B2B SaaS company that sells project-management software.
@@ -99,6 +101,49 @@ Signal: [press_release] "Acme Boards names former Example Corp COO as new CEO"
    summary="Acme Boards appointed a former Example Corp COO as its CEO.",
    why_it_matters="New CEOs often reset pricing and roadmap, so watch for changes in Acme's enterprise motion."
 """
+
+
+# v2 edits, each aimed at an error pattern from the v1 eval (docs/EVALS.md).
+_V2_EDITS = [
+    (
+        # v1: 7 of 9 false positives were reviews, explainers, switching stories, or third-party tools.
+        "or when the item is a generic how-to/listicle that merely names the product.",
+        "or when the item is a generic how-to/listicle that merely names the product.\n"
+        '  Also false for: reviews, comparisons ("X vs Y", alternatives), pricing explainers, tutorials, personal\n'
+        '  "I replaced X" stories, posts about a third-party tool that integrates with or replaces the product, and\n'
+        "  engineering blog posts with no customer-facing change. If the competitor isn't the subject of the title,\n"
+        "  it is usually false.",
+    ),
+    (
+        # v1: launch vs feature_update was the most common category confusion.
+        "    - product_launch: a new product, app, or major module ships or is announced.\n"
+        "    - feature_update: an incremental capability added to an existing product.",
+        "    - product_launch: a new standalone product, app, or platform, or a major numbered release the company\n"
+        "      markets as a launch. Additions to an existing product, including new AI features, are feature_update.\n"
+        "    - feature_update: an incremental capability added to an existing product.",
+    ),
+    (
+        # v1: importance was +1 above the labels on 29 of 65 relevant signals and -1 on only 4.
+        "    1 = noise (listicles, tutorials, passing mentions, unrelated meaning of the name).",
+        "    1 = noise (listicles, tutorials, passing mentions, unrelated meaning of the name).\n"
+        "  Calibrate conservatively: most changelog entries and single features are 2, a notable release is 3.\n"
+        "  Use 4 only when a rep would change what they say in a competitive deal, and 5 only for the events listed.\n"
+        "  When torn between two levels, choose the lower one.",
+    ),
+]
+
+
+def build_system_prompt(competitors: list[str], version: str = PROMPT_VERSION) -> str:
+    text = _v1(competitors)
+    if version == "v1":
+        return text
+    if version == "v2":
+        for old, new in _V2_EDITS:
+            if old not in text:
+                raise AssertionError(f"v2 edit no longer applies to v1 text: {old[:60]!r}")
+            text = text.replace(old, new)
+        return text
+    raise ValueError(f"unknown prompt version {version!r}; expected one of {PROMPT_VERSIONS}")
 
 
 def render_signal(signal: SignalInput) -> str:

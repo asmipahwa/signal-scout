@@ -19,7 +19,6 @@ from pathlib import Path
 
 from signal_scout.enrichment import LlmError, LlmQuotaExhaustedError, SignalInput, llm_client_from_env
 from signal_scout.enrichment.evaluation import EvalCase, GoldLabel, score
-from signal_scout.enrichment.prompt import PROMPT_VERSION
 
 ROOT = Path(__file__).resolve().parents[1]
 LABELS = ROOT / "eval" / "labeled.jsonl"
@@ -50,7 +49,10 @@ async def main() -> None:
                 return
         cases.append(EvalCase(rec["id"], gold, result.enrichment, result.usage))
 
-    print(f"eval: {len(records)} signals, {client.provider}/{client.model}, prompt {PROMPT_VERSION}", file=sys.stderr)
+    print(
+        f"eval: {len(records)} signals, {client.provider}/{client.model}, prompt {client.prompt_version}",
+        file=sys.stderr,
+    )
     await asyncio.gather(*(run_one(r) for r in records))
     if stopped:
         sys.exit(f"stopped: {stopped[0]} ({len(cases)} of {len(records)} done; nothing saved)")
@@ -58,14 +60,14 @@ async def main() -> None:
     report = score(cases)
     RESULTS.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%S")
-    out = RESULTS / f"{stamp}-{client.provider}-{client.model}-{PROMPT_VERSION}.json"
+    out = RESULTS / f"{stamp}-{client.provider}-{client.model}-{client.prompt_version}.json"
     out.write_text(
         json.dumps(
             {
                 "generated_at": stamp,
                 "provider": client.provider,
                 "model": client.model,
-                "prompt_version": PROMPT_VERSION,
+                "prompt_version": client.prompt_version,
                 "report": asdict(report),
                 "cases": [
                     {

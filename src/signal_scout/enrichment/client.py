@@ -44,10 +44,12 @@ class BaseLLMClient(ABC):
         rate_limiter: RateLimiter | None = None,
         max_output_attempts: int = 2,
         max_rate_limit_retries: int = 5,
+        prompt_version: str = PROMPT_VERSION,
     ) -> None:
         self.model = model
         self.competitors = list(competitors)
-        self.system_prompt = build_system_prompt(self.competitors)
+        self.prompt_version = prompt_version
+        self.system_prompt = build_system_prompt(self.competitors, prompt_version)
         self.rate_limiter = rate_limiter
         self.max_output_attempts = max_output_attempts
         self.max_rate_limit_retries = max_rate_limit_retries
@@ -73,7 +75,9 @@ class BaseLLMClient(ABC):
             except ValidationError as exc:
                 last_error = exc
                 continue
-            return EnrichmentResult(enrichment=enrichment, usage=total, prompt_version=PROMPT_VERSION, attempts=attempt)
+            return EnrichmentResult(
+                enrichment=enrichment, usage=total, prompt_version=self.prompt_version, attempts=attempt
+            )
         raise LlmOutputError(f"{self.provider} output invalid after {self.max_output_attempts} attempts: {last_error}")
 
     async def _generate_with_backoff(self, user_message: str) -> tuple[dict[str, Any] | None, LlmUsage]:

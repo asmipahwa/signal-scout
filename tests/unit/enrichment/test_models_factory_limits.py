@@ -152,3 +152,18 @@ async def test_recorded_live_response_parses(provider: str, signal: SignalInput)
     result = await client.enrich(signal)
     assert result.enrichment.competitors == ["Asana"]
     assert result.usage.input_tokens > 0
+
+
+# --- Prompt versions ---------------------------------------------------------------------------
+
+
+def test_v2_is_v1_plus_targeted_edits_and_both_stay_selectable(env: dict[str, str]) -> None:
+    from signal_scout.enrichment.prompt import build_system_prompt
+
+    v1, v2 = build_system_prompt(COMPETITORS, "v1"), build_system_prompt(COMPETITORS, "v2")
+    assert v1 != v2 and len(v2) > len(v1)
+    assert "When torn between two levels, choose the lower one." in v2 and "torn" not in v1
+    with pytest.raises(ValueError, match="unknown prompt version"):
+        build_system_prompt(COMPETITORS, "v9")
+    client = llm_client_from_env(COMPETITORS, {**env, "LLM_PROMPT_VERSION": "v2"})
+    assert client.prompt_version == "v2" and client.system_prompt == v2
