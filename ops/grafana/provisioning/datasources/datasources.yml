@@ -1,0 +1,20 @@
+# Postgres is the source of truth for pipeline numbers (signals, funnel, job runs, LLM spend);
+# Prometheus holds request latency and live counters.
+apiVersion: 1
+datasources:
+  - name: Postgres
+    uid: postgres
+    type: grafana-postgresql-datasource
+    url: postgres:5432
+    user: ${POSTGRES_USER}
+    jsonData:
+      database: ${POSTGRES_DB}
+      sslmode: disable
+      postgresVersion: 1600
+    secureJsonData:
+      password: ${POSTGRES_PASSWORD}
+  - name: Prometheus
+    uid: prometheus
+    type: prometheus
+    url: http://prometheus:9090
+    isDefault: true

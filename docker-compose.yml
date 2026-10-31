@@ -1,0 +1,206 @@
+# Local infrastructure for Signal Scout. Credentials come from .env (`make env` generates random
+# local-only passwords); nothing secret lives in this file.
+#
+#   make up        start postgres, elasticsearch, minio (+ one-shot bucket init)
+#   make down      stop them (volumes are kept)
+#
+#   make observe   start prometheus + grafana (dashboard at http://localhost:3000)
+#   make app       build the image and run everything: api, 2 workers, scheduler, mcp (+ observe)
+
+name: signal-scout
+
+services:
+  postgres:
+    image: postgres:16.15-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-signal_scout}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env (run make env)}
+      POSTGRES_DB: ${POSTGRES_DB:-signal_scout}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.5
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "true"
+      # Local dev only: password auth over plain HTTP. Production needs TLS.
+      xpack.security.http.ssl.enabled: "false"
+      xpack.security.transport.ssl.enabled: "false"
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:?set ELASTIC_PASSWORD in .env (run make env)}
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      # Don't go read-only when the dev laptop's disk is nearly full.
+      cluster.routing.allocation.disk.threshold_enabled: "false"
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    mem_limit: 1536m  # 512m heap + off-heap; 1g was ~90% used at idle
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS -u elastic:$${ELASTIC_PASSWORD} http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=5s >/dev/null"]
+      interval: 10s
+      timeout: 10s
+      retries: 30
+
+  # MinIO stopped publishing images to Docker Hub / Quay in 2025 (minio/minio now returns "access
+  # denied"). This is Bitnami's frozen MinIO build: fine for local dev, but it receives no updates.
+  minio:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY_ID:-signal-scout}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_ACCESS_KEY:?set S3_SECRET_ACCESS_KEY in .env (run make env)}
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - miniodata:/bitnami/minio/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  # One-shot: create the bucket, then exit. Reuses the MinIO image, which bundles the `mc` client.
+  minio-init:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    depends_on:
+      minio:
+        condition: service_healthy
+    environment:
+      MC_CONFIG_DIR: /tmp/mc
+      MC_HOST_local: http://${S3_ACCESS_KEY_ID:-signal-scout}:${S3_SECRET_ACCESS_KEY}@minio:9000
+    entrypoint: ["/opt/bitnami/minio-client/bin/mc"]
+    command: ["mb", "--ignore-existing", "local/${S3_BUCKET:-signal-scout}"]
+    restart: "no"
+
+  prometheus:
+    image: prom/prometheus:v3.2.1
+    command: ["--config.file=/etc/prometheus/prometheus.yml", "--storage.tsdb.retention.time=30d"]
+    ports:
+      - "127.0.0.1:9090:9090"
+    volumes:
+      - ./ops/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./ops/prometheus/alerts.yml:/etc/prometheus/alerts.yml:ro
+      - promdata:/prometheus
+    profiles: [observe, app]
+
+  grafana:
+    image: grafana/grafana:11.6.0
+    depends_on: [postgres, prometheus]
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:?set GRAFANA_ADMIN_PASSWORD in .env (run make env)}
+      GF_AUTH_ANONYMOUS_ENABLED: "true"  # read-only viewer for the local dashboard; bound to localhost
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+      POSTGRES_USER: ${POSTGRES_USER:-signal_scout}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:-signal_scout}
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./ops/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./ops/grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafanadata:/var/lib/grafana
+    profiles: [observe, app]
+
+  # --- Application (one image, one role per container). `make app` runs them; API keys come from the
+  # environment of the shell running compose (scripts/with-secrets.sh loads them from the Keychain).
+  migrate:
+    image: ${SCOUT_IMAGE:-signal-scout:dev}
+    build: .
+    command: ["migrate"]
+    env_file: .env
+    environment: &app-env
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: "5432"
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      S3_ENDPOINT_URL: http://minio:9000
+      API_HOST: 0.0.0.0
+      MCP_HOST: 0.0.0.0
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL:-}
+    depends_on:
+      postgres: {condition: service_healthy}
+    restart: "no"
+    profiles: [app]
+
+  seed:
+    image: ${SCOUT_IMAGE:-signal-scout:dev}
+    command: ["seed"]
+    env_file: .env
+    environment: *app-env
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: "no"
+    profiles: [app]
+
+  api:
+    image: ${SCOUT_IMAGE:-signal-scout:dev}
+    command: ["api"]
+    env_file: .env
+    environment: *app-env
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      elasticsearch: {condition: service_healthy}
+    restart: unless-stopped
+    profiles: [app]
+
+  worker:
+    image: ${SCOUT_IMAGE:-signal-scout:dev}
+    command: ["worker"]
+    env_file: .env
+    environment: *app-env
+    volumes:
+      - llmstate:/app/.state  # the LLM daily request counter survives restarts
+    deploy:
+      replicas: 2
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:9100/metrics', timeout=4)"]
+      interval: 30s
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+    profiles: [app]
+
+  scheduler:
+    image: ${SCOUT_IMAGE:-signal-scout:dev}
+    command: ["scheduler"]
+    env_file: .env
+    environment: *app-env
+    healthcheck:
+      disable: true
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+    profiles: [app]
+
+  mcp:
+    image: ${SCOUT_IMAGE:-signal-scout:dev}
+    command: ["mcp"]
+    env_file: .env
+    environment: *app-env
+    ports:
+      - "127.0.0.1:8001:8001"
+    healthcheck:
+      disable: true
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+    profiles: [app]
+
+volumes:
+  pgdata:
+  esdata:
+  miniodata:
+  promdata:
+  grafanadata:
+  llmstate:

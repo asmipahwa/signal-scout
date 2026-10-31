@@ -1,0 +1,37 @@
+# Alert rules from the spec. They fire in Prometheus (visible at :9090/alerts); routing them to a pager
+# or Slack needs an Alertmanager, which this single-machine setup deliberately leaves out.
+groups:
+  - name: signal-scout
+    rules:
+      - alert: NoSignalsIngested
+        expr: sum(increase(signals_ingested_total[2h])) == 0
+        for: 10m
+        labels: {severity: warning}
+        annotations:
+          summary: "No signals ingested in the last 2 hours"
+          description: "Every source may be failing or the scheduler/worker is down. Check job_runs for fetch_source failures."
+
+      - alert: EnrichmentFailureRateHigh
+        expr: |
+          sum(increase(enrichment_failures_total[1h]))
+            / clamp_min(sum(increase(enrichment_failures_total[1h])) + sum(increase(signals_enriched_total[1h])), 1)
+            > 0.10
+        for: 15m
+        labels: {severity: warning}
+        annotations:
+          summary: "More than 10% of LLM enrichments are failing"
+          description: "Check job_runs.last_error for enrich_signals and the provider's status page."
+
+      - alert: SearchLatencyP95High
+        expr: histogram_quantile(0.95, sum by (le) (rate(search_request_seconds_bucket[5m]))) > 0.2
+        for: 10m
+        labels: {severity: warning}
+        annotations:
+          summary: "Search p95 above 200 ms for 10 minutes"
+
+      - alert: LlmDailySpendNearCap
+        expr: llm_cost_usd_today > 0.8 * llm_daily_cap_usd
+        for: 5m
+        labels: {severity: warning}
+        annotations:
+          summary: "Paid LLM spend today is above 80% of the daily cap"

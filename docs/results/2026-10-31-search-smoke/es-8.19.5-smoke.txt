@@ -1,0 +1,33 @@
+server version: 8.19.5
+indexed 50 insight documents from 65 real enriched signals; errors: []
+count: 50
+
+query {'q': 'pricing credits'}: 7 hits, took 16 ms
+   Notion   pricing_change       imp 5  Notion AI Business Plan Shifts to Credit System, Agents Expand from 5    [hl: Notion AI Business Plan Shifts to <mark>Credit</mark> System]
+   Notion   pricing_change       imp 4  Notion AI moves to 'General' and 'Designated' pricing: What I'm most e   [hl: Notion AI moves to 'General' and 'Designated' <mark>pricing<]
+   Notion   product_launch       imp 4  Agents, rebuilt to do more for less
+
+query {'q': 'outage', 'competitor': 'Asana'}: 3 hits, took 5 ms
+   Asana    outage_or_incident   imp 4  Asana, popular work management platform, down for thousands of users; 
+   Asana    outage_or_incident   imp 4  Asana Down? Outage Reports Surge as Users Nationwide Report Widespread   [hl: Asana Down? <mark>Outage</mark> Reports Surge as Users Natio]
+   Asana    outage_or_incident   imp 4  Asana outage reported. Asana down for many   [hl: Asana <mark>outage</mark> reported. Asana down for many]
+
+query {'q': 'layoffs workforce'}: 1 hits, took 3 ms
+   ClickUp  hiring_signal        imp 5  ‘People who automate jobs with AI will always have a job’: Productivit   [hl: ‘People who automate jobs with AI will always have a job’: P]
+
+query {'category': 'acquisition'}: 3 hits, took 2 ms
+   ClickUp  acquisition          imp 4  Ora is joining ClickUp. There's a script to export attachments before 
+   Notion   acquisition          imp 4  Notion Acquires ZeroEntropy , Co - Founded by Moroccan Engineer
+   Asana    acquisition          imp 5  Asana acquired Stack AI for $75 million, founders join to accelerate A
+
+query {'min_importance': 4, 'size': 5}: 23 hits, took 2 ms
+   Notion   pricing_change       imp 5  Notion AI Business Plan Shifts to Credit System, Agents Expand from 5 
+   Notion   product_launch       imp 4  Agents, rebuilt to do more for less
+   Notion   product_launch       imp 4  Notion upgrades AI Agent, supports computer operations and 24-hour tas
+
+query {'q': 'AI agents', 'competitor': 'Notion', 'size': 3}: 22 hits, took 6 ms
+   Notion   pricing_change       imp 5  Notion AI Business Plan Shifts to Credit System, Agents Expand from 5    [hl: Notion <mark>AI</mark> Business Plan Shifts to Credit System]
+   Notion   product_launch       imp 4  Notion upgrades AI Agent, supports computer operations and 24-hour tas   [hl: Notion upgrades <mark>AI</mark> <mark>Agent</mark>, supports]
+   Notion   product_launch       imp 4  Agents, rebuilt to do more for less   [hl: <mark>Agents</mark>, rebuilt to do more for less]
+
+suggest 'No': ['Notion']

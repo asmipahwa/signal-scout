@@ -30,7 +30,7 @@ async def test_request_constrains_output_to_shared_schema(signal: SignalInput) -
     await make(fake).enrich(signal)
 
     req = fake.requests[0]
-    assert req["model"] == "gemini-3.8-flash"
+    assert req["model"] == "gemini-3.5-flash-lite"
     config: types.GenerateContentConfig = req["config"]
     assert config.response_mime_type == "application/json"
     assert config.response_json_schema["properties"]["competitors"]["items"]["enum"] == COMPETITORS

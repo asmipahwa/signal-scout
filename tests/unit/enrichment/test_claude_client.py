@@ -24,7 +24,7 @@ async def test_returns_validated_enrichment(signal: SignalInput) -> None:
     assert e.competitors == ["Asana"]
     assert e.importance == 4
     assert result.attempts == 1
-    assert result.prompt_version == "v1"
+    assert result.prompt_version == "v3"  # current default
 
 
 async def test_request_uses_forced_strict_tool_and_cached_system_prompt(signal: SignalInput) -> None:

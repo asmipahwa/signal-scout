@@ -65,10 +65,10 @@ def fake_keys(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
 
 
-def test_default_provider_is_gemini_flash(env: dict[str, str]) -> None:
+def test_default_provider_is_gemini_flash_lite(env: dict[str, str]) -> None:
     client = llm_client_from_env(COMPETITORS, env)
     assert isinstance(client, GeminiClient)
-    assert client.model == "gemini-3.8-flash"
+    assert client.model == "gemini-3.5-flash-lite"
     assert isinstance(client, LLMClient)
 
 
@@ -81,11 +81,11 @@ def test_switch_to_claude_with_env_only(env: dict[str, str]) -> None:
 def test_model_and_limits_from_env(env: dict[str, str]) -> None:
     client = llm_client_from_env(
         COMPETITORS,
-        {**env, "LLM_PROVIDER": "gemini", "LLM_MODEL": "gemini-3.5-flash-lite", "LLM_RPM": "4", "LLM_RPD": "50"},
+        {**env, "LLM_PROVIDER": "gemini", "LLM_MODEL": "gemini-3.8-flash", "LLM_RPM": "4", "LLM_RPD": "18"},
     )
-    assert client.model == "gemini-3.5-flash-lite"
+    assert client.model == "gemini-3.8-flash"
     assert client.rate_limiter is not None
-    assert (client.rate_limiter.rpm, client.rate_limiter.rpd) == (4, 50)
+    assert (client.rate_limiter.rpm, client.rate_limiter.rpd) == (4, 18)
 
 
 def test_unknown_provider_fails_fast(env: dict[str, str]) -> None:
@@ -152,3 +152,18 @@ async def test_recorded_live_response_parses(provider: str, signal: SignalInput)
     result = await client.enrich(signal)
     assert result.enrichment.competitors == ["Asana"]
     assert result.usage.input_tokens > 0
+
+
+# --- Prompt versions ---------------------------------------------------------------------------
+
+
+def test_v2_is_v1_plus_targeted_edits_and_both_stay_selectable(env: dict[str, str]) -> None:
+    from signal_scout.enrichment.prompt import build_system_prompt
+
+    v1, v2 = build_system_prompt(COMPETITORS, "v1"), build_system_prompt(COMPETITORS, "v2")
+    assert v1 != v2 and len(v2) > len(v1)
+    assert "When torn between two levels, choose the lower one." in v2 and "torn" not in v1
+    with pytest.raises(ValueError, match="unknown prompt version"):
+        build_system_prompt(COMPETITORS, "v9")
+    client = llm_client_from_env(COMPETITORS, {**env, "LLM_PROMPT_VERSION": "v2"})
+    assert client.prompt_version == "v2" and client.system_prompt == v2
