@@ -6,14 +6,25 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "aioboto3>=15.5.0",
+    "alembic>=1.20.1",
     "anthropic>=2.3,<3",
+    "apscheduler>=3.11,<4",
+    "asyncpg>=0.32.0",
     "datasketch>=1.6",
     "elasticsearch[async]>=8.19,<9",
+    "fastapi>=0.162.0",
     "feedparser>=6.0.14",
     "google-genai>=2.34,<3",
     "httpx>=0.28.1",
     "pydantic>=2.14,<3",
+    "pydantic-settings>=2.16.2",
     "python-dotenv>=1.2",
+    "pyyaml>=6.0.3",
+    "sqlalchemy[asyncio]>=2.0,<3",
+    "structlog>=26.1.0",
+    "trafilatura>=2.3.1",
+    "uvicorn>=0.54.0",
 ]
 
 [dependency-groups]
@@ -23,7 +34,11 @@ dev = [
     "pytest>=8.3",
     "pytest-asyncio>=0.25",
     "pytest-cov>=7.1.0",
+    "respx>=0.23.1",
     "ruff>=0.11",
+    "testcontainers[minio,postgres]>=4.15.0",
+    "types-aioboto3[s3]>=15.5.0",
+    "types-pyyaml>=6.0.12.20261030",
 ]
 
 [build-system]
@@ -37,6 +52,9 @@ packages = ["src/signal_scout"]
 testpaths = ["tests"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "integration: needs Docker (testcontainers Postgres + MinIO); skipped cleanly when Docker is unavailable",
+]
 
 [tool.ruff]
 line-length = 120
@@ -50,12 +68,24 @@ select = ["E", "F", "I", "UP", "B", "SIM", "ASYNC"]
 "src/signal_scout/enrichment/prompt.py" = ["E501"]
 # Throwaway Sprint 1 prototype; not held to production style.
 "prototype/*" = ["E501"]
+# Alembic generates long op lines.
+"migrations/versions/*" = ["E501"]
 
 [tool.mypy]
 strict = true
 python_version = "3.12"
 files = ["src"]
+plugins = ["pydantic.mypy"]
 
 [[tool.mypy.overrides]]
-module = ["datasketch", "datasketch.*"]  # ships no type hints
+# No type information published for these.
+module = ["feedparser", "feedparser.*", "trafilatura", "trafilatura.*", "apscheduler.*", "datasketch", "datasketch.*"]
 ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["src/signal_scout"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

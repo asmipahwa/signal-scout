@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+	xmlns="http://www.w3.org/2005/Atom"
+	xmlns:thr="http://purl.org/syndication/thread/1.0"
+	xml:lang="en-US"
+	>
+	<title type="text">The Verge</title>
+	<subtitle type="text">The Verge is about technology and how it makes us feel. Founded in 2011, we offer our audience everything from breaking news to reviews to award-winning features and investigations, on our site, in video, and in podcasts.</subtitle>
+
+	<updated>2026-10-30T22:32:53+00:00</updated>
+
+	<link rel="alternate" type="text/html" href="https://www.theverge.com" />
+	<id>https://www.theverge.com/rss/index.xml</id>
+	<link rel="self" type="application/atom+xml" href="https://www.theverge.com/rss/index.xml" />
+
+	<icon>https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-rss-large_80b47e.png?w=150&amp;h=150&amp;crop=1</icon>
+		<entry>
+			
+			<author>
+				<name>Jay Peters</name>
+			</author>
+			
+			<title type="html"><![CDATA[Apple Intelligence is finally coming to China with iOS 27.3]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3" />
+			<id>https://www.theverge.com/?p=1023974</id>
+			<updated>2026-10-30T18:32:53-04:00</updated>
+			<published>2026-10-30T18:32:53-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Apple" /><category scheme="https://www.theverge.com" term="iOS" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Image of iPhone 16 running iOS 18.1 with Apple Intelligence on a bench." data-caption="" data-portal-copyright="Photo: Allison Johnson / The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25699392/DSC08596_processed.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Apple will launch Apple Intelligence in China with iOS 27.3, the company announced <a href="https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/">on its Chinese newsroom website</a>, as <a href="https://www.macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/">reported by <em>MacRumors</em></a>. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December.</p>
+<p class="wp-block-paragraph">This launch doesn't bring the new Siri AI to China. Instead, Apple is launching several of its earlier Apple Intelligence features like notification summaries, real-time translation, rewriting and proofreading tools, visual intelligence, and removing objects from photos. Apple also says it has worked with Ailbaba to add support for its Q …</p>
+<p><a href="https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Terrence O’Brien</name>
+			</author>
+			
+			<title type="html"><![CDATA[Exclusive details about Akai’s MPC Sample Key]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/gadgets/1023649/akai-mpc-sample-key-exclusive" />
+			<id>https://www.theverge.com/?p=1023649</id>
+			<updated>2026-10-30T17:27:26-04:00</updated>
+			<published>2026-10-30T17:01:32-04:00</published>
+			<category scheme="https://www.theverge.com" term="Entertainment" /><category scheme="https://www.theverge.com" term="Gadgets" /><category scheme="https://www.theverge.com" term="Music" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Akai teased its new MPC Sample Key on Instagram earlier this week, and said it plans to open-source its software so the modding community can hack it to their hearts' delight. While there's no word yet on when the device will launch or how much it will cost, The Verge has received exclusive images of [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Akai_Sample_Key_DSC01934_WEB.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Akai teased its new <a href="https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key">MPC Sample Key</a> on Instagram earlier this week, and said it plans to open-source its software so the <a href="https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware">modding community</a> can hack it to their hearts' delight. While there's no word yet on when the device will launch or how much it will cost, <em>The Verge</em> has received exclusive images of the upcoming instrument that offer some details about its feature set. </p>
+<p class="wp-block-paragraph">While the Sample Key shares many of the same controls as the MPC Sample - including the three context-sensitive encoders, a large main encoder - it seems designed for pitched sample playback, rather than chopping up drums. In fact, the "chop" button from the MPC Sample is m …</p>
+<p><a href="https://www.theverge.com/gadgets/1023649/akai-mpc-sample-key-exclusive">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Stevie Bonifield</name>
+			</author>
+			
+			<title type="html"><![CDATA[Sam Altman says it’s better for RAM to be in a data center than on your desk]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers" />
+			<id>https://www.theverge.com/?p=1023820</id>
+			<updated>2026-10-30T16:48:43-04:00</updated>
+			<published>2026-10-30T16:48:43-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="OpenAI" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's "terrible" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: "A lot of people want [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="Image: Justin Sullivan / Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-1778705436.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Asked about supply chain shortages, like the <a href="https://www.theverge.com/news/839353/pc-ram-shortage-pricing-spike-news">ongoing RAM shortage</a>, OpenAI CEO Sam Altman said in an interview that it's "terrible" to have RAM in personal PCs instead of data centers. During his appearance on the <a href="https://www.youtube.com/watch?v=iMsUcCYNKqY&amp;t=1747s"><em>Cheeky Pint</em></a> podcast, where he also <a href="https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview">commented on AI's impact on math</a>, Altman said:</p>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">"A lot of people want local inference. And somehow, they assume that the problem is solved now because we are going to have open-source models, we're going to be able to run them on our computers, and so we're not going to need all the stuff in the data center.</p>
+<p class="wp-block-paragraph">But from a global allocation perspective, actually, it's quite terrible to have everybo …</p></blockquote>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Emma Roth</name>
+			</author>
+			
+			<title type="html"><![CDATA[The biggest names in AI are backing a new way to opt out of scraping]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out" />
+			<id>https://www.theverge.com/?p=1023763</id>
+			<updated>2026-10-30T18:04:23-04:00</updated>
+			<published>2026-10-30T16:26:10-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Anthropic" /><category scheme="https://www.theverge.com" term="Google" /><category scheme="https://www.theverge.com" term="Microsoft" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared "policy token" signal [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Photo illustration of a brain on a circuit board in red." data-caption="" data-portal-copyright="Illustration by Cath Virginia / The Verge | Photos from Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25330660/STK414_AI_CHATBOT_H.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as <a href="https://www.seroundtable.com/google-ai-training-control-42430.html">reported earlier by <em>Search Engine Roundtable</em></a>. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually.</p>
+<p class="wp-block-paragraph">The <a href="https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/">shared "policy token" signal</a> is proposed by Kevin Kelley, a technical lead for standards at Anthropic, as part of the Internet Engineering Task Force (IETF). It will live within a website's <a href="https://www.theverge.com/24067997/robots-txt-ai-text-file-web-crawlers-spiders">robots.txt file</a>, which has long signaled which web crawlers can and can't scrape a site - whether for search indexing, archiving, or …</p>
+<p><a href="https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Emma Roth</name>
+			</author>
+			
+			<title type="html"><![CDATA[Google&#8217;s satellite AI server transmits its first response to Earth]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission" />
+			<id>https://www.theverge.com/?p=1023528</id>
+			<updated>2026-10-30T14:21:38-04:00</updated>
+			<published>2026-10-30T14:21:38-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="Google" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Science" /><category scheme="https://www.theverge.com" term="Space" /><category scheme="https://www.theverge.com" term="Tech" />
+							<summary type="html"><![CDATA[Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space: Blue marble below Data streams in [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="Image: Google" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/project-suncatcher-google.png?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/">Google says</a> it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space:</p>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">Blue marble below</p>
+<p class="wp-block-paragraph">Data streams in silent grace</p>
+<p class="wp-block-paragraph">Starlight feeds my core. &#10024;</p>
+</blockquote>
+<p class="wp-block-paragraph">Google says it tried out other space-themed limericks and telemetry prompts as well. The test is part of Google's Project Suncatcher, <a href="https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher">an experimental initiative</a> that could eventually put AI data centers in space. Google launched the satellite into orbit <a href="https://www.theverge.com/tech/1003838/googles-ai-satellite-successfully-launches-into-space">earlier this …</a></p>
+<p><a href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Emma Roth</name>
+			</author>
+			
+			<title type="html"><![CDATA[Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru" />
+			<id>https://www.theverge.com/?p=1023440</id>
+			<updated>2026-10-30T13:38:04-04:00</updated>
+			<published>2026-10-30T13:38:04-04:00</published>
+			<category scheme="https://www.theverge.com" term="AI" /><category scheme="https://www.theverge.com" term="News" />
+							<summary type="html"><![CDATA[Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore "experiences that recognize participating customers as they arrive, present personalized digital menus, and make payment more effortless," as spotted earlier by More [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="A photo of a Starbucks drive-thru" data-caption="" data-portal-copyright="Photo by: Jeffrey Greenberg/Universal Images Group via Getty Images﻿" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2268681559.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During <a href="https://s203.q4cdn.com/326826266/files/content_files/Q4-FY26-SBUX-Transcript.pdf">an earnings call on Thursday</a>, Starbucks CEO Brian Niccol said the company is going to explore "experiences that recognize participating customers as they arrive, present personalized digital menus, and make payment more effortless," as spotted earlier by <a href="https://bsky.app/profile/moreperfectunion.bsky.social/post/3mz42442ai22z"><em>More Perfect Union</em></a>.</p>
+<p class="wp-block-paragraph">It sounds similar to the technology that <a href="https://www.businessinsider.com/taco-bell-brings-more-ai-drive-thrus-yum-brands-expansion-2026-4">Taco Bell is experimenting with</a>, which could change the layout, content, and visuals on a digital menu board "on a car-by-car basis." McDonald's also r<a href="https://www.theverge.com/ai-artificial-intelligence/947644/mcdonalds-latest-ai-drive-thru-test-will-let-customers-ask-can-i-get-my-usual">ecently showed off an AI-powered feature</a> it's piloting at a handful of dri …</p>
+<p><a href="https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>David Pierce</name>
+			</author>
+			
+			<title type="html"><![CDATA[The delightfully messy state of Apple gadgets]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/podcast/1023194/the-delightfully-messy-state-of-apple-gadgets" />
+			<id>https://www.theverge.com/?p=1023194</id>
+			<updated>2026-10-30T13:25:20-04:00</updated>
+			<published>2026-10-30T13:25:20-04:00</published>
+			<category scheme="https://www.theverge.com" term="Apple" /><category scheme="https://www.theverge.com" term="Gadgets" /><category scheme="https://www.theverge.com" term="Podcasts" /><category scheme="https://www.theverge.com" term="Tech" /><category scheme="https://www.theverge.com" term="Vergecast" />
+							<summary type="html"><![CDATA[The iPhone has more screens! The MacBook has a touchscreen! The HomeView does CarPlay apps! For the first time in a long time, Apple is in a period of unabashed gadget experimentation, and while the final results aren't always perfect, it's fun to watch the most successful product maker try some new things again. Even [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="" data-caption="" data-portal-copyright="Image: Alex Parkin / The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/VRG_VST_1030_SiteB.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">The iPhone <a href="https://www.theverge.com/tech/1015028/iphone-duo-review">has more screens</a>! The MacBook <a href="https://www.theverge.com/tech/1020549/macbook-studio-touchscreen-hands-on">has a touchscreen</a>! The HomeView <a href="https://www.theverge.com/tech/1009877/apple-homeview-smart-home-display-hands-on">does CarPlay apps</a>! For the first time in a long time, Apple is in a period of unabashed gadget experimentation, and while the final results aren't always perfect, it's fun to watch the most successful product maker try some new things again. Even when, in this case, "trying" amounts to just <a href="https://www.theverge.com/tech/1020676/apple-touchscreen-macbook-pro-reveal-video">slapping a touch panel</a> on a lovely new MacBook Pro - just to see if you might use it.</p>
+<p class="wp-block-paragraph">On <a href="https://pod.link/vergecast">this episode of <em>The Vergecast</em></a>, David and Nilay debate the merits of a touchscreen laptop, Nilay explains why he is absolutely positively going to buy the new MacBook Pro with PROLED XDR Display, …</p>
+<p><a href="https://www.theverge.com/podcast/1023194/the-delightfully-messy-state-of-apple-gadgets">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Andrew J. Hawkins</name>
+			</author>
+			
+			<title type="html"><![CDATA[Rivian’s autonomy gamble faces its first real test]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/transportation/1023143/rivian-autonomy-point-to-point-robotaxi-q3-2026" />
+			<id>https://www.theverge.com/?p=1023143</id>
+			<updated>2026-10-30T13:40:51-04:00</updated>
+			<published>2026-10-30T13:16:09-04:00</published>
+			<category scheme="https://www.theverge.com" term="Autonomous Cars" /><category scheme="https://www.theverge.com" term="Electric Cars" /><category scheme="https://www.theverge.com" term="News" /><category scheme="https://www.theverge.com" term="Transportation" />
+							<summary type="html"><![CDATA[During an hourlong earnings call last night, Rivian CEO RJ Scaringe spent less time talking about the production ramp of the all-important R2 SUV than he did hyping the company's still-unproven autonomous vehicle ambitions. But the company faces a crucial test later this year, when it rolls out its point-to-point hands-free driving feature - first [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Rivian founder and CEO RJ Scaringe watches Rivian R2s on the assembly line." data-caption="Rivian founder and CEO RJ Scaringe (left) watches Rivian R2s being built after an event at the Rivian assembly plant on May 19th, 2026, in Normal, Illinois. | Photo: Scott Olson / Getty Images" data-portal-copyright="Photo: Scott Olson / Getty Images" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2277183149.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+	Rivian founder and CEO RJ Scaringe (left) watches Rivian R2s being built after an event at the Rivian assembly plant on May 19th, 2026, in Normal, Illinois. | Photo: Scott Olson / Getty Images	</figcaption>
+</figure>
+<p class="wp-block-paragraph"><a href="https://www.theverge.com/transportation/1022420/rivian-q3-earnings-r2-sales-volkswagen-software">During an hourlong earnings call last night</a>, Rivian CEO RJ Scaringe spent less time talking about the production ramp of <a href="https://www.theverge.com/transportation/946398/rivian-r2-review-price-specs-ai-ev">the all-important R2 SUV</a> than he did hyping the company's still-unproven <a href="https://www.theverge.com/transportation/846783/rivian-ai-autonomy-day-self-driving-lidar-chip-tesla">autonomous vehicle ambitions</a>. </p>
+<p class="wp-block-paragraph">But the company faces a crucial test later this year, when it rolls out its point-to-point hands-free driving feature - first to its own employees for testing and validation in 2026, and later to customers in 2027. Following that, Rivian says it will launch its first robotaxi vehicles in <a href="https://www.theverge.com/transportation/897105/uber-rivian-robotaxi-investment-deal">partnership with Uber in 2028</a>. In short, the next two years will determine whether Rivian will succeed or fail in its high-stakes ques …</p>
+<p><a href="https://www.theverge.com/transportation/1023143/rivian-autonomy-point-to-point-robotaxi-q3-2026">Read the full story at The Verge.</a></p>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Brad Bourque</name>
+			</author>
+			
+			<title type="html"><![CDATA[Vizio’s discounted Mini LED TV lets you skip the sign-ups and smarts]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/gadgets/1022794/vizio-mini-led-quantum-tv-65-inch-walmart-deal-sale" />
+			<id>https://www.theverge.com/?p=1022794</id>
+			<updated>2026-10-30T13:01:07-04:00</updated>
+			<published>2026-10-30T13:01:07-04:00</published>
+			<category scheme="https://www.theverge.com" term="Deals" /><category scheme="https://www.theverge.com" term="Gadgets" /><category scheme="https://www.theverge.com" term="Verge Shopping" />
+							<summary type="html"><![CDATA[Modern smart TVs let you skip the streaming device, which is convenient, but they also come with their own issues, including privacy concerns and frequent updates. The Vizio Mini LED Quantum TV lets you cut out the rigamarole and just get straight to the HDMI ports. And right now, it’s discounted at Walmart, with the [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="The Vizio Mini LED Quantum displaying an image from The Expanse, sitting on a wooden credenza." data-caption="Walmart’s inexpensive Vizio produces a nice, bright image, though its black levels aren’t that deep. | Photo: John Higgins / The Verge" data-portal-copyright="Photo: John Higgins / The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268611_Vizio_Mini_LED_Quantum_TV_JHiggins_0009.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+	Walmart’s inexpensive Vizio produces a nice, bright image, though its black levels aren’t that deep. | Photo: John Higgins / The Verge	</figcaption>
+</figure>
+<p class="wp-block-paragraph">Modern smart TVs let you skip the streaming device, which is convenient, but they also come with their own issues, including <a href="https://www.theverge.com/tech/991190/lg-tv-spying-standby-recording-wi-fi-scanning-gamers-nexus">privacy concerns</a> and frequent updates. The <strong>Vizio Mini LED Quantum TV</strong> lets you cut out the rigamarole and just get straight to the HDMI ports. And right now, it’s discounted at Walmart, with the <a href="https://www.walmart.com/ip/VIZIO-65-Mini-LED-Quantum-4K-QLED-HDR-Smart-TV-NEW-VQM65C-10/7771502259">65-inch model</a> going for $358 ($40 off) and the <a href="https://www.walmart.com/ip/VIZIO-85-Mini-LED-Quantum-4K-QLED-HDR-Smart-TV-NEW-VQM85C-10/7748764679">85-inch</a> model going for $698 ($100 off).</p>
+<div class="product-block"><h3>Vizio Mini LED Quantum TV</h3>
+<figure class="product-image"><img width="300" height="200" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268611_Vizio_Mini_LED_Quantum_TV_JHiggins_0001.jpg?w=300" class="attachment-medium size-medium" alt="The Vizio Mini LED Quantum display the Vizio OS home page, on a wooden credenza." /></figure>
+<h3>Where to Buy:</h3><ul><li><a href="https://www.walmart.com/ip/VIZIO-65-Mini-LED-Quantum-4K-QLED-HDR-Smart-TV-NEW-VQM65C-10/7751017286"> <strike>$278</strike> $248 at <strong>Walmart (55-inch)</strong></a></li><li><a href="https://www.walmart.com/ip/VIZIO-65-Mini-LED-Quantum-4K-QLED-HDR-Smart-TV-NEW-VQM65C-10/7771502259"> <strike>$398</strike> $358 at <strong>Walmart (65-inch)</strong></a></li><li><a href="https://www.walmart.com/ip/VIZIO-85-Mini-LED-Quantum-4K-QLED-HDR-Smart-TV-NEW-VQM85C-10/7748764679"> <strike>$768</strike> $698 at <strong>Walmart (85-inch)</strong></a></li></ul></div>
+<p class="wp-block-paragraph">Although Vizio’s Mini LED TV comes loaded with Vizio OS, you can bypass the TV’s host of agreements during setup. By pushing past the manufacturer’s warnings about “missing out” on smart TV features, you can disable the built-in operating system, letting you use your own streaming device like a Roku or Apple TV 4K without worrying about what data Vizio and Walmart might be collecting.</p>
+
+
+
+
+
+
+
+<p class="wp-block-paragraph">As for specs, the TV features quantum dots for full, vivid color and high brightness (our testing showed it can reach 936 nits when calibrated thanks to its mini-LED panel). There are some compromises, though, which is expected given the low price point. The IPS panel doesn’t have the best black levels, as you might see on more expensive sets, and there’s a touch of motion blur during faster scenes, which may also hurt its appeal for gamers. It also has three HDMI ports, but they’re only 2.0, although the screen only supports up to 4K at 60Hz, so it’s not detrimental to the experience.</p>
+
+<h5 class="wp-block-heading"><a href="https://www.theverge.com/tech/960916/vizio-mini-led-quantum-tv-review">Read our full Vizio Mini LED Quantum TV review</a>.</h5>
+						]]>
+									</content>
+			
+					</entry>
+			<entry>
+			
+			<author>
+				<name>Sheena Vasani</name>
+			</author>
+			
+			<title type="html"><![CDATA[Google’s latest Nest Learning Thermostat is $60 off just in time for sweater weather]]></title>
+			<link rel="alternate" type="text/html" href="https://www.theverge.com/gadgets/1022819/google-nest-learning-thermostat-4th-gen-casio-ws-b1000-watch-deal-sale" />
+			<id>https://www.theverge.com/?p=1022819</id>
+			<updated>2026-10-30T11:29:02-04:00</updated>
+			<published>2026-10-30T11:29:02-04:00</published>
+			<category scheme="https://www.theverge.com" term="Deals" /><category scheme="https://www.theverge.com" term="Gadgets" /><category scheme="https://www.theverge.com" term="Verge Shopping" />
+							<summary type="html"><![CDATA[As the weather cools, it may be worth investing in a smart thermostat to help lower your energy bills. Right now, Google&#8217;s fourth-gen Nest Learning Thermostat is on sale in all three colors for $219.99 ($60 off) at Amazon, Best Buy, and The Home Depot, matching its best price of the year and just $10 [&#8230;]]]></summary>
+			
+							<content type="html">
+											<![CDATA[
+
+						
+<figure>
+
+<img alt="Google Nest Learning Thermostat (fourth-gen)" data-caption="" data-portal-copyright="Image: The Verge" data-has-syndication-rights="1" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/googlenestlearningthermostatthevergedealsoct29.png?quality=90&#038;strip=all&#038;crop=0,0,100,100" />
+	<figcaption>
+		</figcaption>
+</figure>
+<p class="wp-block-paragraph">As the weather cools, it may be worth investing in a smart thermostat to help lower your energy bills. Right now, <strong>Google&#8217;s fourth-gen Nest Learning Thermostat</strong> is on sale in all three colors for $219.99 ($60 off) at <a href="https://www.amazon.com/Google-Learning-Thermostat-Temperature-Sensor/dp/B0D5BGST5N/">Amazon</a>, <a href="https://www.bestbuy.com/product/google-nest-learning-thermostat-4th-gen-with-nest-temperature-sensor-2nd-gen-polished-gold/JJ8T5CCSRL">Best Buy</a>, and <a href="https://www.homedepot.com/pep/Google-Nest-Learning-Thermostat-4th-Gen-with-Nest-Temperature-Sensor-2nd-Gen-Polished-Gold-GA05171-US/330451503?g_store=6611">The Home Depot</a>, matching its best price of the year and just $10 shy of its all-time low.</p>
+<div class="product-block"><h3>Google Nest Learning Thermostat (fourth-gen)</h3>
+<figure class="product-image"><img width="300" height="200" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/247414_Nest_Learning_Thermostat_4th_gen_JTuohy_0011.webp?w=300" class="attachment-medium size-medium" alt="A photo of the Nest Learning Thermostat" /></figure>
+<h3>Where to Buy:</h3><ul><li><a href="https://www.amazon.com/Google-Learning-Thermostat-Temperature-Sensor/dp/B0D5BBYRJM/"> <strike>$279.99</strike> $219.99 at <strong>Amazon</strong></a></li><li><a href="https://www.bestbuy.com/product/google-nest-learning-thermostat-4th-gen-with-nest-temperature-sensor-2nd-gen-polished-gold/JJ8T5CCSRL"> <strike>$279.99</strike> $219.99 at <strong>Best Buy </strong></a></li><li><a href="https://www.homedepot.com/pep/Google-Nest-Learning-Thermostat-4th-Gen-with-Nest-Temperature-Sensor-2nd-Gen-Polished-Gold-GA05171-US/330451503?g_store=6611"> <strike>$279.99</strike> $219.99 at <strong>The Home Depot</strong></a></li></ul></div>
+<p class="wp-block-paragraph">Google&#8217;s latest Nest Learning Thermostat is its most capable to date, and comes with new features designed to lower energy consumption without sacrificing comfort. Like prior models, it learns your heating and cooling preferences over time and automatically creates a schedule based on your habits, so you don&#8217;t have to constantly adjust the temperature yourself. It can also suggest schedule changes to save energy and automatically adjusts the temperature when you&#8217;re away. Additionally, it includes a remote temperature sensor in the box, so you can better adjust the temperature in your preferred room, whether that’s the bedroom or another space in your home.</p>
+
+
+
+
+
+<p class="wp-block-paragraph">The Nest Learning Thermostat also improves on its predecessor with a beautifully designed adaptive display that shows your temperature settings, the weather, and the time from across the room. When you get closer, it reveals more detailed information, including outdoor air quality and humidity levels. The Matter-ready device also <a href="https://store.google.com/intl/en_us/widget/compatibility/thermostat/">works with more HVAC systems</a> than the third-gen model, along with a host of compatible humidifiers, dehumidifiers, and ventilation equipment. Plus, unlike many smart thermostats, it doesn&#8217;t require a C-wire in most homes either, though using one can help ensure consistent power.  </p>
+
+<h5 class="wp-block-heading"><a href="https://www.theverge.com/24322643/nest-learning-thermostat-4th-gen-review">Read our full Nest Learning Thermostat (fourth-gen) review</a>.</h5>
+
+<div id="hype-desk-root"></div>
+
+  window.HYPE_DESK_CONFIG = {
+    productImageUrl: "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/iphone_17e.png",
+    productImageAlt: "iPhone 17e • Unlocked",
+    productTitle: "iPhone 17e • Unlocked",
+    shortDescription: "Save on an unlocked refurbished iPhone 17e",
+    longDescription:
+      "Upgrade to a 256GB unlocked iPhone 17e without paying full new-device pricing. Back Market offers professionally inspected refurbished phones with free 30-day returns and a one-year warranty.",
+    purchaseUrl: "https://www.awin1.com/cread.php?awinmid=18275&amp;awinaffid=299513&amp;platform=dl&amp;ued=https%3A%2F%2Fwww.backmarket.com%2Fen-us%2Fp%2Fiphone-17e%3Futm_source%3Dchatgpt.com",
+    purchaseLinkText: "Shop At Back Market"
+  };
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+<h2 class="wp-block-heading">Three more deals that aren’t as pricey</h2>
+
+<ul class="wp-block-list">
+<li>You can get the black <strong>Casio WS-B1000</strong> at <a href="https://www.amazon.com/dp/B0D4WM61JN">Amazon</a> and <a href="https://www.walmart.com/ip/Casio-Unisex-Bluetooth-Connect-Step-Tracker-200-Lap-Watch-Light-Gray-WS-B1000-8BV/15936705928">Walmart</a> for just $23.88 ($41 off), which is its best price to date. The retro-style digital watch lacks advanced health sensors and features like contactless payments, but it does offer <em>some</em> basic fitness tracking, including a built-in step counter and Bluetooth connectivity for syncing your activity data with your phone; it also comes with a stopwatch and alarms. <a href="https://www.theverge.com/24206037/casio-ws-b1000-review-smartwatch-wearable">Read our review</a>.</li>
+
+
+
+<li>We <a href="https://www.theverge.com/gadgets/1019138/apple-airtag-second-gen-cricut-joy-2-printer-deal-sale">recently highlighted</a> an ongoing deal on a <a href="https://www.amazon.com/dp/B0GJTFXNRX">single <strong>AirTag</strong></a>, but if you want to stock up, <a href="https://www.amazon.com/dp/B0GJTXVN9Z">Amazon</a>, <a href="https://www.bestbuy.com/product/apple-airtag-4-pack-2nd-generation-2026-white/JJGCQLTTF3/sku/6377586">Best Buy</a>, and <a href="https://www.walmart.com/ip/Apple-AirTag-4-Pack-2nd-Generation/19319566241">Walmart</a> are now selling a four-pack for $69.99 ($30 off), which is the lowest price we’ve seen. Apple&#8217;s second-gen AirTag is our top pick for iPhone owners thanks to its impressively precise tracking, which can guide you directly to a lost item. You can also locate items with an Apple Watch Series 9 or later and share an AirTag&#8217;s location with participating airlines, such as <a href="https://www.theverge.com/2024/12/12/24319503/apple-airtag-find-my-network-share-item-location-united-airlines-lost-bag-luggage">United</a> and <a href="https://www.theverge.com/2024/12/16/24322718/deltas-mobile-app-now-supports-apples-share-item-location-feature">Delta</a>, helping you recover lost luggage. <a href="https://www.theverge.com/tech/875314/airtags-second-gen-review-item-tracker">Read our review</a>.</li>
+
+
+
+<li><strong>SwitchBot’s 12-inch RGBICWW Ceiling Light</strong> is available at <a href="https://www.amazon.com/dp/B0H1J192F3">Amazon</a> for $36.99 ($12 off) when you clip the on-page coupon, or directly from <a href="https://us.switch-bot.com/products/switchbot-rgbicww-ceiling-light">SwitchBot</a> for the same price with code <strong>HWHW26</strong>. The Matter-compatible smart light — which is also <a href="https://www.amazon.com/dp/B0H1J32RNT">discounted in a 15-inch size</a> — offers 26 preset scenes, eight lighting effects, and the ability to create your own. The main difference between the two sizes is the brightness: the 15-inch model delivers up to 3,200 lumens, compared to 2,000 lumens for the smaller version.</li>
+</ul>
+						]]>
+									</content>
+			
+					</entry>
+	</feed>
