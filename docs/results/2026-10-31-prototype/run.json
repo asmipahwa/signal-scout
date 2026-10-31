@@ -1,0 +1,3833 @@
+{
+ "generated_at": "2026-10-31T02:25:57+00:00",
+ "llm": "gemini/gemini-3.5-flash-lite",
+ "funnel": {
+  "fetched": 803,
+  "too_old": 261,
+  "no_competitor": 432,
+  "dup_url": 9,
+  "near_dup_title": 0,
+  "to_enrich": 101,
+  "llm_enriched": 75,
+  "llm_not_relevant": 26,
+  "llm_enrichment_failed": 0,
+  "llm_deferred": 0,
+  "insights": 69
+ },
+ "cost_usd": 0.0,
+ "signals": [
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "Asana and Salesforce integration via Asana rules",
+   "url": "https://note.com/escortia/n/n2ab1894166b9?hl=en",
+   "published_at": "2026-10-27T08:23:00+00:00",
+   "text": "Regarding the integration between Asana and Salesforce, I have summarized the key points of the past integration method versus the current one. This is an article originally written in 2023, updated ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "partnership",
+    "summary": "An article discusses the integration between Asana and Salesforce using Asana rules, comparing past methods with current ones.",
+    "why_it_matters": "Useful context if a prospect brings up CRM integrations, but otherwise a minor routine update rather than a new sales wedge.",
+    "importance": 2,
+    "sentiment": 0.1,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1602,
+    "output_tokens": 130,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.5358422920107841,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Hindustan Times on MSN",
+   "title": "Asana, popular work management platform, down for thousands of users; what we know so far",
+   "url": "https://www.msn.com/en-in/news/other/asana-popular-work-management-platform-down-for-thousands-of-users-what-we-know-so-far/ar-AA2fL04U",
+   "published_at": "2026-10-21T17:18:00+00:00",
+   "text": "Work-management platform Asana is experiencing an outage, with nearly 2,300 U.S. users reporting problems on Down Detector.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Asana experienced an outage affecting thousands of users, with nearly 2,300 U.S. reports on Down Detector.",
+    "why_it_matters": "Use this active outage to question Asana's platform reliability when talking to prospects evaluating their stability.",
+    "importance": 4,
+    "sentiment": -0.7,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1635,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 3.066588625020813,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Yahoo Finance",
+   "title": "What Investors Got Wrong About Asana Before The Drop",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/investors-got-wrong-asana-drop-151627694.html",
+   "published_at": "2026-10-23T08:15:00+00:00",
+   "text": "Asana\u2019s latest quarter landed with a mix of upbeat AI headlines and a softer outlook that knocked the share price around and grabbed investors\u2019 attention. Investors who held Asana over the past year ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "Asana reported its latest quarter with AI headlines and a softer outlook that impacted its share price.",
+    "why_it_matters": "Use Asana's softer outlook to raise questions about their growth momentum and stability during competitive evaluations.",
+    "importance": 3,
+    "sentiment": -0.3,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1612,
+    "output_tokens": 89,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 3.1995823750039563,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Yahoo Finance",
+   "title": "Asana\u2019s Arboretum overhaul aims to rival The Domain",
+   "url": "https://finance.yahoo.com/real-estate/articles/asana-arboretum-overhaul-aims-rival-225957033.html",
+   "published_at": "2026-10-27T15:59:00+00:00",
+   "text": "Terry S. Brown, Sam E. Judd and Jason K. Tompkins of Asana Partners, with The Arboretum in Austin (LinkedIn, City of Austin)Asana Partners is betting that a facelift, not just an expansion, will be ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "Asana Partners is overhauling The Arboretum in Austin to rival The Domain.",
+    "why_it_matters": "Not relevant for sales; the signal is about a real estate firm named Asana Partners, not the project-management software company Asana.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1623,
+    "output_tokens": 121,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9881794590037316,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:The Globe and Mail",
+   "title": "Asana Reshapes Board and Finance Team for AI Growth",
+   "url": "https://www.theglobeandmail.com/investing/markets/stocks/ASAN/pressreleases/4865916/asana-reshapes-board-and-finance-team-for-ai-growth/",
+   "published_at": "2026-09-29T14:13:00+00:00",
+   "text": "On September 25, 2026, Asana restructured its board leadership, appointing CEO Dan Rogers as board chair to succeed co\u2011founder Dustin Moskovitz, who remained a director and signaled long\u2011term ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "leadership_change",
+    "summary": "Asana restructured its board leadership on September 25, 2026, appointing CEO Dan Rogers as board chair to succeed co-founder Dustin Moskovitz.",
+    "why_it_matters": "A new board chair focusing on AI growth may signal strategic shifts, but this does not create an immediate opening in active deals.",
+    "importance": 4,
+    "sentiment": 0.1,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1637,
+    "output_tokens": 147,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1089452920132317,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:TechInformed",
+   "title": "Asana tests show 29-fold cut in browser agent model costs",
+   "url": "https://techinformed.com/asana-tests-show-29-fold-cut-in-browser-agent-model-costs/",
+   "published_at": "2026-10-13T08:53:00+00:00",
+   "text": "Changes to how the agent stored and reused its browsing history delivered most of the savings, before another model brought estimated costs down to $0.47 per run ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "feature_update",
+    "summary": "Asana tests showed a 29-fold reduction in browser agent model costs by optimizing how browsing history is stored and reused.",
+    "why_it_matters": "Expect Asana reps to pitch lower AI execution costs, so be prepared to demonstrate the cost-efficiency of your own AI features.",
+    "importance": 3,
+    "sentiment": 0.6,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1605,
+    "output_tokens": 139,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0172322079888545,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Yahoo Finance",
+   "title": "Is Asana\u2019s (ASAN) New AI-Savvy Board Tilted More Toward Innovation or Control?",
+   "url": "https://uk.finance.yahoo.com/news/asana-asan-ai-savvy-board-151039403.html",
+   "published_at": "2026-10-10T08:10:00+00:00",
+   "text": "Asana, Inc. recently restructured its leadership, naming CEO Dan Rogers as Chair of the Board, adding Tom Berquist and Jerry Ting as directors, and appointing Heather Le as Chief Accounting Officer, ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "leadership_change",
+    "summary": "Asana restructured its leadership by naming CEO Dan Rogers as Chair of the Board, adding Tom Berquist and Jerry Ting as directors, and appointing Heather Le as Chief Accounting Officer.",
+    "why_it_matters": "A new board and executive appointments indicate Asana is shifting its strategic focus, which may influence their enterprise posture and execution speed.",
+    "importance": 4,
+    "sentiment": 0.1,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1622,
+    "output_tokens": 148,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 4.055398791009793,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Kalkine Media",
+   "title": "Asana CEO Daniel Mark Rogers Sells 19,676 Shares Under 10b5-1 Plan on October 22, 2026",
+   "url": "https://kalkinemedia.com/us/news/announcements/asana-ceo-daniel-mark-rogers-sells-19676-shares-under-10b5-1-plan-on-october-22-2026",
+   "published_at": "2026-10-23T14:00:00+00:00",
+   "text": "ASAN (NASDAQ:ASAN) , sold 19,676 shares of Class A Common Stock on October 22, 2026, as disclosed in a Form 4 filed on October 23, 2026. The transaction, coded \"S\" for sale, was carried out under a ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "leadership_change",
+    "summary": "Asana CEO Daniel Mark Rogers sold 19,676 shares of Class A Common Stock under a 10b5-1 plan on October 22, 2026.",
+    "why_it_matters": "Routine executive stock sales under 10b5-1 plans do not impact active sales deals and require no specific positioning change.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1696,
+    "output_tokens": 155,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.307186374993762,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:MarketScreener",
+   "title": "Asana Insider Sold Shares Worth $4,237,478, According to a Recent SEC Filing",
+   "url": "https://www.marketscreener.com/news/asana-insider-sold-shares-worth-4-237-478-according-to-a-recent-sec-filing-ce785adedd8af224",
+   "published_at": "2026-09-24T00:44:00+00:00",
+   "text": "Asana Fiscal Q2 Adjusted Earnings, Revenue Rise MT Sep. 03 (ASAN) Asana Expects Fiscal 2027 Adjusted EPS $0.37, vs. FactSet Est of $0.37 MT Sep. 03 Tranche Update on Asana, Inc.'s Equity Buyback Plan ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "An Asana insider sold shares worth $4,237,478 according to a recent SEC filing, and Asana reported Q2 adjusted earnings and revenue rises.",
+    "why_it_matters": "Insider stock sales rarely impact day-to-day sales conversations and can be safely ignored in deals.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1678,
+    "output_tokens": 141,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9483208750025369,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Tech",
+   "title": "Asana vs Basecamp: Features and Pricing Review",
+   "url": "https://tech.co/project-management-software/asana-vs-basecamp",
+   "published_at": "2026-10-09T06:53:00+00:00",
+   "text": "Our research shows that Asana is the better project management software when compared with Basecamp. Asana has more task management features, like Gantt charts and a spreadsheet-style view, so you\u2019ll ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A review article compares Asana and Basecamp features and pricing.",
+    "why_it_matters": "Not relevant for sales; a standard comparison listicle.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1595,
+    "output_tokens": 100,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.02932287499425,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:thetechedvocate.org",
+   "title": "Asana pricing plans explained",
+   "url": "https://www.thetechedvocate.org/asana-pricing-plans-explained/",
+   "published_at": "2026-08-09T01:18:00+00:00",
+   "text": "Understanding Asana\u2019s Core Philosophy and Its Impact on Pricing Before we even dive into the nitty-gritty of dollars and features, it\u2019s helpful to understand Asana\u2019s underlying philosophy. At its ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An article explaining Asana's pricing plans and core philosophy.",
+    "why_it_matters": "Not relevant for sales; it is a general guide or tutorial rather than a specific pricing or product change.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1600,
+    "output_tokens": 110,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0994901249941904,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Yahoo Finance",
+   "title": "Asana\u2019s AI pricing shift brings near-term revenue pressure",
+   "url": "https://finance.yahoo.com/technology/ai/articles/asana-ai-pricing-shift-brings-150038599.html",
+   "published_at": "2026-09-04T12:00:00+00:00",
+   "text": "The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "pricing_change",
+    "summary": "Asana shifted its AI pricing, resulting in near-term revenue pressure according to Yahoo Finance.",
+    "why_it_matters": "Changes to Asana's AI monetization strategy could create uncertainty for their customers, allowing reps to position our AI pricing as more stable and predictable.",
+    "importance": 4,
+    "sentiment": -0.3,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1612,
+    "output_tokens": 135,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9378057499998249,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:tipranks",
+   "title": "Asana price target raised to $9 from $8 at DA Davidson",
+   "url": "https://www.tipranks.com/news/the-fly/asana-price-target-raised-to-9-from-8-at-da-davidson-thefly-news",
+   "published_at": "2026-09-03T22:55:00+00:00",
+   "text": "DA Davidson raised the firm\u2019s price target on Asana (ASAN) to $9 from $8 and keeps a Neutral rating on the shares. The company\u2019s Q2 revenue exceeded expectations, but while its new product releases in ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "DA Davidson raised Asana's price target from $8 to $9 while maintaining a Neutral rating, noting that Q2 revenue exceeded expectations.",
+    "why_it_matters": "Analyst price target adjustments do not directly impact day-to-day sales conversations.",
+    "importance": 1,
+    "sentiment": 0.2,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1631,
+    "output_tokens": 125,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0102517500054091,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:therundown.ai",
+   "title": "Asana AI review: features, pricing and alternatives",
+   "url": "https://www.therundown.ai/tools/asana-ai",
+   "published_at": "2026-10-10T17:00:00+00:00",
+   "text": "Use Asana\u2019s AI assists, AI Studio, Dash and AI Teammates to plan and carry out project work. Asana AI is the umbrella for AI features within Asana\u2019s project and work management platform. The current ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An online review covers Asana AI features, pricing, and alternatives.",
+    "why_it_matters": "Not relevant for sales; a standard software review article.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1602,
+    "output_tokens": 102,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8181842920021154,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Yahoo Finance",
+   "title": "What Investors Got Wrong About Asana Before The Drop",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/investors-got-wrong-asana-drop-151627694.html",
+   "published_at": "2026-10-23T08:15:00+00:00",
+   "text": "Asana\u2019s latest quarter landed with a mix of upbeat AI headlines and a softer outlook that knocked the share price around and grabbed investors\u2019 attention. Investors who held Asana over the past year ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Mezha",
+   "title": "Asana acquired Stack AI for $75 million, founders join to accelerate AI agents",
+   "url": "https://mezha.net/eng/news/684c794a_asana_acquired_stack/",
+   "published_at": "2026-05-28T16:33:00+00:00",
+   "text": "Asana bought Stack AI for $75 million to accelerate agent-driven automation and embed AI agents into its workspace, with the startup's founders joining the company.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "acquisition",
+    "summary": "Asana acquired Stack AI for $75 million to accelerate agent-driven automation and embed AI agents into its workspace, with the startup's founders joining the company.",
+    "why_it_matters": "Expect Asana reps to aggressively pitch new native AI agent workflows, so be prepared to probe on the maturity and stability of these newly integrated capabilities.",
+    "importance": 5,
+    "sentiment": 0.8,
+    "confidence": 1.0
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1604,
+    "output_tokens": 148,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0587108749896288,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Yahoo Finance",
+   "title": "Is Asana\u2019s (ASAN) New AI-Savvy Board Tilted More Toward Innovation or Control?",
+   "url": "https://uk.finance.yahoo.com/news/asana-asan-ai-savvy-board-151039403.html",
+   "published_at": "2026-10-10T08:10:00+00:00",
+   "text": "Asana, Inc. recently restructured its leadership, naming CEO Dan Rogers as Chair of the Board, adding Tom Berquist and Jerry Ting as directors, and appointing Heather Le as Chief Accounting Officer, ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:The Globe and Mail",
+   "title": "monday.com, CrowdStrike, Asana, C3.ai, and Palo Alto Networks Shares Skyrocket, What You Need To Know",
+   "url": "https://www.theglobeandmail.com/investing/markets/stocks/CRWD/pressreleases/4988188/mondaycom-crowdstrike-asana-c3ai-and-palo-alto-networks-shares-skyrocket-what-you-need-to-know/",
+   "published_at": "2026-10-06T09:17:00+00:00",
+   "text": "Detailed price information for Crowdstrike Holdings (CRWD-Q) from The Globe and Mail including charting and trades.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A stock market news article mentions Asana in a headline alongside several other unrelated companies.",
+    "why_it_matters": "Not relevant for sales; Asana is only mentioned in a passing stock roundup headline.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1648,
+    "output_tokens": 110,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.01740895799594,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:The Globe and Mail",
+   "title": "Asana Reshapes Board and Finance Team for AI Growth",
+   "url": "https://www.theglobeandmail.com/investing/markets/stocks/ASAN/pressreleases/4865916/asana-reshapes-board-and-finance-team-for-ai-growth/",
+   "published_at": "2026-09-29T14:13:00+00:00",
+   "text": "On September 25, 2026, Asana restructured its board leadership, appointing CEO Dan Rogers as board chair to succeed co\u2011founder Dustin Moskovitz, who remained a director and signaled long\u2011term ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Tech Critter",
+   "title": "Cloudflare brings Asana, Box, Canva, GitHub, and more into Cloudflare OS, its AI workspace for enterprises",
+   "url": "https://www.tech-critter.com/cloudflare-os-partner-ecosystem-ai-workspace/",
+   "published_at": "2026-10-19T17:00:00+00:00",
+   "text": "With new one-click integrations and deployment partners like EPAM, the company wants teams to adopt AI quickly without losing visibility into what employees and agents are doing.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "partnership",
+    "summary": "Cloudflare announced that Asana is part of Cloudflare OS, its new AI workspace for enterprises featuring one-click integrations.",
+    "why_it_matters": "Use this to highlight Asana's expanding ecosystem partnerships, but probe if the prospect actually uses Cloudflare OS for their workspace setup.",
+    "importance": 3,
+    "sentiment": 0.6,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1607,
+    "output_tokens": 102,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.048984000022756,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "[Breaking News] GPT-6.1 Sol records 76x cost reduction and 5x speed increase with Asana's browser agent",
+   "url": "https://note.com/zeronin_keiei/n/nfc01e3af223b?hl=en",
+   "published_at": "2026-10-10T17:58:00+00:00",
+   "text": "This article is a summary of the official announcement. Confirmation date: 2026-10-11 (Confirmation date of 00_seed.md). Screens and conditions are subject to change.Table of Contents Introduction 1.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "partnership",
+    "summary": "GPT-6.1 Sol achieved a 76x cost reduction and 5x speed increase using Asana's browser agent according to a news summary.",
+    "why_it_matters": "Use this benchmark of Asana's browser agent performance to counter claims about AI agent speed and cost efficiency.",
+    "importance": 3,
+    "sentiment": 0.8,
+    "confidence": 0.7
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1635,
+    "output_tokens": 140,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1519233750004787,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:kalkinemedia",
+   "title": "Why Are Asana (NYSE:ASAN) Results Drawing Market Attention?",
+   "url": "https://kalkinemedia.com/us/stocks/technology/why-are-asana-nyseasan-results-drawing-market-attention",
+   "published_at": "2026-09-16T22:12:00+00:00",
+   "text": "Second-quarter results showed continued expansion across Asanas work management platform. AI Teammates and AI Studio are becoming central parts of the product suite. Customer retention and operating ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "product_launch",
+    "summary": "Asana's second-quarter results highlighted continued expansion, with AI Teammates and AI Studio becoming central parts of its platform.",
+    "why_it_matters": "Expect Asana reps to heavily pitch their AI Teammates and AI Studio capabilities as core differentiators in deal cycles.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1610,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0947671250032727,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Hindustan Times on MSN",
+   "title": "Asana, popular work management platform, down for thousands of users; what we know so far",
+   "url": "https://www.msn.com/en-in/news/other/asana-popular-work-management-platform-down-for-thousands-of-users-what-we-know-so-far/ar-AA2fL04U",
+   "published_at": "2026-10-21T17:18:00+00:00",
+   "text": "Work-management platform Asana is experiencing an outage, with nearly 2,300 U.S. users reporting problems on Down Detector.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:ibtimes",
+   "title": "Asana Down? Outage Reports Surge as Users Nationwide Report Widespread Access Problems This Monday Morning",
+   "url": "https://www.ibtimes.com.au/asana-users-face-widespread-access-issues-1874799",
+   "published_at": "2026-08-31T18:31:00+00:00",
+   "text": "Users of the workplace project management platform Asana began reporting widespread access problems starting at approximately 10:40 a.m. Eastern time Monday, according to outage-tracking service ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Asana experienced a widespread access outage starting at approximately 10:40 a.m. Eastern time on Monday morning.",
+    "why_it_matters": "Use this outage to question Asana's reliability with prospects currently evaluating them, positioning your stability as a safer bet.",
+    "importance": 4,
+    "sentiment": -0.7,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1614,
+    "output_tokens": 140,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 2.112613125005737,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:ibtimes",
+   "title": "Asana Down? Asana Experiences Intermittent Outage Reports as Users Report Access Issues on May 27",
+   "url": "https://www.ibtimes.com.au/asana-service-disruptions-impacting-global-productivity-1869565",
+   "published_at": "2026-05-27T17:46:00+00:00",
+   "text": "NEW YORK \u2014 Project management platform Asana faced scattered reports of service disruptions on Wednesday, with some users unable to access tasks, projects and collaborative features, prompting ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Asana experienced scattered reports of service disruptions and access issues impacting users on Wednesday, May 27.",
+    "why_it_matters": "Use this current stability issue to question Asana's reliability with prospects who prioritize uptime and seamless access.",
+    "importance": 4,
+    "sentiment": -0.7,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1613,
+    "output_tokens": 132,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0931995419960003,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:app.com",
+   "title": "Asana outage reported. Asana down for many",
+   "url": "https://www.app.com/story/news/2026/05/27/is-asana-down-downdetector-reports-asana-outage/90276123007/",
+   "published_at": "2026-05-27T08:28:00+00:00",
+   "text": "If you're team works on Asana, you could be dealing with some problems Wednesday morning. According to DownDetector, the site that helps people use AI to manage work projects is having some issues ...",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Asana experienced an outage on Wednesday morning, according to reports from DownDetector.",
+    "why_it_matters": "Use this outage to question Asana's reliability when speaking with prospects currently experiencing downtime or evaluating platforms based on uptime stability.",
+    "importance": 4,
+    "sentiment": -0.7,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1630,
+    "output_tokens": 131,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.05187916700379,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Asana's Database Architecture: Sharding, Data Flow, and Scaling Tradeoffs",
+   "url": "https://asana.com/inside-asana/database-architecture-sharding-scaling",
+   "published_at": "2026-10-05T20:31:02+00:00",
+   "text": "Hacker News story with 1 points and 0 comments.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "Asana published an engineering blog post about its database architecture, sharding, data flow, and scaling tradeoffs.",
+    "why_it_matters": "Not relevant for sales; technical architecture posts do not impact active deals.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1576,
+    "output_tokens": 121,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1289352920139208,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: MCPJam - the first testing & evaluations platform for MCP servers",
+   "url": "https://www.mcpjam.com",
+   "published_at": "2026-09-17T19:23:47+00:00",
+   "text": "Prathmesh, CEO of MCPJam here. Users now start in ChatGPT, Claude, Cursor, and other AI clients. They reach your product through your MCP server. That means your users often aren\u2019t in your product anymore. You can\u2019t see what they prompted for, how the agent interpreted it, or whether your server helped them get the result they wanted. I saw this firsthand leading MCP technical strategy at Asana, including our ChatGPT and Claude launches. We were building high-stakes enterprise integrations, but we had no reliable way to test them the way we test normal software- or to know whether they worked once they reached real users. I started using MCPJam for those problems after re-connecting with my former coworker who created the project. brought it to more of our developers, and worked it into our CI/CD pipeline. I joined the team because I kept hearing the same issue from other companies building for agents. So, what does \u201cgood\u201d look like for MCP? For us, it means users reliably get the outcome they came for, across the AI clients they use. That\u2019s what we\u2019ve been building toward. MCPJam now helps you test the full workflow, from the first prompt to the expected result: * Swarms: Simulate users with different goals and prompts to find where workflows break across AI clients. * User Testing: Watch how real users interact with your MCP product, where they get stuck, and how they feel about the results. * Evals: Turn those workflows into repeatable tests that check whether users get the expected outcome. * CI/CD: Run those evals across AI clients before each release to catch regressions. Over 106,000 developers and +300 enterprises use our open-source solution to see how their servers behave locally across major AI clients. MCPJam has grown from a debugging tool into a continuous testing and evaluation workflow for MCP servers. If you\u2019re building an MCP server or agent-facing product, give MCPJam a try. What is the hardest thing for you to test? We love hearing about your MCP server builds!",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "The CEO of MCPJam noted that while leading MCP technical strategy at Asana, he worked on ChatGPT and Claude integrations and faced challenges testing them.",
+    "why_it_matters": "Not relevant for sales deals; it is a founder story mentioning past employment at Asana without product news for Asana.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1980,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9730234159796964,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Tanjey \u2013 Task Timers and Asana Management",
+   "url": "https://www.tanjey.com/",
+   "published_at": "2026-08-28T01:41:49+00:00",
+   "text": "Hacker News story with 1 points and 0 comments.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "A Hacker News story was posted about Tanjey, a tool for task timers and Asana management.",
+    "why_it_matters": "Not relevant for sales; a passing mention of an ecosystem utility tool on Hacker News.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1561,
+    "output_tokens": 122,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0781162919884082,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Planly, a free, low-complexity, self-hosted alternative to Jira/Asana",
+   "url": "https://github.com/esbeneickhardt/Planly",
+   "published_at": "2026-08-20T12:15:11+00:00",
+   "text": "Hacker News story with 2 points and 0 comments.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A Hacker News post shares Planly, a free and self-hosted alternative to Jira and Asana.",
+    "why_it_matters": "Not relevant for sales; a passing mention of Asana in an open-source project submission.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1573,
+    "output_tokens": 98,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0670747910044156,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+   "url": "https://openai.com/index/asana/",
+   "published_at": "2026-08-20T05:54:20+00:00",
+   "text": "Hacker News story with 44 points and 96 comments.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "partnership",
+    "summary": "Asana published a case study with OpenAI stating it cleared five years of engineering work in two weeks using Codex.",
+    "why_it_matters": "Use this to counter Asana reps who pitch aggressive AI-driven engineering velocity, noting these are marketing claims rather than standard product capabilities.",
+    "importance": 3,
+    "sentiment": 0.8,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1568,
+    "output_tokens": 134,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.37028125001234,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Asana's Tab Shortcuts",
+   "url": "https://unsung.aresluna.org/asanas-fascinating-tab-shortcuts/",
+   "published_at": "2026-08-04T19:01:06+00:00",
+   "text": "Hacker News story with 2 points and 0 comments.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "other",
+    "summary": "A Hacker News link discusses Asana's tab shortcuts.",
+    "why_it_matters": "Not relevant for sales; a minor technical discussion about keyboard shortcuts.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.7
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1569,
+    "output_tokens": 110,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.676100624987157,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: OldHand A Claude/Codex plugin to verify the development flow end-to-end",
+   "url": "https://github.com/berwinsingh/oldhand",
+   "published_at": "2026-08-04T16:48:57+00:00",
+   "text": "I built this clod code or codec skill because I just love using these AI agents to write code. It's just so convenient to do. But when it comes to working in a corporate environment, I have to ultimately follow a Jira ticket or a Asana ticket. Now, when I'm following those tickets, I am able to do the work, but it's not always up to the mark because after all I found AI to hallucinate, Unnecessary code is being written, even though a function for that is already there and can be reused, no proper testing apart from unit test being done so when the QA started testing it they raised a astronomical amount of bugs. So, with Claude and Codex becoming very capable especially with their plugins/connectors and computer use ability, I build OldHand that allows for end-to-end ticket development, planning, coding, reusability (combined with Ponytail), QA testing with browser/computer use. I would love to get people's feedback as it has been helping me a lot with my day-to-day work, but I would like to improve this even further and every feedback helps.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A developer shared a Show HN post about a Claude/Codex plugin called OldHand that verifies development flows against Jira or Asana tickets.",
+    "why_it_matters": "Not relevant for sales; Asana is merely mentioned as an example of a ticketing tool used in a corporate workflow.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1796,
+    "output_tokens": 128,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8302188339876011,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "ilo - making Google Tasks(Google Workspace) work at scale",
+   "url": "https://news.ycombinator.com/item?id=48774191",
+   "published_at": "2026-07-03T12:27:10+00:00",
+   "text": "Hey HN, I\u2019ve been using Google Tasks for years. It\u2019s fast, simple, and lives inside Gmail \u2014 which is why I stuck with it. But at some point it stops working. Everything turns into one long flat list, and once you use multiple Google accounts, it gets messy fast. I didn\u2019t want to switch to something heavier like Jira or Asana. I just wanted Google Tasks to handle a bit more complexity. So I built something for myself on top of it. The idea is simple: keep Google as the source of truth, but make it easier to actually use day-to-day \u2014 mainly around grouping tasks, handling multiple accounts, and having a clearer \u201ctoday\u201d view. I\u2019ve been using it as my main workflow for a while now. Curious if others tried pushing Google Tasks further,or just switched to something else. link. https://iloworks.com?utm_source=hackernews",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An indie developer on Hacker News shared a tool they built called ilo to extend Google Tasks, mentioning Asana as an example of a heavier tool they wanted to avoid.",
+    "why_it_matters": "Not relevant for sales; Asana is only mentioned in passing as an alternative the author chose not to use.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1756,
+    "output_tokens": 133,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1135890409932472,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: Rinkta \u2013 pulls finished work from all task managers into one dashboard",
+   "url": "https://rinkta.com/",
+   "published_at": "2026-06-30T13:47:44+00:00",
+   "text": "I ran a software agency for about ten years. Every client used a different task manager, which doesn't sound like a problem until it's your whole life. I spent more time digging through those things trying to figure out what we'd done than actually doing anything. So I built Rinkta to get that time back. Seemed smarter than continuing to lose my mind. What it does is, it takes all your tasks out of Asana, Linear, ClickUp, GitHub, Basecamp, whatever you got, figures out how long each one took, puts the right rate on it, and lands the whole thing in one dashboard. That's the program. Not much to look at, but it works, which is more than I can say for most things. Now, a lot of these people on HN build a little program and get up saying it changed the world, all that. But in reality they built it and walked away like a fella who buys a boat. Not me. Somebody says \"it's Rinkta or you live as a hobo,\" I'm a hobo now, simple as that, got the little bindle and everything. Anyway, I'd love to hear what you think, and if you hate it , say so.",
+   "matched_competitors": [
+    "Asana",
+    "ClickUp"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An independent developer posted a Show HN thread for Rinkta, a new dashboard tool that aggregates finished work and time tracking from various task managers including Asana and ClickUp.",
+    "why_it_matters": "Not relevant for sales; this is a third-party aggregator tool mentioned alongside many others.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1818,
+    "output_tokens": 129,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8993453340081032,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Ask HN: How are you managing MCP servers across a team?",
+   "url": "https://news.ycombinator.com/item?id=48592531",
+   "published_at": "2026-06-18T22:32:40+00:00",
+   "text": "I'm the CTO of a small NGO (10 people, 3 devs). Each person has an account with one of the leading AI companies. I'm looking for an easy, reliable and cheap way to allow them to connect to external MCP servers without having the hassle of setting everything up. What I want is a simple MCP server that I can show them how to connect, which aggregates access to multiple MCP servers I configure (Slack, Google Drive, Asana, and others). Kind of an \"MCP Gateway\". I tried: * Pipedream.com: Great to aggregate multiple MCP servers in one, but doesn't seem to work as an MCP Gateway * Prefect Horizon: Seems perfect, but too expensive for us * Cloudflare MCP Server Portals: So far it looks like the best option. Still trying it out. Did you figure out a good solution for this? What is it?",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A Hacker News user asks for recommendations on managing and aggregating MCP servers across a small team, mentioning Asana as one of the integrations they use.",
+    "why_it_matters": "Not relevant for sales; Asana is only mentioned in passing as an integration in a user's technical question.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1748,
+    "output_tokens": 129,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.3707792919885833,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "StackAI Acquired by Asana",
+   "url": "https://asana.com/press/releases/pr/asana-acquires-stackai-adding-cross-system-execution-for-human-agent-teams/e7c73b97-ae8c-4e51-b927-189ccb184146",
+   "published_at": "2026-05-28T21:00:43+00:00",
+   "text": "Hacker News story with 2 points and 0 comments.",
+   "matched_competitors": [
+    "Asana"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Asana"
+    ],
+    "category": "acquisition",
+    "summary": "Asana acquired StackAI to add cross-system execution for human-agent teams.",
+    "why_it_matters": "Expect Asana to push heavily on new AI agent capabilities in deals, so reps should probe on whether those advanced integrations require expensive add-ons.",
+    "importance": 5,
+    "sentiment": 0.8,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1618,
+    "output_tokens": 132,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.058431124984054,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:GeekWire",
+   "title": "Gaurav Agarwal Is Betting ClickUp\u2019s Next Growth Wave on AI, Not Headcount",
+   "url": "https://www.geekwire.com/contributor-content/gaurav-agarwal-is-betting-clickups-next-growth-wave-on-ai-not-headcount/",
+   "published_at": "2026-10-07T09:25:00+00:00",
+   "text": "Most software companies solve a growth problem by hiring. Gaurav Agarwal solved one by doing less of that, not more.\u2026 Read More ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "hiring_signal",
+    "summary": "ClickUp's growth strategy focuses on AI rather than increasing headcount.",
+    "why_it_matters": "Use this to position your product as a stable alternative if prospects are concerned about ClickUp's reduced focus on human-powered support and growth.",
+    "importance": 3,
+    "sentiment": 0.0,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1616,
+    "output_tokens": 131,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0487740829994436,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Crypto Briefing",
+   "title": "ClickUp\u2019s Brain AI autonomously creates dedicated agents for tasks",
+   "url": "https://cryptobriefing.com/clickup-brain-ai-autonomous-agents/",
+   "published_at": "2026-06-21T01:56:00+00:00",
+   "text": "ClickUp\u2019s latest AI update, Brain\u00b2, can now autonomously spin up dedicated agents to handle recurring tasks, squash bugs, and generally do the kind of work that used to require a human clicking ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "feature_update",
+    "summary": "ClickUp launched an update to its Brain AI called Brain2, which can autonomously create dedicated agents for recurring tasks and bug squashing.",
+    "why_it_matters": "Expect prospects evaluating ClickUp to ask about autonomous AI agents, so position your AI capabilities around human oversight and workflow predictability.",
+    "importance": 3,
+    "sentiment": 0.6,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1599,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.2755734589882195,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:TechRepublic",
+   "title": "ClickUp vs Notion (2026): Which Project Tool Should You Choose?",
+   "url": "https://www.techrepublic.com/article/clickup-vs-notion/",
+   "published_at": "2026-09-09T07:00:00+00:00",
+   "text": "Explore ClickUp vs Notion and compare project features, AI, pricing, and knowledge management to find the better option. ClickUp and Notion are two well-known project management tools, but they serve ...",
+   "matched_competitors": [
+    "ClickUp",
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A TechRepublic comparison article contrasting ClickUp and Notion features, AI, pricing, and knowledge management.",
+    "why_it_matters": "Not relevant for sales; a generic comparison article that merely names the tools.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1605,
+    "output_tokens": 111,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.040585208014818,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:thetechedvocate.org",
+   "title": "How much does ClickUp cost per user",
+   "url": "https://www.thetechedvocate.org/how-much-does-clickup-cost-per-user/",
+   "published_at": "2026-08-25T00:36:00+00:00",
+   "text": "When you\u2019re looking to streamline your team\u2019s workflow, project management tools like ClickUp often come to mind. They promise a centralized hub for tasks, documents, communication, and even goal ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An article discusses project management tools like ClickUp and their general cost per user.",
+    "why_it_matters": "Not relevant for sales; a passing mention in a generic educational article.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1606,
+    "output_tokens": 106,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8168035419948865,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Tech",
+   "title": "ClickUp vs Trello: Pricing and Features Comparison",
+   "url": "https://tech.co/project-management-software/clickup-vs-trello",
+   "published_at": "2026-10-19T03:20:00+00:00",
+   "text": "We may receive a commission from our partners if you click on a link to review or purchase a product or service. Click to Learn More On the other hand, Trello has a lower starting price than ClickUp, ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A comparison article discussing pricing and features between ClickUp and Trello.",
+    "why_it_matters": "Not relevant for sales; a standard comparison listicle mentioning ClickUp alongside Trello.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1598,
+    "output_tokens": 107,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.5304528330161702,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:therundown.ai",
+   "title": "ClickUp Brain review: features, pricing and alternatives",
+   "url": "https://www.therundown.ai/tools/clickup-brain",
+   "published_at": "2026-10-10T17:00:00+00:00",
+   "text": "Use ClickUp Brain to search workspace context, draft content, summarize work and run AI-assisted project tasks. ClickUp Brain is the AI layer inside ClickUp\u2019s work management platform. Its assistant ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "other",
+    "summary": "An online review covers ClickUp Brain's features, pricing, and alternatives, detailing its role as an AI layer for workspace search and content generation.",
+    "why_it_matters": "Use this review to understand how competitors pitch ClickUp Brain when prospects ask about built-in AI capabilities.",
+    "importance": 2,
+    "sentiment": 0.0,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1596,
+    "output_tokens": 136,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.9025157919968478,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:GeekWire",
+   "title": "Gaurav Agarwal Is Betting ClickUp\u2019s Next Growth Wave on AI, Not Headcount",
+   "url": "https://www.geekwire.com/contributor-content/gaurav-agarwal-is-betting-clickups-next-growth-wave-on-ai-not-headcount/",
+   "published_at": "2026-10-07T09:25:00+00:00",
+   "text": "Most software companies solve a growth problem by hiring. Gaurav Agarwal solved one by doing less of that, not more.\u2026 Read More ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:CNN-News18",
+   "title": "ClickUp CEO Cuts 22% Workforce Despite Business Being 'Strongest Ever'; CEO Says 'I Did It Because...'",
+   "url": "https://www.news18.com/viral/clickup-ceo-cuts-22-workforce-despite-business-being-strongest-ever-ceo-says-i-did-it-because-ws-l-10109385.html",
+   "published_at": "2026-05-24T02:27:00+00:00",
+   "text": "A fresh debate over artificial intelligence and job security erupted online after ClickUp cut nearly 22% of its workforce while reporting strong growth. In a lengthy statement shared on X, Evans said ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "hiring_signal",
+    "summary": "ClickUp cut nearly 22% of its workforce despite reporting strong growth and business being strong.",
+    "why_it_matters": "Prospects dealing with ClickUp may have concerns about future account stability, support quality, and roadmap execution following a major layoff.",
+    "importance": 5,
+    "sentiment": -0.8,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1655,
+    "output_tokens": 133,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.091583957982948,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:SiliconANGLE",
+   "title": "Exclusive: ClickUp endows its Brain assistant with agentic capabilities",
+   "url": "https://siliconangle.com/2026/05/12/exclusive-clickup-endows-brain-assistant-agentic-capabilities/",
+   "published_at": "2026-05-12T10:00:00+00:00",
+   "text": "ClickUp, the business name of Mango Technologies Inc., today is introducing what it says is a major overhaul of its Brain artificial intelligence assistant inside its workplace collaboration platform, ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "product_launch",
+    "summary": "ClickUp introduced a major overhaul of its Brain AI assistant, giving it new agentic capabilities inside its workplace collaboration platform.",
+    "why_it_matters": "Expect ClickUp reps to aggressively pitch these new agentic AI capabilities in deals, so be prepared to contrast the maturity and security of your own AI roadmap.",
+    "importance": 4,
+    "sentiment": 0.8,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1609,
+    "output_tokens": 142,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.3417533329920843,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Business Today",
+   "title": "\u2018People who automate jobs with AI will always have a job\u2019: Productivity Startup ClickUp cuts 22% of its workforce",
+   "url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22",
+   "published_at": "2026-05-21T22:26:00+00:00",
+   "text": "ClickUp, the California-based productivity platform, has announced that it will cut 22% of its workforce as part of a shift towards an AI-first operating model. Chief Executive Officer Zeb Evans ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "hiring_signal",
+    "summary": "ClickUp has announced plans to cut 22% of its workforce as part of a transition to an AI-first operating model.",
+    "why_it_matters": "Prospects may worry about ClickUp's support quality and account stability during deep layoffs, providing an opening to emphasize our dedicated customer success.",
+    "importance": 5,
+    "sentiment": -0.8,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1666,
+    "output_tokens": 144,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1903667080041487,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Outlook Business",
+   "title": "ClickUp Cuts 22% of Staff in AI Restructuring, Promises Million-Dollar Pay Bands",
+   "url": "https://www.outlookbusiness.com/corporate/clickup-cuts-22-of-staff-in-ai-restructuring-promises-million-dollar-pay-bands",
+   "published_at": "2026-05-22T07:00:00+00:00",
+   "text": "California-based productivity software firm ClickUp has laid off roughly a fifth of its workforce, with chief executive Zeb Evans framing the decision as a deliberate pivot to an AI-first operating ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "hiring_signal",
+    "summary": "ClickUp laid off approximately 22% of its workforce as part of an AI restructuring plan announced by CEO Zeb Evans.",
+    "why_it_matters": "Use this layoff news to plant seeds of doubt with ClickUp prospects regarding account stability, support responsiveness, and roadmap execution.",
+    "importance": 5,
+    "sentiment": -0.8,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1622,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0827802910062019,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:GeekWire",
+   "title": "Gaurav Agarwal Is Betting ClickUp\u2019s Next Growth Wave on AI, Not Headcount",
+   "url": "https://www.geekwire.com/contributor-content/gaurav-agarwal-is-betting-clickups-next-growth-wave-on-ai-not-headcount/",
+   "published_at": "2026-10-07T09:25:00+00:00",
+   "text": "Most software companies solve a growth problem by hiring. Gaurav Agarwal solved one by doing less of that, not more.\u2026 Read More ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:ARN",
+   "title": "Unfold adds ClickUp to A/NZ distie portfolio",
+   "url": "https://www.arnnet.com.au/article/4236893/unfold-adds-clickup-to-a-nz-distie-portfolio.html",
+   "published_at": "2026-10-18T16:59:00+00:00",
+   "text": "Unfold has signed a distribution deal with converged AI workspace vendor ClickUp for Australia and New Zealand, offering solutions to consolidate work, knowledge, communication, and AI. ClickUp\u2019s app ...",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "partnership",
+    "summary": "Unfold signed a distribution deal with ClickUp to bring its AI workspace solutions to Australia and New Zealand.",
+    "why_it_matters": "Expect ClickUp to increase local channel partner activity and channel-driven enterprise engagement in the A/NZ region.",
+    "importance": 4,
+    "sentiment": 0.6,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1617,
+    "output_tokens": 128,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0723545409855433,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+   "url": "https://formstep.io/",
+   "published_at": "2026-10-27T16:03:31+00:00",
+   "text": "I built Formstep: https://formstep.io The idea came from a problem I kept running into while working on loan applications. A workflow could automate a large part of the process, but eventually it would need something only the customer could provide: a document, a correction, a signature, an explanation, or confirmation of some information. At that point, workflow automation basically did not work. The forms themselves were also often the source of the problem. Applications came in with wrong documents, misunderstood questions, incomplete answers, or people simply forgetting to finish. Someone had to email the customer, explain what was missing, wait for a reply then follow up again. It was always back-and-forth. So I built Formstep to make requesting information from customers easier, not only for humans, but also for workflows and AI agents. The idea is: A person, workflow, or AI agent sends a customer a request through email or a link. Either re-use existing form or create unique for each customer. You can prefill what you already know, lock fields, pass context, and only ask the customer what you need. For example, we might already know: * Address that you already have in the CRM * Company description from the internet * What a agreement document must contain * How a good answer should be Formstep can check inputs and uploaded files while the customer is filling out the form and tell them if something is missing or inconsistent before they submit. For example \u201cThe PDF does not contain your signature\u201d or \u201cInvoice total does not match the order amount\u201d. The goal is to catch problems while the customer is still there, rather than letting bad data continue through the workflow and discovering it later. On the automation side, requests can currently be created through n8n, Zapier, the REST API, or by an AI agent over MCP. When the customer finishes, the structured answers can go back into the workflow so it can continue. Forms and invitation/reminder are multilingual, and submitted answers can be translated inside the dashboard with one click. If you want, Formstep can be used as normal form builder and shared through public links, QR, embeds etc. It support custom themes for dark/light mode, with cover image, has Notion-style editor and much more. The list is too long to fit here. I want to make Formstep a plattform where it becomes more intelligent over time and ensures that we can get better answers from customers for any use case. My question to you: Where do your automations currently stop because they need input from a customer or user, and how are you handling that today? If you are interested in trying out the n8n node: https://www.npmjs.com/package/n8n-nodes-formstep Zapier integration: https://zapier.com/apps/formstep/integrations Connecting your AI agent: https://docs.formstep.io/developers/mcp-server/ Docs: https://docs.formstep.io I would love your feedback and please try a quick demo at https://app.formstep.io/try",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An independent developer shared Formstep, a customer data collection tool with workflow integrations and a Notion-style editor.",
+    "why_it_matters": "Not relevant for sales; Notion is only mentioned in passing for its editor styling.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 2182,
+    "output_tokens": 115,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 277,
+    "cost_usd": 0.0,
+    "latency_s": 1.8617390840081498,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Inhouseticket Like ClickUp and Jira",
+   "url": "https://inhouseticket.com",
+   "published_at": "2026-10-25T17:56:18+00:00",
+   "text": "Hacker News story with 2 points and 0 comments.",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A Hacker News submission links to inhouseticket.com with the title Inhouseticket Like ClickUp and Jira.",
+    "why_it_matters": "Not relevant for sales; a passing mention in a generic submission title.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1558,
+    "output_tokens": 115,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9017313749936875,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Ora is joining ClickUp. There's a script to export attachments before 2026-10-31",
+   "url": "https://github.com/bleuetdesign/ora-attachments-exporter",
+   "published_at": "2026-10-21T20:22:02+00:00",
+   "text": "Hacker News story with 1 points and 2 comments.",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "ClickUp"
+    ],
+    "category": "acquisition",
+    "summary": "Ora is joining ClickUp, prompting the release of an export script for attachments before October 31, 2026.",
+    "why_it_matters": "Use this acquisition to question ClickUp's integration stability for former Ora users who may be worried about migration or disruption.",
+    "importance": 4,
+    "sentiment": 0.5,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1582,
+    "output_tokens": 136,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0312045410100836,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: Frink \u2013 Desktop-first app for multi-step workflows and parallel agents",
+   "url": "https://github.com/benord-labs/frink",
+   "published_at": "2026-10-20T17:34:24+00:00",
+   "text": "What\u2019s up HN?! I'm Benji, and I\u2019ve been building Frink since ~April this year. Frink is a desktop-first, open-source (MIT) app for running coding agents in parallel and multi-step workflows that start on their own. It runs on your machine (macOS and Linux) with your own provider login. It currently supports Claude Code, Codex, Cursor, Copilot, and OpenCode, but the latter 3 are in preview. No Frink account to use the app. The biggest USP of Frink is workflows: think n8n for agents. You describe a routine in a sentence, for example: \"every weekday at 9am, run the tests; if any fail, have an agent fix them, then wait for my approval before it opens a PR.\" Then, Frink builds it as a workflow (or simply, Flow): a list of steps you can read and change before it runs. A Flow can start on a schedule, from any webhook, or from an event from a third-party such as Linear, Shortcut, ClickUp, Sentry, PostHog, etc. Steps can be agent turns, shell commands, conditions, approval steps that stop and wait for you, or steps you write yourself in code (or ask the agent to write one). Everything that needs you (an approval, an agent's question, a finished task to review) lands in one Work Queue. Other stuff: * Up to four agents side by side, each on its own git worktree if you want. Or, many agents out of direct view. * Every change shows as a diff; there's a code editor, a terminal, etc. * Local-first: chats, Flows and tasks live in SQLite on your machine. * Easier provider parity: currently working on and improving the tooling setup between providers. Once inside Frink, irrespective of what provider you use, the hooks, MCPs, and other tooling work out of the box between providers. Why I built it: I started building it when there weren\u2019t many other competitors; now the industry is swamped with ADEs and harnesses. However, in my opinion, each still lacks good automation for more fine-tuned scenarios. I doubled down on the flows to help me with my actual day-to-day job as a SWE, and over time it\u2019s helped me automate most of the PRs being shipped across my personal projects, team, etc., to the point that it\u2019s a continuous loop and helps a whole ton. Notes: Windows isn't supported yet. Flows only run on Claude Code and Codex for now. It's a solo project, so expect sharp edges.",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An independent developer posted a Show HN for Frink, a desktop-first open-source app for running coding agents and multi-step workflows that can integrate with various third-party services including ClickUp.",
+    "why_it_matters": "Not relevant for sales; ClickUp is merely mentioned as one of many third-party tools that can trigger workflows in a new developer tool.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 2115,
+    "output_tokens": 146,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 56.658048208017135,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:tech.co",
+   "title": "ClickUp Pricing 2026 : Everything You Need to Know",
+   "url": "https://tech.co/project-management-software/clickup-pricing",
+   "published_at": "2026-10-16T14:45:00+00:00",
+   "text": "ClickUp Pricing 2026 : Everything You Need to Know",
+   "matched_competitors": [
+    "ClickUp"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An article titled ClickUp Pricing 2026 was published by Tech.co.",
+    "why_it_matters": "Not relevant for sales; a passing mention in an SEO pricing roundup.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1572,
+    "output_tokens": 108,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.4160569160012528,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Technobezz",
+   "title": "Notion Adds Two-Step Verification Requirement to Password Login",
+   "url": "https://www.technobezz.com/news/notion-adds-two-step-verification-password-login",
+   "published_at": "2026-10-14T10:44:00+00:00",
+   "text": "Notion is adding a second verification step for password users, with existing accounts moving over in stages over the next few months. Users setting or changing a password will be asked to configure ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion is adding a two-step verification requirement for password logins, rolling out to existing accounts in stages over the next few months.",
+    "why_it_matters": "Highlights Notion's improving security posture, making it harder for prospects to object on grounds of basic login security.",
+    "importance": 3,
+    "sentiment": 0.2,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1601,
+    "output_tokens": 137,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 15.06500570900971,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:TechCrunch",
+   "title": "Notion Mail shuts down amid agent takeover",
+   "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
+   "published_at": "2026-06-25T12:14:00+00:00",
+   "text": "Productivity company Notion is shutting down its email product, Notion Mail, on September 22. The company said it is discontinuing its email inbox in favor of its AI agent offering. It noted that ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion is shutting down Notion Mail on September 22 to focus entirely on its AI agent offerings.",
+    "why_it_matters": "Use this to highlight product instability and shifting strategic focus when prospects rely on Notion for multiple workflow components.",
+    "importance": 4,
+    "sentiment": -0.4,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1609,
+    "output_tokens": 128,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1281296660017688,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:aiweekly",
+   "title": "How to Use Notion AI: Every Feature, Explained (2026)",
+   "url": "https://aiweekly.co/learning-ai/ai-applications/how-to-use-notion-ai",
+   "published_at": "2026-08-14T17:00:00+00:00",
+   "text": "The short answer (August 2026): Notion AI is a built-in suite covering inline writing assistance, autonomous agents, meeting transcription, cross-app search, and scheduled automation. The full toolset ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An article provides an overview of Notion AI features as of August 2026, including writing assistance, agents, and transcription.",
+    "why_it_matters": "Not relevant for sales; this is a generic tutorial or how-to guide rather than a competitive signal.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1610,
+    "output_tokens": 124,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8014764169929549,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:cybernews",
+   "title": "Hackers claim 110M Notion records exposed, but the company\u2019s AI assistant is not concerned",
+   "url": "https://cybernews.com/security/notion-data-breach-claims/",
+   "published_at": "2026-06-29T06:14:00+00:00",
+   "text": "Key Takeaways by nexos.ai, reviewed by Cybernews staff. A hacker has claimed responsibility for a massive breach of Notion \u2013 a productivity platform used by Nvidia and OpenAI \u2013 exposing 110 million ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "A hacker claimed responsibility for a breach of Notion exposing 110 million records.",
+    "why_it_matters": "Security and data privacy will be top-of-mind for prospects evaluating Notion right now, so lean into your security posture.",
+    "importance": 5,
+    "sentiment": -0.8,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1610,
+    "output_tokens": 132,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0712354999850504,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "Notion AI Business Plan Shifts to Credit System, Agents Expand from 5 Minutes to Over 24 Hours",
+   "url": "https://note.com/ai_masaki/n/n827fccdc7860?hl=en",
+   "published_at": "2026-10-21T01:00:00+00:00",
+   "text": "Hello, this is Masaki.The idea of paying for a seat and getting unlimited usage is starting to exit the world of AI at work. Notion has announced that it is switching its Notion AI pricing from a flat ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "pricing_change",
+    "summary": "Notion announced it is shifting its Notion AI pricing from a flat seat-based model to a credit system.",
+    "why_it_matters": "Use this change to challenge Notion's predictability on AI costs in deals where prospects are worried about unpredictable credit consumption.",
+    "importance": 5,
+    "sentiment": -0.3,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1616,
+    "output_tokens": 132,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.15965333301574,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "Notion AI moves to 'General' and 'Designated' pricing: What I'm most excited about with the November 2nd switch",
+   "url": "https://note.com/nft_rili/n/n24d172791903?hl=en",
+   "published_at": "2026-10-21T18:44:00+00:00",
+   "text": "To those who have received my Notion coaching so farI started off by addressing a specific group of people right away.This article is something I definitely want those who have taken my Notion ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "pricing_change",
+    "summary": "Notion is shifting its AI pricing model to 'General' and 'Designated' tiers starting November 2nd.",
+    "why_it_matters": "Use this pricing structure shift to ask prospects evaluating Notion AI if their usage fits the new tiers, potentially highlighting a simpler pricing model on your end.",
+    "importance": 4,
+    "sentiment": 0.0,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1619,
+    "output_tokens": 140,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1945833749778103,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:aiweekly",
+   "title": "How to Use Notion AI: Every Feature, Explained (2026)",
+   "url": "https://aiweekly.co/learning-ai/ai-applications/how-to-use-notion-ai",
+   "published_at": "2026-08-14T17:00:00+00:00",
+   "text": "The short answer (August 2026): Notion AI is a built-in suite covering inline writing assistance, autonomous agents, meeting transcription, cross-app search, and scheduled automation. The full toolset ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:letsdatascience",
+   "title": "Notion Rebuilds AI Agents and Updates Auto Router",
+   "url": "https://letsdatascience.com/news/notion-rebuilds-ai-agents-and-updates-auto-router-e64008af",
+   "published_at": "2026-10-20T11:45:00+00:00",
+   "text": "Notion released rebuilt AI agents, an updated Auto model router, and a two-tier AI credit system on October 19. WebProNews reports that Notion's new agent harness can keep a single task running for ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion released rebuilt AI agents, an updated Auto model router, and a new two-tier AI credit system.",
+    "why_it_matters": "Expect Notion reps to lead with enhanced autonomous AI capabilities, so be ready to contrast your AI reliability and predictable pricing.",
+    "importance": 4,
+    "sentiment": 0.6,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1618,
+    "output_tokens": 134,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.8056184999877587,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:chaincatcher",
+   "title": "Notion upgrades AI Agent, supports computer operations and 24-hour tasks",
+   "url": "https://www.chaincatcher.com/en/article/2297533",
+   "published_at": "2026-10-19T16:31:00+00:00",
+   "text": "Notion is comprehensively upgrading its AI features to enhance user experience and reduce usage costs. By allowing the Notion Agent to use an independent ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion upgraded its AI Agent to support computer operations and 24-hour tasks while aiming to reduce usage costs.",
+    "why_it_matters": "Use this to prepare for prospects asking about advanced AI agents; emphasize your own platform's agent capabilities and reliability.",
+    "importance": 4,
+    "sentiment": 0.7,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1587,
+    "output_tokens": 134,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1422490419936366,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Technobezz",
+   "title": "Notion AI Adds Two Credit Pools and Longer Agent Tasks",
+   "url": "https://www.technobezz.com/news/notion-ai-adds-two-credit-pools",
+   "published_at": "2026-10-19T15:42:00+00:00",
+   "text": "Notion is rebuilding its AI agents and introducing separate monthly credit allowances for automatic and user-selected models. The new system starts today for new customers, with existing customers ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion is rebuilding its AI agents to introduce separate monthly credit allowances for automatic and user-selected models. The new system begins today for new customers.",
+    "why_it_matters": "Expect prospects to ask about Notion's new AI credit limits and agent pricing complexities, which can be used to highlight a simpler AI packaging model.",
+    "importance": 4,
+    "sentiment": 0.5,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1596,
+    "output_tokens": 146,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.5350860829930753,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:kucoin",
+   "title": "Notion Enhances Its AI Agent with 24-Hour Task Support and Improved Capabilities",
+   "url": "https://www.kucoin.com/news/flash/notion-upgrades-ai-agent-with-24-hour-task-support-and-enhanced-capabilities",
+   "published_at": "2026-10-20T07:55:00+00:00",
+   "text": "ChainCatcher reports that Notion has announced an upgrade to its AI features. The Notion Agent now operates on a dedicated computer and browser, with improved c ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion upgraded its AI agent to operate on a dedicated computer and browser with 24-hour task support and improved capabilities.",
+    "why_it_matters": "Use this update to show that Notion is pushing deeper into automated agent workflows, opening a conversation about the reliability and security of autonomous background tasks compared to your solution.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1612,
+    "output_tokens": 145,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 11.94617629100685,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Mezha",
+   "title": "Notion launches developer platform to connect AI agents and databases",
+   "url": "https://mezha.net/eng/news/a4d1b472_notion_launches_developer/",
+   "published_at": "2026-05-13T15:19:00+00:00",
+   "text": "Notion unveiled a developer platform with Workers, External Agent API and data integrations, enabling teams to run custom code, orchestrate multi-step AI workflows, and connect external agents to ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion launched a new developer platform featuring Workers, an External Agent API, and data integrations to support custom code and multi-step AI workflows.",
+    "why_it_matters": "Expect prospects evaluating Notion for heavy custom development or AI orchestration to ask how our platform compares on developer extensibility.",
+    "importance": 4,
+    "sentiment": 0.8,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1601,
+    "output_tokens": 139,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 2.0021956670098007,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "I want to keep my LINE correspondence in Notion too",
+   "url": "https://note.com/notiworks/n/nc94e0472da2f?hl=en",
+   "published_at": "2026-10-25T00:07:00+00:00",
+   "text": "What was it that this customer asked about before?\u201dAn inquiry for a trial lesson arrives on your official LINE account. You go to reply, but then you hesitate. Was this person a first-timer, or had ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An article or post on note.com discusses keeping LINE correspondence in Notion.",
+    "why_it_matters": "Not relevant for sales; this is a user blog post or tutorial about an integration use case, not a company announcement.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1604,
+    "output_tokens": 115,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.565323917020578,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:winbuzzer.com",
+   "title": "Notion Launches Developer Platform for AI Agents",
+   "url": "https://winbuzzer.com/2026/05/14/notion-just-turned-its-workspace-into-a-hub-for-ai-xcxwbn/",
+   "published_at": "2026-05-14T09:41:00+00:00",
+   "text": "Notion has launched a developer platform to push its workspace beyond note-taking. Synced data, custom code, and AI agents now sit in the same product where teams already manage documents, projects, ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion launched a new developer platform allowing synced data, custom code, and AI agents within its workspace product.",
+    "why_it_matters": "Use this launch to position our product against Notion's pivot into complex technical workflows, especially if prospects are worried about workspace bloat.",
+    "importance": 4,
+    "sentiment": 0.8,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1620,
+    "output_tokens": 137,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 10.030919457989512,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Technobezz",
+   "title": "Notion AI Adds Two Credit Pools and Longer Agent Tasks",
+   "url": "https://www.technobezz.com/news/notion-ai-adds-two-credit-pools",
+   "published_at": "2026-10-19T15:42:00+00:00",
+   "text": "Notion is rebuilding its AI agents and introducing separate monthly credit allowances for automatic and user-selected models. The new system starts today for new customers, with existing customers ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "I want to manage appointment bookings in Notion too",
+   "url": "https://note.com/notiworks/n/ne9726abe4337?hl=en",
+   "published_at": "2026-10-25T00:04:00+00:00",
+   "text": "I wish I could manage appointment bookings in Notion, too.\u201dI already have my customer information, menus, and sales notes all organized in Notion. Yet, for bookings, I still have to deal with LINE ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An opinion piece or user blog post discussing the desire to manage appointment bookings within Notion alongside existing customer data and sales notes.",
+    "why_it_matters": "Not relevant for sales; a user wish-list article rather than a product update.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1600,
+    "output_tokens": 117,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.6958177920023445,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:note",
+   "title": "Notion and Anthropic Experience Sudden Connection Outage? / Overseas IT News",
+   "url": "https://note.com/se_maruo/n/n3844aa3bf4c1?hl=en",
+   "published_at": "2026-06-08T23:01:00+00:00",
+   "text": "A Notion product manager revealed that a service outage occurred, temporarily blocking access to Anthropic's AI (Claude). Although access was later restored, the manager commented that they were ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "A Notion product manager reported a temporary service outage that blocked access to Anthropic's Claude AI, though access was later restored.",
+    "why_it_matters": "Use this temporary AI integration outage to question Notion's AI reliability when prospects evaluate their dependent features.",
+    "importance": 3,
+    "sentiment": -0.4,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1602,
+    "output_tokens": 136,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.2397265839972533,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:techbuzz",
+   "title": "Notion Restores Anthropic AI Access After Brief Outage",
+   "url": "https://www.techbuzz.ai/articles/notion-restores-anthropic-ai-access-after-brief-outage",
+   "published_at": "2026-06-07T11:15:00+00:00",
+   "text": "Notion has restored access to Anthropic's AI services after a service disruption that sparked significant reaction across social media. The incident, which temporarily affected the productivity ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Notion restored access to Anthropic's AI services following a temporary service disruption that caused reactions on social media.",
+    "why_it_matters": "Use this brief AI outage to probe prospects on how heavily their Notion workflows depend on third-party AI reliability.",
+    "importance": 3,
+    "sentiment": -0.2,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1599,
+    "output_tokens": 135,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.049295583012281,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:fourweekmba",
+   "title": "Anthropic Claude AI Outage: Notion\u2019s Multi-Model Switch 2026",
+   "url": "https://fourweekmba.com/ai-anthropic-claude-outage-notion-multi-model-routing/",
+   "published_at": "2026-06-06T17:00:00+00:00",
+   "text": "Anthropic Claude AI outage refers to service disruptions affecting Claude, Anthropic's conversational AI assistant. Following major outages, companies like Notion implemented multi-model routing ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Following Anthropic Claude AI outages, Notion implemented a multi-model routing approach.",
+    "why_it_matters": "Use this to highlight Notion's reliance on third-party AI models and position your own AI reliability or multi-model resilience.",
+    "importance": 3,
+    "sentiment": 0.1,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1606,
+    "output_tokens": 129,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 12.832823040982476,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:x",
+   "title": "Notion experienced a major outage lasting over three hours, leaving users unable to sign in or load pages.",
+   "url": "https://x.com/Zaardaar/status/2113672775860904422",
+   "published_at": "2026-10-23T09:43:00+00:00",
+   "text": "Notion experienced a major outage lasting over three hours, leaving users unable to sign in or load pages. \ud83d\udcf0 23 Oct 2026 16:43:54 ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Notion experienced a major outage lasting over three hours that prevented users from signing in or loading pages.",
+    "why_it_matters": "Use this outage to question Notion's reliability when talking to prospects who prioritize uptime and business continuity.",
+    "importance": 4,
+    "sentiment": -0.7,
+    "confidence": 1.0
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1617,
+    "output_tokens": 130,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 20.80098058297881,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:finance.biggo",
+   "title": "Notion Briefly Pulls Anthropic\u2019s Claude After Infrastructure Glitch Triggers AI Outage",
+   "url": "https://finance.biggo.com/news/UlkVpZ4BmHHDnbgy745Y",
+   "published_at": "2026-06-07T19:35:00+00:00",
+   "text": "Notion briefly disabled all Anthropic AI models after a weekend infrastructure glitch caused elevated error rates on the Claude Opus 4.7 and 4.8 models. The outage ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Notion briefly disabled all Anthropic AI models following a weekend infrastructure glitch that caused elevated error rates on Claude Opus 4.7 and 4.8 models.",
+    "why_it_matters": "Use this AI reliability hiccup to cast doubt on Notion's AI stability if prospects are evaluating their Claude integrations for core workflows.",
+    "importance": 3,
+    "sentiment": -0.4,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1607,
+    "output_tokens": 149,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0891904160089325,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:ivoox",
+   "title": "Alert: Notion-Anthropic Outage Exposes AI Vendor Lock-In Risk 2026",
+   "url": "https://www.ivoox.com/en/alert-notion-anthropic-outage-exposes-ai-vendor-lock-in-risk-audios-mp3_rf_175112614_1.html",
+   "published_at": "2026-07-05T16:59:00+00:00",
+   "text": "When Notion disabled all Anthropic models over a weekend glitch, it wasn't just a hiccup\u2014it was a warning shot for every company building on third-party AI. Executive Summary: A temporary service ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Notion temporarily disabled all Anthropic models over a weekend due to a glitch.",
+    "why_it_matters": "Use this outage to highlight the risks of third-party AI dependency when prospects evaluate Notion AI features.",
+    "importance": 3,
+    "sentiment": -0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1645,
+    "output_tokens": 126,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.12879950000206,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "bing:Crypto Briefing",
+   "title": "Notion restores access to Anthropic models after service disruption",
+   "url": "https://cryptobriefing.com/notion-anthropic-models-service-disruption/",
+   "published_at": "2026-06-08T10:08:00+00:00",
+   "text": "Notion restored access to Anthropic models in its AI product after a service disruption forced the company to temporarily disable Claude across the platform. The outage began after Notion detected ...",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Notion restored access to Anthropic models in its AI product after a service disruption forced a temporary disablement of Claude.",
+    "why_it_matters": "Use this to question the reliability of Notion's AI features with prospects who rely heavily on automated workflows.",
+    "importance": 3,
+    "sentiment": -0.3,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1592,
+    "output_tokens": 135,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0528012920112815,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: Formstep, Request information from customers without the back-and-forth",
+   "url": "https://formstep.io/",
+   "published_at": "2026-10-27T16:03:31+00:00",
+   "text": "I built Formstep: https://formstep.io The idea came from a problem I kept running into while working on loan applications. A workflow could automate a large part of the process, but eventually it would need something only the customer could provide: a document, a correction, a signature, an explanation, or confirmation of some information. At that point, workflow automation basically did not work. The forms themselves were also often the source of the problem. Applications came in with wrong documents, misunderstood questions, incomplete answers, or people simply forgetting to finish. Someone had to email the customer, explain what was missing, wait for a reply then follow up again. It was always back-and-forth. So I built Formstep to make requesting information from customers easier, not only for humans, but also for workflows and AI agents. The idea is: A person, workflow, or AI agent sends a customer a request through email or a link. Either re-use existing form or create unique for each customer. You can prefill what you already know, lock fields, pass context, and only ask the customer what you need. For example, we might already know: * Address that you already have in the CRM * Company description from the internet * What a agreement document must contain * How a good answer should be Formstep can check inputs and uploaded files while the customer is filling out the form and tell them if something is missing or inconsistent before they submit. For example \u201cThe PDF does not contain your signature\u201d or \u201cInvoice total does not match the order amount\u201d. The goal is to catch problems while the customer is still there, rather than letting bad data continue through the workflow and discovering it later. On the automation side, requests can currently be created through n8n, Zapier, the REST API, or by an AI agent over MCP. When the customer finishes, the structured answers can go back into the workflow so it can continue. Forms and invitation/reminder are multilingual, and submitted answers can be translated inside the dashboard with one click. If you want, Formstep can be used as normal form builder and shared through public links, QR, embeds etc. It support custom themes for dark/light mode, with cover image, has Notion-style editor and much more. The list is too long to fit here. I want to make Formstep a plattform where it becomes more intelligent over time and ensures that we can get better answers from customers for any use case. My question to you: Where do your automations currently stop because they need input from a customer or user, and how are you handling that today? If you are interested in trying out the n8n node: https://www.npmjs.com/package/n8n-nodes-formstep Zapier integration: https://zapier.com/apps/formstep/integrations Connecting your AI agent: https://docs.formstep.io/developers/mcp-server/ Docs: https://docs.formstep.io I would love your feedback and please try a quick demo at https://app.formstep.io/try",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "duplicate",
+   "enrichment": null,
+   "llm_usage": null
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Wiki-driven development: coding agents update a wiki for you, you set direction",
+   "url": "https://news.ycombinator.com/item?id=50180884",
+   "published_at": "2026-10-21T13:46:27+00:00",
+   "text": "My team has been working in a way we are calling calling wiki-driven development, where the wiki is written for the human, not the agent and the human uses primarily the wiki to set direction for the agent. This is different from Karparthy's LLm I'm curious whether others do something like it. Once I run several coding agents at a time, I get overwhelmed and disorganized. Every session makes decisions and raises questions, and I can't reread the transcripts. CLAUDE.md and agent memory help the agent, but they don't give me a place to see what is going on and decide. The problem gets worse with a team. So, I have the agents write a wiki, and they write it for me. As they work, they record only what is significant: decisions with who made them, when, and the option we passed over; open questions with an owner; and a short summary of where each area stands. I ask it to focus on the big picture, strategy, key architectural or business decisions. In more detail: 1. Agents do the work and update the pages it affects with what is significant: key decisions, key strategic points, open questions, and a summary of where things stand. 2. I read the wiki to understand the big picture: the key points, where we are, and what still needs to be decided. It is short enough to read. 3. I think and decide there: I settle a question, change a decision, lay out some more strategy points, or rewrite a page to say where I want to go. 4. The next session builds from the page I changed. Karpathy's LLM Wiki idea is related, but it compiles sources you collect into a knowledge base that keeps getting richer. His goal is completeness for research. Our approach is minimalistic: the pages distill way down from the agents' sessions, hold only what is significant, and exist only so I can think and decide. Spec-driven development has you write the spec up front for the agent to implement. Here the agent writes the wiki based on all the valuable detail that are in my session prompts and its response and I edit the wiki, so the document keeps up with the agents work and my job is thinking, organizing, deciding, direction. Here are some things I have learned doing this: - Organization is key for me as the human. I make the agent make a nice visual html with clickable links marketecture or architecture or business model canvas as the top page and navigate from there. I have it keep each page a page long so I actually am motivated to read stuff. - Have the decisions record the rejected options, so when someone brings a question back, the reasoning is available. We are constantly revisiting decisions as we work and learn and so this is very helpful. - The agent wants to write everything down. The criteria I give it is to only record what it would need to get back to where we are right now in terms of strategy, decisions, implementation. Its not that much. You can do the same with a CLAUDE.md that tells the agent what to record, and work in markdown files or Obsidian or Notion. We got so into this that we turned it into a free, MIT-licensed plugin for Claude Code and Codex that keeps the wiki as markdown files in your repo and lets you see the wiki in your browser locally: https://github.com/nimbalyst/nimbalyst-wiki. Do you work in this way? If so, what other things should we be doing and how have you made it work well?",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A Hacker News user discusses a development workflow called wiki-driven development where coding agents update a wiki, mentioning Notion in passing as a tool option for markdown files.",
+    "why_it_matters": "Not relevant for sales; Notion is only mentioned as a generic file format or storage option in a developer workflow discussion.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 2300,
+    "output_tokens": 132,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.8640799160057213,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: SchemaWright, learning database design in a gamified way",
+   "url": "https://schemawright.com",
+   "published_at": "2026-10-21T00:50:43+00:00",
+   "text": "Let me begin by explaining what it is: SchemaWright is a platform for learning database table design in a gamified way, with a real Postgres database running on your browser via WASM. It was heavily inspired by Duolingo and LeetCode, because I love the way how those platforms teach their users. I built and launched this a couple months ago, weeks after my first SaaS failed (that one was called NoteRaven, and the idea was for it to be a Notion + Medium + Udemy all in one platform; but after looking at how saturated that market was, I decided to move on). The story on how I came up with it is basically that I was working normally on my day job, and noticed how many times we had changed some core tables, and usually discussed renaming them, changing columns, relationships etc. After that, I realized that I wanted to learn how to \"get the schema right\" from the beginning, so I began looking for websites that could teach that. It didnt take long to realize I couldn't find one that fitted my needs: it had to feel gamified and rigorous at the same time. When I say \"rigorous\" I mean that the content shouldnt be standard exercises we see in university (that we never really use at work) or loose definitions we feel like is too shallow. Therefore, I decided that I would be the one to build such platform. The way I structured the app is by separating it in 3 main pages: Learn, Exercises and Lectures. The first one is where you'll find Duolingo like lessons for database schema, it goes from the foundations (what is a table, what are rows and columns), to intermediate/advanced contents, such as concurrency and queues, scaling and architecture etc. It has 8 levels, but I currently only wrote up to level 3 (normalisation). Which is funny because my boss once tested me on this lol. The Exercises page is where I took inspiratoin from LeetCode, especially the page for an exercise structure: on the left side you have the problem description, your submissions and an editorial, and on the right side the code editor and the tests that will run on your code. Finally the last page is for people who are keen on reading papers and are more drawn to academic research. The lectures reference famous and important research papers that led us to our current understanding of databases, sql and concepts we learn today on this subject. It summarizes them and teaches you the concepts, while containing some interactive exercises too! Ok, so why do I think this may work as opposed to NoteRaven? One of the reasons is that I shared this with my co-workers (60+ people, most are devs too) and boss (who is CEO and CTO), and they really enjoyed using it. That same boss gave me positive feedback and suggestions, that I actually ended up implementing on the platform (yeah your suggestion could end up there too!). Another would be that I feel like platforms that train you on database design are scarce compared to ones that teach you queries, so the market wouldn't be so saturated. Let me know what you guys think! Please share if you think some exercises are unfair, meaning that they need better context for people to answer them, and also what you think of the lesson's pace, content and interactive exercises; the same goes for the lectures.",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An independent developer shared SchemaWright, a gamified platform for learning database design built using WASM and Postgres, noting they previously built a failed SaaS called NoteRaven that combined Notion, Medium, and Udemy features.",
+    "why_it_matters": "Not relevant for sales; Notion is only mentioned as a past inspiration for an unrelated failed project.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 2235,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9627476249879692,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: AIExportHub \u2013 bulk export AI chats to Notion, Markdown, and PDF",
+   "url": "https://chatgpt2notion.com/products/aiexporthub-hero/",
+   "published_at": "2026-10-20T08:39:04+00:00",
+   "text": "Hacker News story with 1 points and 0 comments.",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A Hacker News show post features a tool called AIExportHub that allows bulk exporting of AI chats to Notion, Markdown, and PDF.",
+    "why_it_matters": "Not relevant for sales; a passing mention of Notion in a third-party developer tool.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1578,
+    "output_tokens": 92,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.013054041977739,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "hn",
+   "source": "hn.algolia.com",
+   "title": "Show HN: Mnemify \u2013 3D terrain map merging Confluence, Notion, Obsidian",
+   "url": "https://github.com/mnemify-ai/mnemify",
+   "published_at": "2026-10-14T10:36:34+00:00",
+   "text": "I have been working on documents for last 5 years. Recently I realized I was using Confluence to structure execution notes, Notion for thoughts during meetings, Obsidian for quick local notes, and then reading back notes from Googles note taking apps. My colleague had the exact same problem. We had MCP connected to Claude, but there was no way to bring all of that into one place that was intuitive. So we built Mnemify. Which converted all our notes from every app to a 3D traversable terrain instead. We\u2019ve been using it daily for last two months and found it useful so decided to share it. What it does: it harvests your sources into a local folder, then using your AI subscriptions compiles them into a 3D terrain you can traverse. Regions and peaks come from context, so related things end up adjacent from all your connected apps. We also have chat over the compiled graph that cites the exact source passages. You can also view time wise how the terrain was modified over time and see all your note higlights and action items in workspaces. Everything stays on your machine. It never writes back to any source. Models are bring your own: OpenAI, Claude (your claude CLI or a subscription), or a fully offline mode with an on-device embedding model. Currently supported sources: Confluence, Notion, Obsidian and local files. Jira, Linear, Slack, Gmail and Google Meet notes are built and coming... Please try it out, would appreciate your feedback. Repo: https://github.com/mnemify-ai/mnemify Our Landing: https://mnemify.ai",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "A Show HN post for Mnemify, a tool that creates a 3D terrain map from various note-taking apps including Notion, Confluence, and Obsidian.",
+    "why_it_matters": "Not relevant for sales; it is a third-party open-source hobby project that integrates with Notion alongside other tools rather than an update by Notion itself.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.95
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1890,
+    "output_tokens": 142,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0918440410168841,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:makeuseof.com",
+   "title": "If youre the only good prompt - maker at your company , Notion will now let you share your skills with the team",
+   "url": "https://www.makeuseof.com/if-youre-the-only-good-prompt-maker-at-your-company-notion-will-now-let-you-share-your-skills-with-the-team/",
+   "published_at": "2026-09-24T23:00:00+00:00",
+   "text": "If youre the only good prompt - maker at your company , Notion will now let you share your skills with the team",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion has introduced a feature allowing users to share custom prompts with their team.",
+    "why_it_matters": "Use this to highlight how Notion is leaning into team-wide AI collaboration if a prospect is evaluating their AI features.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1629,
+    "output_tokens": 126,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 9.669347749993904,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:androidpolice.com",
+   "title": "I replaced Notion , Obsidian , and Todoist with Anytype ; now I handle my notes and tasks in one app",
+   "url": "https://www.androidpolice.com/replaced-notion-obsidian-todoist-with-anytype-handle-notes-in-one-app/",
+   "published_at": "2026-10-20T23:30:00+00:00",
+   "text": "I replaced Notion , Obsidian , and Todoist with Anytype ; now I handle my notes and tasks in one app",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "other",
+    "summary": "An article describes replacing Notion, Obsidian, and Todoist with an app called Anytype to handle notes and tasks in one place.",
+    "why_it_matters": "Not relevant for sales; this is an individual user opinion piece about switching tools.",
+    "importance": 1,
+    "sentiment": -0.1,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1609,
+    "output_tokens": 127,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8905277080193628,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:makeuseof.com",
+   "title": "Obsidian finally fixed the one thing Notion always did better",
+   "url": "https://www.makeuseof.com/obsidian-bases-notion-database/",
+   "published_at": "2026-08-18T17:30:00+00:00",
+   "text": "Obsidian finally fixed the one thing Notion always did better",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "other",
+    "summary": "An article discusses how Obsidian added a feature that previously made Notion better at databases.",
+    "why_it_matters": "Not relevant for sales conversations, as it simply compares a competitor's feature to a third-party tool.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1570,
+    "output_tokens": 123,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.2302044160023797,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:tomsguide.com",
+   "title": "Slashy is the AI email app replacing Notion Mail here why",
+   "url": "https://www.tomsguide.com/ai/slashy-is-the-ai-email-app-replacing-notion-mail-heres-why",
+   "published_at": "2026-08-01T09:00:00+00:00",
+   "text": "Slashy is the AI email app replacing Notion Mail here why",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "other",
+    "summary": "An article discusses an AI email app called Slashy and why users are adopting it instead of Notion Mail.",
+    "why_it_matters": "Not relevant for sales; it is an opinion or review article about third-party tools compared to Notion.",
+    "importance": 1,
+    "sentiment": -0.1,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1589,
+    "output_tokens": 127,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0310977500048466,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:makeuseof.com",
+   "title": "I tried replacing Notion , Miro , and Obsidian with one app , and it nearly replaced my whole workflow",
+   "url": "https://www.makeuseof.com/replacing-notion-miro-obsidian-with-one-app-replaced-whole-workflow/",
+   "published_at": "2026-09-23T18:15:00+00:00",
+   "text": "I tried replacing Notion , Miro , and Obsidian with one app , and it nearly replaced my whole workflow",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An opinion article discussing an attempt to replace Notion, Miro, and Obsidian with a single application.",
+    "why_it_matters": "Not relevant for sales; a passing mention in a generic workflow review article.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1603,
+    "output_tokens": 110,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.8285088330158032,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:moroccoworldnews.com",
+   "title": "Notion Acquires ZeroEntropy , Co - Founded by Moroccan Engineer",
+   "url": "https://www.moroccoworldnews.com/2026/08/333742/notion-acquires-zeroentropy-co-founded-by-moroccan-engineer/",
+   "published_at": "2026-08-08T16:30:00+00:00",
+   "text": "Notion Acquires ZeroEntropy , Co - Founded by Moroccan Engineer",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "acquisition",
+    "summary": "Notion has acquired ZeroEntropy, a company co-founded by a Moroccan engineer.",
+    "why_it_matters": "Expect Notion reps to pitch enhanced search, data, or AI capabilities from the ZeroEntropy acquisition in deal cycles.",
+    "importance": 4,
+    "sentiment": 0.6,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1601,
+    "output_tokens": 124,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0037198330101091,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "news",
+   "source": "gdelt:makeuseof.com",
+   "title": "Microsoft 365 , Notion , Evernote , Todoist , and Grammarly cost $550 a year , and I replaced all of them for free",
+   "url": "https://www.makeuseof.com/free-alternatives-microsoft-365-notion-evernote-todoist-grammarly/",
+   "published_at": "2026-09-07T17:45:00+00:00",
+   "text": "Microsoft 365 , Notion , Evernote , Todoist , and Grammarly cost $550 a year , and I replaced all of them for free",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "not_relevant",
+   "enrichment": {
+    "is_about_tracked_competitor": false,
+    "competitors": [],
+    "category": "other",
+    "summary": "An article discusses replacing Microsoft 365, Notion, Evernote, Todoist, and Grammarly with free alternatives.",
+    "why_it_matters": "Not relevant for sales; a passing mention in a generic roundup.",
+    "importance": 1,
+    "sentiment": 0.0,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1627,
+    "output_tokens": 113,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.828278417000547,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Agents, rebuilt to do more for less",
+   "url": "https://www.notion.so/releases/2026-10-19",
+   "published_at": "2026-10-19T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion released rebuilt AI agents advertised to do more for less.",
+    "why_it_matters": "Expect Notion reps to lead with aggressive AI agent positioning, requiring you to probe on actual cost and reliability in deals.",
+    "importance": 4,
+    "sentiment": 0.6,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1557,
+    "output_tokens": 123,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.9039000420016237,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Notion 3.8: Context for your agents",
+   "url": "https://www.notion.so/releases/2026-10-13",
+   "published_at": "2026-10-13T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion released version 3.8, introducing context for agents.",
+    "why_it_matters": "Use this to highlight Notion's push into AI agents when discussing AI roadmaps with prospects.",
+    "importance": 4,
+    "sentiment": 0.6,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1559,
+    "output_tokens": 120,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0816765000054147,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Notion 3.7: Agent skills for your whole team",
+   "url": "https://www.notion.so/releases/2026-09-15",
+   "published_at": "2026-09-15T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released version 3.7, introducing agent skills for teams.",
+    "why_it_matters": "Expect Notion reps to pitch team-wide AI agent capabilities, so be ready to highlight the security and practicality of your own AI roadmap.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1561,
+    "output_tokens": 123,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.3917259160079993,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Control which AI models your agents can use",
+   "url": "https://www.notion.so/releases/2026-09-09",
+   "published_at": "2026-09-09T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a feature allowing users to control which AI models their agents can use.",
+    "why_it_matters": "Use this to highlight Notion's growing enterprise AI management capabilities if a prospect is evaluating them for AI security and model control.",
+    "importance": 3,
+    "sentiment": 0.2,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1557,
+    "output_tokens": 129,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.5241029169992544,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Ask your agent to suggest edits",
+   "url": "https://www.notion.so/releases/2026-08-28",
+   "published_at": "2026-08-28T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a feature allowing users to ask their agent to suggest edits.",
+    "why_it_matters": "Use this to highlight Notion's growing AI capabilities and proactively discuss your own AI editing workflows with prospects.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1555,
+    "output_tokens": 123,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1208866250235587,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Your Developer Portal, now in the sidebar",
+   "url": "https://www.notion.so/releases/2026-08-19",
+   "published_at": "2026-08-19T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released an update to put the Developer Portal in the sidebar.",
+    "why_it_matters": "Useful context if a prospect asks about developer tooling integration access directly inside the Notion sidebar.",
+    "importance": 2,
+    "sentiment": 0.2,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1557,
+    "output_tokens": 118,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.058607375016436,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Model selection, simplified",
+   "url": "https://www.notion.so/releases/2026-08-14",
+   "published_at": "2026-08-14T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a changelog entry titled 'Model selection, simplified'.",
+    "why_it_matters": "Minor update to AI model options; only relevant if a prospect asks about Notion AI flexibility.",
+    "importance": 2,
+    "sentiment": 0.1,
+    "confidence": 0.5
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1553,
+    "output_tokens": 120,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.971420665999176,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Share context with Custom Agents from the Share menu",
+   "url": "https://www.notion.so/releases/2026-08-07",
+   "published_at": "2026-08-07T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion added the ability to share context with Custom Agents directly from the Share menu.",
+    "why_it_matters": "Use this update to show that Notion is continuing to build out its AI features, prompting you to highlight your own AI capabilities or integration depth if a prospect brings it up.",
+    "importance": 3,
+    "sentiment": 0.2,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1558,
+    "output_tokens": 138,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 4.0555741249991115,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "AI Meeting Notes can now trigger Custom Agents",
+   "url": "https://www.notion.so/releases/2026-07-31",
+   "published_at": "2026-07-31T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion updated AI Meeting Notes to allow triggering Custom Agents.",
+    "why_it_matters": "Use this update to show that Notion is doubling down on custom AI workflows, giving you an opening to discuss our platform's superior enterprise automation and security controls.",
+    "importance": 3,
+    "sentiment": 0.3,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1557,
+    "output_tokens": 131,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.1040994999930263,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "High contrast mode",
+   "url": "https://www.notion.so/releases/2026-07-30",
+   "published_at": "2026-07-30T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a high contrast mode in its latest update.",
+    "why_it_matters": "Minor accessibility feature update; only relevant if a prospect asks specifically about accessibility options.",
+    "importance": 2,
+    "sentiment": 0.2,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1552,
+    "output_tokens": 109,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.3962314169912133,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Workers, now in your Notion credits dashboard",
+   "url": "https://www.notion.so/releases/2026-07-24",
+   "published_at": "2026-07-24T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion added Workers to the Notion credits dashboard.",
+    "why_it_matters": "Useful context if a prospect is managing credits or billing integrations within Notion, but generally minor.",
+    "importance": 2,
+    "sentiment": 0.1,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1557,
+    "output_tokens": 115,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.6447321670129895,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "New calendar tools for your agent",
+   "url": "https://www.notion.so/releases/2026-07-16",
+   "published_at": "2026-07-16T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released new calendar tools for agents.",
+    "why_it_matters": "Use this to show prospects that Notion is investing in agentic features, which you can contrast with your own platform's capabilities.",
+    "importance": 3,
+    "sentiment": 0.2,
+    "confidence": 0.6
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1555,
+    "output_tokens": 122,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.0505711250007153,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Share Notion Workers across your team",
+   "url": "https://www.notion.so/releases/2026-07-09",
+   "published_at": "2026-07-09T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a feature allowing users to share Notion Workers across their team.",
+    "why_it_matters": "Highlight that Notion is investing in automated workflows, and use this to probe prospects on how well Notion handles complex multi-step automation compared to your solution.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1555,
+    "output_tokens": 132,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.2049067089974415,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Meet the Notion Agents iOS app",
+   "url": "https://www.notion.so/releases/2026-07-08",
+   "published_at": "2026-07-08T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion released the Notion Agents iOS app.",
+    "why_it_matters": "Highlight that Notion is pushing mobile AI agents, while reminding prospects to evaluate if mobile agent workflows fit their security and productivity needs.",
+    "importance": 4,
+    "sentiment": 0.7,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1555,
+    "output_tokens": 121,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.4842438749910798,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Notion 3.6: External Agents, HTML blocks, and more",
+   "url": "https://www.notion.so/releases/2026-07-01",
+   "published_at": "2026-07-01T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion released version 3.6, introducing External Agents and HTML blocks.",
+    "why_it_matters": "Use Notion's new External Agents and HTML blocks to ask prospects if they are leveraging these capabilities or if they need tighter project management integration.",
+    "importance": 4,
+    "sentiment": 0.5,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1563,
+    "output_tokens": 131,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.167469792009797,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Merge cells in simple tables",
+   "url": "https://www.notion.so/releases/2026-05-26",
+   "published_at": "2026-05-26T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion added the ability to merge cells in simple tables.",
+    "why_it_matters": "A minor formatting feature update; only relevant if a prospect specifically asks about advanced table editing capabilities in Notion.",
+    "importance": 2,
+    "sentiment": 0.2,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1554,
+    "output_tokens": 120,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 10.622884500015061,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "3.5: Notion Developer Platform",
+   "url": "https://www.notion.so/releases/2026-05-13",
+   "published_at": "2026-05-13T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "product_launch",
+    "summary": "Notion released version 3.5, introducing the Notion Developer Platform.",
+    "why_it_matters": "Expect prospects to ask about new developer integrations and extensibility options enabled by Notion's updated platform.",
+    "importance": 4,
+    "sentiment": 0.8,
+    "confidence": 0.9
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1557,
+    "output_tokens": 122,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.775107791996561,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "Plan Mode",
+   "url": "https://www.notion.so/releases/2026-05-07",
+   "published_at": "2026-05-07T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a new feature called Plan Mode.",
+    "why_it_matters": "Useful context if a prospect brings up Notion's planning capabilities, but otherwise a standard incremental feature update.",
+    "importance": 2,
+    "sentiment": 0.2,
+    "confidence": 0.7
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1551,
+    "output_tokens": 118,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.9525935410056263,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "New Custom Agent Directory",
+   "url": "https://www.notion.so/releases/2026-05-06",
+   "published_at": "2026-05-06T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released a new Custom Agent Directory.",
+    "why_it_matters": "Use this update to highlight Notion's growing focus on AI agents if a prospect is evaluating their automation capabilities.",
+    "importance": 3,
+    "sentiment": 0.5,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1553,
+    "output_tokens": 118,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 1.029832207976142,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  },
+  {
+   "source_type": "changelog",
+   "source": "www.notion.com",
+   "title": "New Custom Agent controls for admins",
+   "url": "https://www.notion.so/releases/2026-05-05",
+   "published_at": "2026-05-05T00:00:00+00:00",
+   "text": "",
+   "matched_competitors": [
+    "Notion"
+   ],
+   "status": "enriched",
+   "enrichment": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+     "Notion"
+    ],
+    "category": "feature_update",
+    "summary": "Notion released new Custom Agent controls for workspace admins.",
+    "why_it_matters": "Use this to highlight our own granular admin controls if prospects are worried about workspace-wide AI agent management in Notion.",
+    "importance": 3,
+    "sentiment": 0.3,
+    "confidence": 0.8
+   },
+   "llm_usage": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "input_tokens": 1555,
+    "output_tokens": 121,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "thinking_tokens": 0,
+    "cost_usd": 0.0,
+    "latency_s": 0.7728003329830244,
+    "prompt_version": "v1",
+    "attempts": 1
+   }
+  }
+ ]
+}
