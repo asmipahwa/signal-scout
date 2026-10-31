@@ -93,6 +93,91 @@ JSON log lines carry the same `run_id`.
 Local dev uses `bitnamilegacy/minio` because MinIO no longer publishes images to Docker Hub or Quay;
 it is a frozen build, fine for development only.
 
+## API
+
+`make api` serves a FastAPI app on `API_HOST:API_PORT` (default `127.0.0.1:8000`); OpenAPI docs are at
+`/docs`. `make env` generates a random local `API_KEY` and `INBOUND_WEBHOOK_SECRET` in `.env`.
+
+| Endpoint | What it returns |
+|---|---|
+| `GET /api/v1/insights` | Ranked feed (score desc), filters `competitor`, `category`, `min_importance`, `days`; opaque `cursor` pagination |
+| `GET /api/v1/insights/{id}` (`/sources`) | One insight with its linked signals (title, URL, source type, date) |
+| `GET /api/v1/search` | Elasticsearch search: `q`, `competitor`, `category`, `from`, `to`, `min_importance`, `page`, `size`; highlights, `total`, `took_ms` |
+| `GET /api/v1/competitors`, `/competitors/{id}/brief` | Tracked competitors; a brief with top insights, counts by category, pricing and page changes |
+| `GET /api/v1/changes`, `/compare` | Recent pricing changes / launches / page diffs; side-by-side counts |
+| `GET /api/v1/signals/{id}` | Signal metadata plus a presigned S3 URL for the raw object (expires after 15 minutes) |
+| `POST/GET/DELETE /api/v1/webhooks`, `GET /api/v1/webhooks/{id}/deliveries` | Outbound webhooks; the signing secret is returned only once, at creation |
+| `POST /api/v1/ingest/webhook` | Inbound signal, HMAC-signed (`X-SignalScout-Signature`); bad or stale signatures get 401 |
+| `GET /api/v1/runs` | The `job_runs` audit log |
+| `GET /healthz`, `/readyz`, `/metrics` | Liveness; readiness of Postgres, ES and S3 (503 with per-dependency status); Prometheus |
+
+Reads are public; `POST`/`DELETE /api/v1/webhooks` need `X-API-Key`. Every error is RFC 9457
+`application/problem+json`:
+
+```sh
+curl -s 'localhost:8000/api/v1/search?q=pricing&competitor=Notion&size=5'
+curl -s 'localhost:8000/api/v1/insights?limit=10'          # then pass next_cursor back as ?cursor=
+curl -s -X POST localhost:8000/api/v1/webhooks -H "X-API-Key: $API_KEY" \
+  -H 'content-type: application/json' -d '{"name":"sales","url":"https://example.com/hook","filters":{"min_importance":4}}'
+curl -s -X POST localhost:8000/api/v1/webhooks -d '{}' -H 'content-type: application/json'
+# {"type":"about:blank","title":"Unauthorized","status":401,"detail":"missing or invalid X-API-Key header",...}
+```
+
+Signing an inbound signal (same scheme as outbound deliveries: HMAC-SHA256 over `<timestamp>.<raw body>`):
+
+```sh
+BODY='{"title":"Acme adds an AI tier","url":"https://example.com/acme-ai","text":"...","competitors":["Asana"]}'
+SIG=$(uv run python -c "import sys; from signal_scout.alerts.signing import sign; print(sign(sys.argv[1], sys.argv[2].encode()))" "$INBOUND_WEBHOOK_SECRET" "$BODY")
+curl -s -X POST localhost:8000/api/v1/ingest/webhook -H 'content-type: application/json' \
+  -H "X-SignalScout-Signature: $SIG" -d "$BODY"
+# {"signal_id":7,"created":true,"s3_key":"raw/...","status":"new"}
+```
+
+The curl calls above were run by hand against a throwaway local stack seeded with the integration-test
+fixture data (invented insights, not real news).
+
+## MCP
+
+`src/signal_scout/mcp_server.py` is an MCP server (official `mcp` Python SDK v2, where FastMCP is now
+`MCPServer`) so AI agents can query the same data. All tools are read-only and call the same services
+as the REST API. Each call is logged with its arguments and latency and recorded in `job_runs` as
+`mcp_tool:<name>`.
+
+| Kind | Name |
+|---|---|
+| Tools | `search_insights(query, competitor?, category?, days?, limit?)`, `get_competitor_brief(competitor, days=30)`, `list_recent_changes(competitor?, change_type?, days=7)`, `compare_competitors(competitors, days=30)`, `get_signal_sources(insight_id)` |
+| Resources | `competitors://list`, `insights://top` (head of the ranked feed) |
+| Prompt | `weekly_competitive_digest(competitors?)` |
+
+```sh
+make mcp            # Streamable HTTP on MCP_HOST:MCP_PORT (default 127.0.0.1:8001), path /mcp
+make mcp-inspect    # MCP Inspector (npx) against the stdio server
+uv run python -m signal_scout.mcp_server --transport stdio
+```
+
+Checked by hand: the SDK client over both stdio and Streamable HTTP, and MCP Inspector 2.13.0 in CLI
+mode (`--cli ... --method tools/list` / `tools/call`), against the same throwaway fixture stack.
+
+### Use it from Claude Desktop
+
+Add this to `claude_desktop_config.json` (macOS: `~/Library/Application Support/Claude/`), with the
+absolute path to your checkout. `--directory` makes the server read that checkout's `.env`, so the
+stack from `make up` must be running:
+
+```json
+{
+  "mcpServers": {
+    "signal-scout": {
+      "command": "uv",
+      "args": ["run", "--directory", "/absolute/path/to/signal-scout", "python", "-m", "signal_scout.mcp_server"]
+    }
+  }
+}
+```
+
+stdio is the default transport. Logs go to stderr, because stdout carries the protocol. If Claude Desktop
+cannot find `uv`, use its absolute path (`which uv`) as `command`.
+
 ## Roadmap
 
 | Sprint | Scope | Status |

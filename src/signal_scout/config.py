@@ -75,6 +75,17 @@ class Settings(BaseSettings):
     scheduler_tick_s: int = 60
     job_lock_timeout_s: int = 900
 
+    # --- REST API / MCP server ----------------------------------------------------------------------
+    # API_KEY guards the write endpoints (X-API-Key header); empty means writes are disabled.
+    api_key: SecretStr = SecretStr("")
+    # Shared HMAC secret that external tools sign POST /api/v1/ingest/webhook bodies with.
+    inbound_webhook_secret: SecretStr = SecretStr("")
+    api_host: str = "127.0.0.1"
+    api_port: int = 8000
+    mcp_host: str = "127.0.0.1"
+    mcp_port: int = 8001
+    presign_expires_s: int = 900
+
     log_level: str = "INFO"
 
     @property
