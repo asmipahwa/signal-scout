@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help env up down migrate seed worker scheduler test it lint format
+.PHONY: help env up down migrate seed worker scheduler api mcp mcp-inspect test it lint format
 
 help: ## List targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*## "}; {printf "  %-10s %s\n", $$1, $$2}'
@@ -25,6 +25,15 @@ worker: ## Run a queue worker
 
 scheduler: ## Run the scheduler (enqueues fetch_source jobs)
 	uv run python -m signal_scout.scheduler
+
+api: ## Run the REST API (uvicorn on API_HOST:API_PORT; docs at /docs)
+	uv run python -m signal_scout.api
+
+mcp: ## Run the MCP server over Streamable HTTP (MCP_HOST:MCP_PORT, path /mcp)
+	uv run python -m signal_scout.mcp_server --transport http
+
+mcp-inspect: ## Open the MCP Inspector against the stdio server (needs Node/npx)
+	npx -y @modelcontextprotocol/inspector uv run python -m signal_scout.mcp_server --transport stdio
 
 test: ## Unit tests with coverage
 	uv run pytest -m "not integration" --cov --cov-report=term
