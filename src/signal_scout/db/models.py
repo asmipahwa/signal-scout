@@ -147,6 +147,11 @@ class Signal(Base):
     status: Mapped[SignalStatus] = mapped_column(
         _pg_enum(SignalStatus, "signal_status"), server_default=SignalStatus.new.value, index=True
     )
+    # Added in migration 2 (schema evolution): detected language, why a signal was filtered, and which
+    # signal a near-duplicate copies.
+    language: Mapped[str | None] = mapped_column(String(10))
+    filter_reason: Mapped[str | None] = mapped_column(String(100))
+    duplicate_of_id: Mapped[int | None] = mapped_column(ForeignKey("signals.id", ondelete="SET NULL"))
 
     enrichment: Mapped[Enrichment | None] = relationship(back_populates="signal")
 
@@ -204,6 +209,14 @@ class Insight(CreatedAtMixin, Base):
     importance: Mapped[int] = mapped_column(SmallInteger)
     score: Mapped[float] = mapped_column(Float, index=True)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    # Added in migration 2: what the ranked feed, search index and alerts need without re-joining signals.
+    why_it_matters: Mapped[str] = mapped_column(Text, server_default=text("''"))
+    sentiment: Mapped[float] = mapped_column(Float, server_default=text("0"))
+    signal_count: Mapped[int] = mapped_column(Integer, server_default=text("0"))
+    source_types: Mapped[list[str]] = mapped_column(TextArray, server_default=text("'{}'"))
+    first_seen: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_seen: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), index=True)
+    slack_alerted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
 class InsightSignal(Base):
@@ -225,6 +238,8 @@ class WebhookSubscription(CreatedAtMixin, Base):
     url: Mapped[str] = mapped_column(Text)
     filters: Mapped[dict[str, Any]] = mapped_column(JSONB, server_default=text("'{}'::jsonb"))
     enabled: Mapped[bool] = mapped_column(Boolean, server_default=text("true"))
+    # Added in migration 2: HMAC signing secret shared with the receiver.
+    secret: Mapped[str] = mapped_column(Text, server_default=text("''"))
 
 
 class WebhookDelivery(CreatedAtMixin, Base):

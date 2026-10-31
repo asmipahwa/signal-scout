@@ -1,6 +1,8 @@
-"""The initial migration applies, matches the ORM models, and round-trips down and up."""
+"""Migrations apply, match the ORM models, round-trip down and up, and evolve the schema safely."""
 
 from __future__ import annotations
+
+import asyncio
 
 from alembic import command
 from alembic.autogenerate import compare_metadata
@@ -34,7 +36,7 @@ async def test_migration_creates_every_table_and_matches_models(migrated_url: st
     def check(conn: Connection) -> None:
         insp = inspect(conn)
         assert set(insp.get_table_names()) == EXPECTED_TABLES
-        assert "language" not in {c["name"] for c in insp.get_columns("signals")}  # added by a later migration
+        assert "language" in {c["name"] for c in insp.get_columns("signals")}  # added by migration 2
         claimable = next(i for i in insp.get_indexes("jobs") if i["name"] == "ix_jobs_claimable")
         assert "locked_at IS NULL" in str(claimable.get("dialect_options", {}).get("postgresql_where"))
         uniques = {tuple(u["column_names"]) for u in insp.get_unique_constraints("webhook_deliveries")}
@@ -52,3 +54,28 @@ def test_downgrade_to_base_and_upgrade_again(migrated_url: str) -> None:
     cfg = alembic_config(migrated_url)
     command.downgrade(cfg, "base")
     command.upgrade(cfg, "head")
+
+
+def _columns(url: str, table: str) -> set[str]:
+    """Column names of a table, read through the app's async engine (the test itself stays sync because
+    Alembic's async env runs its own event loop)."""
+
+    async def read() -> set[str]:
+        engine = make_engine(url)
+        try:
+            async with engine.connect() as conn:
+                return await conn.run_sync(lambda c: {col["name"] for col in inspect(c).get_columns(table)})
+        finally:
+            await engine.dispose()
+
+    return asyncio.run(read())
+
+
+def test_migration_2_is_additive_and_reversible(migrated_url: str) -> None:
+    """Downgrading one step removes exactly the evolved columns; upgrading restores them."""
+    cfg = alembic_config(migrated_url)
+    evolved = {"language", "filter_reason", "duplicate_of_id"}
+    command.downgrade(cfg, "06fa916cc7de")
+    assert not evolved & _columns(migrated_url, "signals")
+    command.upgrade(cfg, "head")
+    assert evolved <= _columns(migrated_url, "signals")
