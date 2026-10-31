@@ -21,6 +21,10 @@ from .config import get_settings
 from .ingest.fetch_source import IngestContext, fetch_source
 from .jobruns import RunStats, track_job_run
 from .log import configure_logging, get_logger, redact_text
+from .pipeline.alerts import deliver_webhook, send_alerts
+from .pipeline.enrich import enrich_signals
+from .pipeline.index import index_insights
+from .pipeline.insights import build_insights
 from .runtime import ingest_context
 
 log = get_logger(__name__)
@@ -29,6 +33,11 @@ Handler = Callable[[IngestContext, dict[str, Any], RunStats], Awaitable[None]]
 
 HANDLERS: dict[str, Handler] = {
     "fetch_source": fetch_source,
+    "enrich_signals": enrich_signals,
+    "build_insights": build_insights,
+    "index_insights": index_insights,
+    "send_alerts": send_alerts,
+    "deliver_webhook": deliver_webhook,
 }
 
 

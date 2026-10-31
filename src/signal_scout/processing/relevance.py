@@ -1,37 +1,19 @@
 """Cheap relevance filtering that runs before any LLM call.
 
-Two checks, both deliberately simple:
-
-1. **Competitor matching.** A signal must mention a tracked competitor by one of its aliases.
-   Matching is case-sensitive on word boundaries, because several competitor names are ordinary
-   words ("the notion that...", "a linear process", "on Monday"). Lowercase mentions don't count.
-2. **Low-value patterns.** Comparison posts, pricing explainers, reviews, and how-tos mention a
-   competitor without saying anything new about it. The prototype eval showed these were the bulk of
-   what the LLM later marked irrelevant, so we drop them by title before spending quota.
-
-Both are tuned against the labeled eval set (see docs/EVALS.md); any false positives here are
+Ingestion already records which tracked competitors a signal mentions (case-sensitive alias matching
+in `ingest/matching.py`; signals mentioning none are filtered there). This module adds the second
+cheap check: **low-value title patterns**. Comparison posts, pricing explainers, reviews, how-tos, and
+"I replaced X" stories mention a competitor without saying anything new about it. On the labeled eval
+set these patterns drop 16 of 35 irrelevant signals and 0 of 66 relevant ones
+(docs/results/2026-10-31-processing/relevance-and-clustering.txt). Anything that slips through is
 caught later by the LLM's own `is_about_tracked_competitor` judgment.
 """
 
 from __future__ import annotations
 
 import re
-from collections.abc import Mapping, Sequence
+from collections.abc import Sequence
 from dataclasses import dataclass
-
-
-class CompetitorMatcher:
-    """Finds which tracked competitors a piece of text mentions."""
-
-    def __init__(self, aliases: Mapping[str, Sequence[str]]) -> None:
-        self._patterns = {
-            name: re.compile(r"\b(" + "|".join(re.escape(a) for a in sorted(names, key=len, reverse=True)) + r")\b")
-            for name, names in aliases.items()
-        }
-
-    def match(self, text: str) -> list[str]:
-        return sorted(name for name, pattern in self._patterns.items() if pattern.search(text))
-
 
 # Title patterns for posts that mention a product without news about it. Each one was checked
 # against the labeled eval set; see docs/EVALS.md for hits and misses.
@@ -63,17 +45,15 @@ def low_value_reason(title: str) -> str | None:
     return None
 
 
-def decide(
-    matcher: CompetitorMatcher, title: str, text: str, known_competitors: Sequence[str] = ()
-) -> RelevanceDecision:
+def decide(title: str, competitors: Sequence[str], official_source: bool = False) -> RelevanceDecision:
     """Decide whether a signal is worth sending to the LLM.
 
-    `known_competitors` is for sources that are about one company by definition (its own changelog),
-    which skip alias matching.
+    `official_source` is for feeds that are about one company by definition (its own changelog or
+    newsroom); their titles are never treated as low-value.
     """
-    competitors = sorted(set(known_competitors)) or matcher.match(f"{title}\n{text}")
-    if not competitors:
+    names = sorted(set(competitors))
+    if not names:
         return RelevanceDecision(False, [], "no_competitor")
-    if not known_competitors and (reason := low_value_reason(title)):
-        return RelevanceDecision(False, competitors, f"low_value:{reason}")
-    return RelevanceDecision(True, competitors, "ok")
+    if not official_source and (reason := low_value_reason(title)):
+        return RelevanceDecision(False, names, f"low_value:{reason}")
+    return RelevanceDecision(True, names, "ok")
