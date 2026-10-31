@@ -1,0 +1,34 @@
+# Search load test against a running deployment. Manual only (it needs a live target with data).
+name: Load test
+
+on:
+  workflow_dispatch:
+    inputs:
+      host:
+        description: "Base URL of a running Signal Scout API (e.g. https://scout.example.com)"
+        required: true
+      users:
+        description: "Concurrent users"
+        default: "50"
+      run_time:
+        description: "Duration"
+        default: "5m"
+
+permissions:
+  contents: read
+
+jobs:
+  locust:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: >
+          uv run locust -f load-test/locustfile.py --host "${{ inputs.host }}"
+          --users "${{ inputs.users }}" --spawn-rate 10 --run-time "${{ inputs.run_time }}" --headless
+          --csv results/search --html results/report.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: load-test
+          path: results/
