@@ -436,7 +436,10 @@ class Enricher:
 
 IMPORTANCE_WEIGHT = {1: 0.1, 2: 0.25, 3: 0.5, 4: 0.8, 5: 1.0}
 SOURCE_WEIGHT = {"press_release": 1.0, "changelog": 1.0, "news": 0.9, "hn": 0.6}
-HALF_LIFE_HOURS = 48
+# 7 days, not 48 h: with a 180-day window, 48 h let a minor post from yesterday outrank a major pricing
+# change from last week. Measured in docs/results/2026-10-31-prototype/ranking-variants.txt.
+HALF_LIFE_HOURS = 168
+MIN_INSIGHT_IMPORTANCE = 2  # importance 1 is noise by the rubric; keep it out of the feed
 CLUSTER_WINDOW_HOURS = 72
 CLUSTER_JACCARD = 0.25
 STOPWORDS = {
@@ -625,7 +628,9 @@ def main() -> None:
         for status in ("enriched", "not_relevant", "enrichment_failed", "deferred"):
             funnel[f"llm_{status}"] = sum(1 for s in todo if s.status == status)
 
-    insights = cluster([s for s in signals if s.status == "enriched"])
+    insights = cluster(
+        [s for s in signals if s.status == "enriched" and s.enrichment["importance"] >= MIN_INSIGHT_IMPORTANCE]
+    )
     rank(insights, now)
     insights.sort(key=lambda i: i.rank_score, reverse=True)
     funnel["insights"] = len(insights)
