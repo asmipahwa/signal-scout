@@ -189,6 +189,15 @@ competitors:
         type: hn_search
         url: "https://hn.algolia.com/api/v1/search_by_date?query=Atlassian&tags=story&hitsPerPage=50"
         items: 50
+      - name: "HN: Jira"
+        type: hn_search
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=Jira&tags=story&hitsPerPage=50&typoTolerance=false"
+      - name: "HN: Trello"
+        type: hn_search
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=Trello&tags=story&hitsPerPage=50&typoTolerance=false"
+      - name: "HN: Confluence"
+        type: hn_search
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=Confluence&tags=story&hitsPerPage=50&typoTolerance=false"
 
 # General feeds: not about one competitor; an item becomes a signal only if it mentions an alias.
 general_sources:

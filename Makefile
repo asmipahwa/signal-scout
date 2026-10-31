@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help env up down migrate seed worker scheduler test it lint format
+.PHONY: help env up down migrate seed worker scheduler test it lint format backfill reindex eval
 
 help: ## List targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*## "}; {printf "  %-10s %s\n", $$1, $$2}'
@@ -25,6 +25,15 @@ worker: ## Run a queue worker
 
 scheduler: ## Run the scheduler (enqueues fetch_source jobs)
 	uv run python -m signal_scout.scheduler
+
+backfill: ## Load historical Hacker News stories for every hn_search source (SINCE=YYYY-MM-DD)
+	uv run python -m signal_scout.backfill hn --since $${SINCE:-2016-01-01}
+
+reindex: ## Rebuild the Elasticsearch index from Postgres
+	uv run python -m signal_scout.pipeline.index --full
+
+eval: ## Run the labeled LLM eval (PROVIDER=gemini|claude); real API calls, keys from the Keychain
+	LLM_PROVIDER=$${PROVIDER:-gemini} scripts/with-secrets.sh uv run python scripts/run_eval.py
 
 test: ## Unit tests with coverage
 	uv run pytest -m "not integration" --cov --cov-report=term
