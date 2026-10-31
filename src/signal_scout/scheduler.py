@@ -1,4 +1,5 @@
-"""The scheduler process: every tick, enqueue a `fetch_source` job for each source that is due.
+"""The scheduler process: every tick, enqueue a `fetch_source` job for each source that is due, and the
+pipeline jobs (enrich, build insights, index, alerts) on their intervals.
 
 A source is due when it is enabled, has a fetcher, was never polled or was last polled more than
 `poll_interval` ago, and has no live job already queued. Deciding from the database on every tick
@@ -19,7 +20,7 @@ from sqlalchemy import Text, cast, exists, func, or_, select
 
 from . import queue
 from .config import Settings, get_settings
-from .db.models import RSS_SOURCE_TYPES, Job, Source, SourceType
+from .db.models import RSS_SOURCE_TYPES, Job, JobRun, Source, SourceType
 from .db.session import SessionFactory, make_engine, make_session_factory
 from .jobruns import track_job_run
 from .log import configure_logging, get_logger
@@ -53,14 +54,45 @@ async def enqueue_due_sources(sessions: SessionFactory) -> list[int]:
     return source_ids
 
 
+# Pipeline jobs after ingestion and how often each runs. Enrichment runs often in small batches so the
+# LLM rate limiter stays busy; later stages are cheap and only need to keep up.
+PIPELINE_JOBS: dict[str, timedelta] = {
+    "enrich_signals": timedelta(minutes=2),
+    "build_insights": timedelta(minutes=10),
+    "index_insights": timedelta(minutes=10),
+    "send_alerts": timedelta(minutes=10),
+}
+
+
+async def enqueue_pipeline_jobs(sessions: SessionFactory, now: datetime | None = None) -> list[str]:
+    """Enqueue each pipeline job whose interval has passed since its last run, unless one is already queued."""
+    current = now or datetime.now(UTC)
+    enqueued: list[str] = []
+    async with sessions() as session:
+        for kind, every in PIPELINE_JOBS.items():
+            queued = (
+                await session.execute(select(Job.id).where(Job.kind == kind, Job.failed_at.is_(None)).limit(1))
+            ).first()
+            if queued:
+                continue
+            last = (await session.execute(select(func.max(JobRun.started_at)).where(JobRun.job_type == kind))).scalar()
+            if last is not None and current - last < every:
+                continue
+            await queue.enqueue(session, kind, {}, max_attempts=2)
+            enqueued.append(kind)
+        await session.commit()
+    return enqueued
+
+
 async def tick(sessions: SessionFactory, settings: Settings) -> None:
     """One scheduler pass, recorded in job_runs like any other job."""
     async with track_job_run(sessions, "schedule_sources") as run:
         async with sessions() as session:
             released = await queue.release_stale_locks(session, timedelta(seconds=settings.job_lock_timeout_s))
         enqueued = await enqueue_due_sources(sessions)
-        run.items_out = len(enqueued)
-        run.details.update(released_stale_locks=released, source_ids=enqueued)
+        pipeline = await enqueue_pipeline_jobs(sessions)
+        run.items_out = len(enqueued) + len(pipeline)
+        run.details.update(released_stale_locks=released, source_ids=enqueued, pipeline_jobs=pipeline)
 
 
 async def _main() -> None:

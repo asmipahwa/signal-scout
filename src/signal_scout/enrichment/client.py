@@ -28,6 +28,7 @@ class LLMClient(Protocol):
 
     provider: str
     model: str
+    prompt_version: str
 
     async def enrich(self, signal: SignalInput) -> EnrichmentResult: ...
 

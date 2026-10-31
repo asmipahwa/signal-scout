@@ -21,7 +21,7 @@ from sqlalchemy import func, select, update
 
 from ..db.models import Enrichment, LlmCall, Signal, SignalStatus, Source
 from ..enrichment import (
-    BaseLLMClient,
+    LLMClient,
     LlmError,
     LlmQuotaExhaustedError,
     LlmTransientError,
@@ -77,7 +77,7 @@ async def _set_status(ctx: IngestContext, signal_id: int, **values: Any) -> None
 
 
 async def enrich_signals(
-    ctx: IngestContext, payload: dict[str, Any], run: RunStats, client: BaseLLMClient | None = None
+    ctx: IngestContext, payload: dict[str, Any], run: RunStats, client: LLMClient | None = None
 ) -> None:
     batch = int(payload.get("batch", DEFAULT_BATCH))
     async with ctx.sessions() as session:
@@ -94,7 +94,7 @@ async def enrich_signals(
     if not rows:
         return
 
-    llm = client or llm_client_for(ctx.settings, competitors)
+    llm: LLMClient = client or llm_client_for(ctx.settings, competitors)
     near_dups = await _near_dup_index(ctx)
     outcomes: Counter[str] = Counter()
     stop_reason: str | None = None
