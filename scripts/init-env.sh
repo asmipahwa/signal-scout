@@ -6,7 +6,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 [[ -f .env ]] || cp .env.example .env
 
-for var in POSTGRES_PASSWORD S3_SECRET_ACCESS_KEY ELASTIC_PASSWORD; do
+for var in POSTGRES_PASSWORD S3_SECRET_ACCESS_KEY ELASTIC_PASSWORD GRAFANA_ADMIN_PASSWORD; do
   if grep -qE "^${var}=$" .env; then
     value="$(openssl rand -hex 16)"
     # Portable in-place edit (BSD and GNU sed differ on -i).

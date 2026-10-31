@@ -170,7 +170,7 @@ competitors:
       # Very noisy ("linear" is a common word); kept because alias matching filters it cheaply.
       - name: "HN: Linear"
         type: hn_search
-        url: "https://hn.algolia.com/api/v1/search_by_date?query=Linear&tags=story&hitsPerPage=50"
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=linear.app&tags=story&hitsPerPage=50&typoTolerance=false"
         items: 50
 
   - name: Atlassian

@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help env up down migrate seed worker scheduler test it lint format backfill reindex eval runs-report source-report
+.PHONY: help env up down migrate seed worker scheduler test it lint format backfill reindex eval runs-report source-report observe
 
 help: ## List targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*## "}; {printf "  %-10s %s\n", $$1, $$2}'
@@ -11,8 +11,11 @@ up: env ## Start postgres, elasticsearch, minio and create the bucket
 	docker compose up -d --wait postgres elasticsearch minio
 	docker compose run --rm minio-init
 
+observe: ## Start Prometheus and Grafana (dashboard: http://localhost:3000)
+	docker compose --profile observe up -d prometheus grafana
+
 down: ## Stop the stack (keeps volumes; `docker compose down -v` deletes data)
-	docker compose down
+	docker compose --profile observe --profile app down
 
 migrate: ## Apply database migrations
 	uv run alembic upgrade head
