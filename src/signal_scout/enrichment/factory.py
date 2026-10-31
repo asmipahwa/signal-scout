@@ -20,13 +20,13 @@ from .gemini import DEFAULT_GEMINI_MODEL, GeminiClient
 from .prompt import PROMPT_VERSION
 from .rate_limit import RateLimiter
 
-# Client-side pacing. On Gemini's free tier the server enforces the real per-minute and per-day limits
-# (shown in AI Studio) and can't bill us for going over: a per-minute 429 is retried after its
-# retryDelay and a per-day 429 stops the run cleanly (LlmQuotaExhaustedError) to resume after the reset.
-# So we pace at a moderate rate and set no client-side daily cap. A day with 262 requests to
-# gemini-3.5-flash-lite was fully accepted (AI Studio usage page, 2026-10-30). Override with LLM_RPM / LLM_RPD.
+# Client-side pacing at ~80-90% of the provider's limits, so we never touch the ceiling.
+# Gemini free tier for this project (AI Studio rate-limit page, 2026-10-30):
+#   gemini-3.5-flash-lite: 15 RPM, 250K TPM, 500 RPD   <- default model
+#   gemini-3.8-flash:       5 RPM, 250K TPM,  20 RPD   <- too small for a pipeline; set LLM_RPM=4 LLM_RPD=18 to use it
+# Server 429s are still handled: per-minute ones are retried, per-day ones stop the run cleanly.
 DEFAULT_LIMITS: dict[str, tuple[int, int | None]] = {
-    "gemini": (15, None),
+    "gemini": (12, 450),
     "claude": (40, None),  # paid; the CostGuard caps spend instead of a request count
 }
 

@@ -24,7 +24,9 @@ from .errors import LlmQuotaExhaustedError, LlmRateLimitedError, LlmRequestError
 from .models import LlmUsage, enrichment_json_schema
 from .pricing import paid_cost_usd
 
-DEFAULT_GEMINI_MODEL = "gemini-3.8-flash"
+# Flash-Lite, not 3.8 Flash: on the free tier 3.8 Flash allows 20 requests/day (Flash-Lite: 500), and in
+# our runs 3.8 Flash returned 503 "high demand" while Flash-Lite had zero failures.
+DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite"
 
 
 class GeminiClient(BaseLLMClient):
