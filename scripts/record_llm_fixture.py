@@ -6,7 +6,7 @@ contract test in tests/unit/enrichment replays it through the real adapter. That
 still matches what the provider actually returns. One call per run, so it costs at most a fraction
 of a cent on Claude and nothing on the Gemini free tier.
 
-Usage:
+Usage (LLM_MODEL optionally overrides the provider's default model):
     scripts/with-secrets.sh uv run python scripts/record_llm_fixture.py gemini
     scripts/with-secrets.sh uv run python scripts/record_llm_fixture.py claude
 """
@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -23,8 +24,8 @@ from typing import Any
 import anthropic
 from google import genai
 
-from signal_scout.enrichment.claude import ClaudeClient
-from signal_scout.enrichment.gemini import GeminiClient
+from signal_scout.enrichment.claude import DEFAULT_CLAUDE_MODEL, ClaudeClient
+from signal_scout.enrichment.gemini import DEFAULT_GEMINI_MODEL, GeminiClient
 from signal_scout.enrichment.models import SignalInput
 
 FIXTURES = Path(__file__).resolve().parents[1] / "tests" / "unit" / "enrichment" / "fixtures"
@@ -53,7 +54,8 @@ async def record(provider: str) -> dict[str, Any]:
             return captured[-1]
 
         sdk.messages.create = create  # type: ignore[method-assign]
-        result = await ClaudeClient(COMPETITORS, client=sdk, max_output_attempts=1).enrich(SIGNAL)
+        model = os.environ.get("LLM_MODEL") or DEFAULT_CLAUDE_MODEL
+        result = await ClaudeClient(COMPETITORS, model=model, client=sdk, max_output_attempts=1).enrich(SIGNAL)
         body: dict[str, Any] = captured[-1].model_dump(mode="json")
     elif provider == "gemini":
         client = genai.Client()
@@ -64,7 +66,8 @@ async def record(provider: str) -> dict[str, Any]:
             return captured[-1]
 
         client.aio.models.generate_content = generate_content  # type: ignore[method-assign]
-        result = await GeminiClient(COMPETITORS, client=client, max_output_attempts=1).enrich(SIGNAL)
+        model = os.environ.get("LLM_MODEL") or DEFAULT_GEMINI_MODEL
+        result = await GeminiClient(COMPETITORS, model=model, client=client, max_output_attempts=1).enrich(SIGNAL)
         body = captured[-1].model_dump(mode="json", exclude_none=True)
         body.pop("sdk_http_response", None)  # transport headers; not part of the response contract
     else:
