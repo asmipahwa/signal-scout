@@ -18,7 +18,6 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
-import time
 from datetime import UTC, datetime
 from urllib.parse import parse_qs, urlencode, urlparse
 
@@ -121,10 +120,11 @@ async def backfill_hn(since: datetime, only: str | None = None) -> None:
                 consecutive_failures=source.consecutive_failures,
                 competitor_name=competitor,
             )
-            started = time.monotonic()
+            # Wall-clock, like job_runs (time.monotonic pauses while macOS sleeps, which overstated throughput).
+            started = datetime.now(UTC)
             async with track_job_run(ctx.sessions, "backfill_hn", source=source.name) as run:
                 stored = await backfill_hn_source(ctx, snapshot, matcher, since, run)
-                elapsed_h = max(time.monotonic() - started, 1e-6) / 3600
+                elapsed_h = max((datetime.now(UTC) - started).total_seconds(), 1e-6) / 3600
                 run.items_out = stored
                 run.details.update(
                     source=source.name,
