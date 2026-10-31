@@ -17,9 +17,9 @@ from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 from typing import Any
 
-from sqlalchemy import func, select, update
+from sqlalchemy import ColumnElement, case, func, select, update
 
-from ..db.models import Enrichment, LlmCall, Signal, SignalStatus, Source
+from ..db.models import Enrichment, LlmCall, Signal, SignalStatus, Source, SourceType
 from ..enrichment import (
     LLMClient,
     LlmError,
@@ -41,6 +41,28 @@ log = get_logger(__name__)
 DEFAULT_BATCH = 20
 NEAR_DUP_LOOKBACK = timedelta(days=30)
 MAX_LLM_TEXT_CHARS = 6000
+
+
+# The daily LLM quota is the bottleneck, so spend it where it matters: fresh signals before the
+# historical backfill, and official sources (page changes, press releases, changelogs) before news,
+# before forum posts.
+FRESH = timedelta(days=7)
+SOURCE_PRIORITY = {
+    SourceType.webpage_watch: 0,
+    SourceType.press_release_rss: 1,
+    SourceType.changelog_rss: 2,
+    SourceType.inbound_webhook: 2,
+    SourceType.blog_rss: 3,
+    SourceType.news_rss: 4,
+    SourceType.hn_search: 5,
+}
+
+
+def _priority() -> list[ColumnElement[Any]]:
+    published = func.coalesce(Signal.published_at, Signal.fetched_at)
+    fresh_first = case((published >= func.now() - FRESH, 0), else_=1)
+    by_source = case(*((Source.type == t, p) for t, p in SOURCE_PRIORITY.items()), else_=9)
+    return [fresh_first, by_source, published.desc()]
 
 
 async def _near_dup_index(ctx: IngestContext) -> NearDuplicateIndex:
@@ -87,7 +109,7 @@ async def enrich_signals(
                 select(Signal, Source.type)
                 .join(Source, Source.id == Signal.source_id)
                 .where(Signal.status.in_([SignalStatus.new, SignalStatus.deferred]))
-                .order_by(func.coalesce(Signal.published_at, Signal.fetched_at).desc(), Signal.id)
+                .order_by(*_priority(), Signal.id)
                 .limit(batch)
             )
         ).all()

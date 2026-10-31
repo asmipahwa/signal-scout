@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help env up down migrate seed worker scheduler test it lint format backfill reindex eval
+.PHONY: help env up down migrate seed worker scheduler test it lint format backfill reindex eval runs-report source-report
 
 help: ## List targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*## "}; {printf "  %-10s %s\n", $$1, $$2}'
@@ -34,6 +34,12 @@ reindex: ## Rebuild the Elasticsearch index from Postgres
 
 eval: ## Run the labeled LLM eval (PROVIDER=gemini|claude); real API calls, keys from the Keychain
 	LLM_PROVIDER=$${PROVIDER:-gemini} scripts/with-secrets.sh uv run python scripts/run_eval.py
+
+runs-report: ## Job runs (last 24 h) and the full signal funnel by source type, from Postgres
+	uv run python -m signal_scout.reports runs
+
+source-report: ## Signals and relevant signals per source
+	uv run python -m signal_scout.reports sources
 
 test: ## Unit tests with coverage
 	uv run pytest -m "not integration" --cov --cov-report=term
