@@ -1,0 +1,70 @@
+# Relevance pre-filter on eval/labeled.jsonl (101 real signals, draft gold labels)
+
+caught   low_value:comparison         Asana vs Basecamp: Features and Pricing Review
+caught   low_value:pricing_explainer  Asana pricing plans explained
+caught   low_value:comparison         Asana AI review: features, pricing and alternatives
+caught   low_value:comparison         Planly, a free, low-complexity, self-hosted alternative to Jira/Asana
+caught   low_value:comparison         ClickUp vs Notion (2026): Which Project Tool Should You Choose?
+caught   low_value:pricing_explainer  How much does ClickUp cost per user
+caught   low_value:comparison         ClickUp vs Trello: Pricing and Features Comparison
+caught   low_value:comparison         ClickUp Brain review: features, pricing and alternatives
+caught   low_value:pricing_explainer  ClickUp Pricing 2026 : Everything You Need to Know
+caught   low_value:how_to             How to Use Notion AI: Every Feature, Explained (2026)
+caught   low_value:how_to             I want to keep my LINE correspondence in Notion too
+caught   low_value:how_to             I want to manage appointment bookings in Notion too
+caught   low_value:switching_story    I replaced Notion , Obsidian , and Todoist with Anytype ; now I handle my notes 
+caught   low_value:switching_story    I tried replacing Notion , Miro , and Obsidian with one app , and it nearly repl
+caught   low_value:switching_story    Microsoft 365 , Notion , Evernote , Todoist , and Grammarly cost $550 a year , a
+
+gold-not-relevant dropped before the LLM: 15/35
+gold-relevant wrongly dropped: 0/66
+
+# Clustering thresholds on the prototype run (enriched, importance >= 2)
+
+signals: 65
+
+threshold 0.15: 49 clusters, 10 multi-signal
+   [Notion] New Custom Agent controls for admins || New Custom Agent Directory
+   [Notion] 3.5: Notion Developer Platform || Notion launches developer platform to connect AI agents || Notion Launches Developer Platform for AI Agents
+   [ClickUp] ‘People who automate jobs with AI will always have a jo || ClickUp Cuts 22% of Staff in AI Restructuring, Promises || ClickUp CEO Cuts 22% Workforce Despite Business Being '
+   [Asana] Asana outage reported. Asana down for many || Asana Down? Asana Experiences Intermittent Outage Repor
+   [Asana] Asana acquired Stack AI for $75 million, founders join  || StackAI Acquired by Asana
+   [Notion] Anthropic Claude AI Outage: Notion’s Multi-Model Switch || Notion Restores Anthropic AI Access After Brief Outage || Notion Briefly Pulls Anthropic’s Claude After Infrastru || Notion restores access to Anthropic models after servic || Notion and Anthropic Experience Sudden Connection Outag
+   [Asana] [Breaking News] GPT-6.1 Sol records 76x cost reduction  || Asana tests show 29-fold cut in browser agent model cos
+   [Notion] Agents, rebuilt to do more for less || Notion Rebuilds AI Agents and Updates Auto Router
+   [Notion] Notion AI Adds Two Credit Pools and Longer Agent Tasks || Notion AI Business Plan Shifts to Credit System, Agents || Notion AI moves to 'General' and 'Designated' pricing: 
+   [Notion] Notion upgrades AI Agent, supports computer operations  || Notion Enhances Its AI Agent with 24-Hour Task Support 
+
+threshold 0.2: 50 clusters, 10 multi-signal
+   [Notion] New Custom Agent controls for admins || New Custom Agent Directory
+   [Notion] 3.5: Notion Developer Platform || Notion launches developer platform to connect AI agents || Notion Launches Developer Platform for AI Agents
+   [ClickUp] ‘People who automate jobs with AI will always have a jo || ClickUp Cuts 22% of Staff in AI Restructuring, Promises || ClickUp CEO Cuts 22% Workforce Despite Business Being '
+   [Asana] Asana outage reported. Asana down for many || Asana Down? Asana Experiences Intermittent Outage Repor
+   [Asana] Asana acquired Stack AI for $75 million, founders join  || StackAI Acquired by Asana
+   [Notion] Anthropic Claude AI Outage: Notion’s Multi-Model Switch || Notion Restores Anthropic AI Access After Brief Outage || Notion Briefly Pulls Anthropic’s Claude After Infrastru || Notion restores access to Anthropic models after servic || Notion and Anthropic Experience Sudden Connection Outag
+   [Asana] [Breaking News] GPT-6.1 Sol records 76x cost reduction  || Asana tests show 29-fold cut in browser agent model cos
+   [Notion] Agents, rebuilt to do more for less || Notion Rebuilds AI Agents and Updates Auto Router
+   [Notion] Notion AI Adds Two Credit Pools and Longer Agent Tasks || Notion AI Business Plan Shifts to Credit System, Agents
+   [Notion] Notion upgrades AI Agent, supports computer operations  || Notion Enhances Its AI Agent with 24-Hour Task Support 
+
+threshold 0.25: 53 clusters, 9 multi-signal
+   [Notion] New Custom Agent controls for admins || New Custom Agent Directory
+   [Notion] 3.5: Notion Developer Platform || Notion launches developer platform to connect AI agents || Notion Launches Developer Platform for AI Agents
+   [ClickUp] ‘People who automate jobs with AI will always have a jo || ClickUp Cuts 22% of Staff in AI Restructuring, Promises || ClickUp CEO Cuts 22% Workforce Despite Business Being '
+   [Asana] Asana outage reported. Asana down for many || Asana Down? Asana Experiences Intermittent Outage Repor
+   [Notion] Anthropic Claude AI Outage: Notion’s Multi-Model Switch || Notion Briefly Pulls Anthropic’s Claude After Infrastru
+   [Notion] Notion Restores Anthropic AI Access After Brief Outage || Notion restores access to Anthropic models after servic || Notion and Anthropic Experience Sudden Connection Outag
+   [Notion] Agents, rebuilt to do more for less || Notion Rebuilds AI Agents and Updates Auto Router
+   [Notion] Notion AI Adds Two Credit Pools and Longer Agent Tasks || Notion AI Business Plan Shifts to Credit System, Agents
+   [Notion] Notion upgrades AI Agent, supports computer operations  || Notion Enhances Its AI Agent with 24-Hour Task Support 
+
+threshold 0.3: 58 clusters, 5 multi-signal
+   [Notion] New Custom Agent controls for admins || New Custom Agent Directory
+   [Notion] 3.5: Notion Developer Platform || Notion launches developer platform to connect AI agents || Notion Launches Developer Platform for AI Agents
+   [Asana] Asana outage reported. Asana down for many || Asana Down? Asana Experiences Intermittent Outage Repor
+   [Notion] Notion Restores Anthropic AI Access After Brief Outage || Notion restores access to Anthropic models after servic || Notion and Anthropic Experience Sudden Connection Outag
+   [Notion] Notion upgrades AI Agent, supports computer operations  || Notion Enhances Its AI Agent with 24-Hour Task Support 
+
+threshold 0.4: 61 clusters, 2 multi-signal
+   [Notion] 3.5: Notion Developer Platform || Notion launches developer platform to connect AI agents || Notion Launches Developer Platform for AI Agents
+   [Notion] Notion Restores Anthropic AI Access After Brief Outage || Notion restores access to Anthropic models after servic || Notion and Anthropic Experience Sudden Connection Outag
