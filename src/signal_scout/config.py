@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     postgres_user: str = "signal_scout"
     postgres_password: SecretStr = SecretStr("")
     postgres_host: str = "localhost"
-    postgres_port: int = 5432
+    postgres_port: int = 5433  # compose publishes on 5433 so a local Postgres on 5432 is not hit
     postgres_db: str = "signal_scout"
 
     # --- S3 / MinIO -------------------------------------------------------------------------------
