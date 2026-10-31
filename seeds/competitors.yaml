@@ -24,6 +24,10 @@
 #   - ir.monday.com/rss/news-releases.xml, investors.atlassian.com/rss/news-releases.xml: 404.
 #   - Bing query '"Atlassian" OR "Jira"': valid RSS but 0 items; plain '"Atlassian"' is used instead.
 #
+# webpage_watch sources (pricing pages): robots.txt allows each one and each returned 200 on 2026-10-31.
+# Text extraction yields prices for Asana, Linear, Notion, ClickUp, monday.com and Airtable; Smartsheet and
+# Jira render pricing with JavaScript, so only their server-rendered text is tracked. Polled twice a day.
+#
 # Bing News RSS terms: the feed's <copyright> says results are for "personal, non-commercial use" in an
 # RSS aggregator. This is a non-commercial portfolio project; revisit before any commercial use.
 
@@ -35,6 +39,10 @@ competitors:
     aliases: [Asana, "Asana Inc", "Asana AI Studio"]
     domains: [asana.com]
     sources:
+      - name: "Asana pricing page"
+        type: webpage_watch
+        url: "https://asana.com/pricing"
+        poll_interval_minutes: 720
       - name: "Bing News: Asana"
         type: news_rss
         url: "https://www.bing.com/news/search?q=%22Asana%22&format=rss"
@@ -48,6 +56,10 @@ competitors:
     aliases: [monday.com, Monday.com, "monday.com Ltd", "monday Work Management"]
     domains: [monday.com]
     sources:
+      - name: "Monday.com pricing page"
+        type: webpage_watch
+        url: "https://monday.com/pricing"
+        poll_interval_minutes: 720
       - name: "Bing News: monday.com"
         type: news_rss
         url: "https://www.bing.com/news/search?q=%22monday.com%22&format=rss"
@@ -61,6 +73,10 @@ competitors:
     aliases: [ClickUp, "Click Up"]
     domains: [clickup.com]
     sources:
+      - name: "ClickUp pricing page"
+        type: webpage_watch
+        url: "https://clickup.com/pricing"
+        poll_interval_minutes: 720
       - name: "Bing News: ClickUp"
         type: news_rss
         url: "https://www.bing.com/news/search?q=%22ClickUp%22&format=rss"
@@ -75,6 +91,10 @@ competitors:
     aliases: [Notion, "Notion Labs", "Notion AI", "Notion Mail", "Notion Calendar"]
     domains: [notion.com, notion.so]
     sources:
+      - name: "Notion pricing page"
+        type: webpage_watch
+        url: "https://www.notion.com/pricing"
+        poll_interval_minutes: 720
       - name: "Notion releases"
         type: changelog_rss
         url: "https://www.notion.com/releases/rss.xml"
@@ -93,6 +113,10 @@ competitors:
     aliases: [Smartsheet]
     domains: [smartsheet.com]
     sources:
+      - name: "Smartsheet pricing page"
+        type: webpage_watch
+        url: "https://www.smartsheet.com/pricing"
+        poll_interval_minutes: 720
       - name: "Bing News: Smartsheet"
         type: news_rss
         url: "https://www.bing.com/news/search?q=%22Smartsheet%22&format=rss"
@@ -106,6 +130,10 @@ competitors:
     aliases: [Airtable, "Airtable AI", "Airtable Cobuilder"]
     domains: [airtable.com]
     sources:
+      - name: "Airtable pricing page"
+        type: webpage_watch
+        url: "https://www.airtable.com/pricing"
+        poll_interval_minutes: 720
       # Valid RSS, but the newest post on 2026-10-30 was dated 2025-09-29: probably no longer updated.
       - name: "Airtable blog"
         type: blog_rss
@@ -125,6 +153,10 @@ competitors:
     aliases: [linear.app, Linear.app, "Linear app"]
     domains: [linear.app]
     sources:
+      - name: "Linear pricing page"
+        type: webpage_watch
+        url: "https://linear.app/pricing"
+        poll_interval_minutes: 720
       - name: "Linear changelog"
         type: changelog_rss
         url: "https://linear.app/rss/changelog.xml"
@@ -138,13 +170,17 @@ competitors:
       # Very noisy ("linear" is a common word); kept because alias matching filters it cheaply.
       - name: "HN: Linear"
         type: hn_search
-        url: "https://hn.algolia.com/api/v1/search_by_date?query=Linear&tags=story&hitsPerPage=50"
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=linear.app&tags=story&hitsPerPage=50&typoTolerance=false"
         items: 50
 
   - name: Atlassian
     aliases: [Atlassian, Jira, "Jira Service Management", Confluence, Trello]
     domains: [atlassian.com, trello.com]
     sources:
+      - name: "Atlassian pricing page"
+        type: webpage_watch
+        url: "https://www.atlassian.com/software/jira/pricing"
+        poll_interval_minutes: 720
       - name: "Bing News: Atlassian"
         type: news_rss
         url: "https://www.bing.com/news/search?q=%22Atlassian%22&format=rss"
@@ -153,6 +189,15 @@ competitors:
         type: hn_search
         url: "https://hn.algolia.com/api/v1/search_by_date?query=Atlassian&tags=story&hitsPerPage=50"
         items: 50
+      - name: "HN: Jira"
+        type: hn_search
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=Jira&tags=story&hitsPerPage=50&typoTolerance=false"
+      - name: "HN: Trello"
+        type: hn_search
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=Trello&tags=story&hitsPerPage=50&typoTolerance=false"
+      - name: "HN: Confluence"
+        type: hn_search
+        url: "https://hn.algolia.com/api/v1/search_by_date?query=Confluence&tags=story&hitsPerPage=50&typoTolerance=false"
 
 # General feeds: not about one competitor; an item becomes a signal only if it mentions an alias.
 general_sources:

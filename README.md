@@ -75,7 +75,7 @@ Needs Docker and [uv](https://docs.astral.sh/uv/).
 ```sh
 make up        # creates .env with random local passwords, starts Postgres 16, Elasticsearch 8, MinIO
 make migrate   # alembic upgrade head
-make seed      # 8 competitors, 22 sources from seeds/competitors.yaml (idempotent)
+make seed      # 8 competitors, 33 sources (incl. 8 pricing pages) from seeds/competitors.yaml (idempotent)
 make scheduler # enqueues fetch_source jobs as sources come due
 make worker    # claims jobs from the Postgres queue and ingests feeds
 make test      # unit tests;  make it  # integration tests (testcontainers);  make lint

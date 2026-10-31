@@ -7,7 +7,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 [[ -f .env ]] || cp .env.example .env
 
-for var in POSTGRES_PASSWORD S3_SECRET_ACCESS_KEY ELASTIC_PASSWORD API_KEY INBOUND_WEBHOOK_SECRET; do
+for var in POSTGRES_PASSWORD S3_SECRET_ACCESS_KEY ELASTIC_PASSWORD API_KEY INBOUND_WEBHOOK_SECRET GRAFANA_ADMIN_PASSWORD; do
   if ! grep -qE "^${var}=" .env; then
     echo "${var}=$(openssl rand -hex 16)" >> .env
     echo "generated ${var} in .env"

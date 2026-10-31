@@ -27,31 +27,36 @@ from .log import configure_logging, get_logger
 
 log = get_logger(__name__)
 
-FETCHABLE_TYPES = sorted(RSS_SOURCE_TYPES | {SourceType.hn_search})
+FETCHABLE_TYPES = sorted(RSS_SOURCE_TYPES | {SourceType.hn_search, SourceType.webpage_watch})
 FETCH_SOURCE_MAX_ATTEMPTS = 3
 
 
+def job_kind_for(source_type: SourceType) -> str:
+    """Feeds and searches are fetched with fetch_source; watched web pages are snapshotted with watch_page."""
+    return "watch_page" if source_type == SourceType.webpage_watch else "fetch_source"
+
+
 async def enqueue_due_sources(sessions: SessionFactory) -> list[int]:
-    """Enqueue fetch_source for every due source. Returns the source ids enqueued."""
+    """Enqueue a fetch job for every due source. Returns the source ids enqueued."""
     pending = exists().where(
-        Job.kind == "fetch_source",
+        Job.kind.in_(["fetch_source", "watch_page"]),
         Job.failed_at.is_(None),
         Job.payload["source_id"].astext == cast(Source.id, Text),
     )
-    due = select(Source.id).where(
+    due = select(Source.id, Source.type).where(
         Source.enabled.is_(True),
         Source.type.in_(FETCHABLE_TYPES),
         or_(Source.last_polled_at.is_(None), Source.last_polled_at + Source.poll_interval <= func.now()),
         ~pending,
     )
     async with sessions() as session:
-        source_ids = list((await session.execute(due.order_by(Source.id).with_for_update(skip_locked=True))).scalars())
-        for source_id in source_ids:
+        rows = (await session.execute(due.order_by(Source.id).with_for_update(skip_locked=True))).all()
+        for source_id, source_type in rows:
             await queue.enqueue(
-                session, "fetch_source", {"source_id": source_id}, max_attempts=FETCH_SOURCE_MAX_ATTEMPTS
+                session, job_kind_for(source_type), {"source_id": source_id}, max_attempts=FETCH_SOURCE_MAX_ATTEMPTS
             )
         await session.commit()
-    return source_ids
+    return [source_id for source_id, _ in rows]
 
 
 # Pipeline jobs after ingestion and how often each runs. Enrichment runs often in small batches so the

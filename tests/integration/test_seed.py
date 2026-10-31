@@ -15,7 +15,7 @@ SEED = Path(__file__).resolve().parents[2] / "seeds" / "competitors.yaml"
 
 async def test_seeding_twice_creates_no_duplicates_and_keeps_source_state(sessions: SessionFactory) -> None:
     seed = load_seed(SEED)
-    assert await apply_seed(sessions, seed) == (8, 22)
+    assert await apply_seed(sessions, seed) == (8, 33)
 
     async with sessions() as session:
         await session.execute(
@@ -26,7 +26,7 @@ async def test_seeding_twice_creates_no_duplicates_and_keeps_source_state(sessio
     await apply_seed(sessions, seed)
     async with sessions() as session:
         assert (await session.execute(select(func.count()).select_from(Competitor))).scalar_one() == 8
-        assert (await session.execute(select(func.count()).select_from(Source))).scalar_one() == 22
+        assert (await session.execute(select(func.count()).select_from(Source))).scalar_one() == 33
         notion = (await session.execute(select(Source).where(Source.name == "Notion releases"))).scalar_one()
         general = (await session.execute(select(Source).where(Source.name == "TechCrunch"))).scalar_one()
     assert notion.enabled is False and notion.etag == '"kept"'
