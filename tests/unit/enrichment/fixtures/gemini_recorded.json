@@ -1,0 +1,43 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"is_about_tracked_competitor\": true,\n  \"competitors\": [\n    \"Asana\"\n  ],\n  \"category\": \"outage_or_incident\",\n  \"summary\": \"Asana experienced an outage affecting nearly 2,300 U.S. users who reported problems on Down Detector.\",\n  \"why_it_matters\": \"Use this outage to probe prospects currently evaluating Asana on their requirements for uptime and reliability.\",\n  \"importance\": 4,\n  \"sentiment\": -0.7,\n  \"confidence\": 0.95\n}",
+            "thought_signature": "EmAKXgFpFH0T0Em6nZ4w01BzSDA3mMBDRVVzzpiByIU8Tn_irjQtXAcPbtLws9F6r7AWT3K65TycXVwstw2nvdQJORJ41onT5iQTuLuo6DvEpIhhCumLUw90V4UPVdbDe8Q="
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0
+    }
+  ],
+  "model_version": "gemini-3.5-flash-lite",
+  "response_id": "olHlarrdO6Wtz7IP1p24oQ4",
+  "usage_metadata": {
+    "candidates_token_count": 134,
+    "prompt_token_count": 1635,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1635
+      }
+    ],
+    "total_token_count": 1769
+  },
+  "automatic_function_calling_history": [],
+  "parsed": {
+    "is_about_tracked_competitor": true,
+    "competitors": [
+      "Asana"
+    ],
+    "category": "outage_or_incident",
+    "summary": "Asana experienced an outage affecting nearly 2,300 U.S. users who reported problems on Down Detector.",
+    "why_it_matters": "Use this outage to probe prospects currently evaluating Asana on their requirements for uptime and reliability.",
+    "importance": 4,
+    "sentiment": -0.7,
+    "confidence": 0.95
+  }
+}

@@ -6,7 +6,7 @@ import anthropic
 import pytest
 
 from signal_scout.enrichment.claude import TOOL_NAME, ClaudeClient
-from signal_scout.enrichment.errors import LlmOutputError, LlmQuotaExhaustedError
+from signal_scout.enrichment.errors import LlmOutputError, LlmQuotaExhaustedError, LlmRequestError, LlmTransientError
 from signal_scout.enrichment.models import SignalInput
 
 from .conftest import COMPETITORS, FakeAnthropic, anthropic_error
@@ -108,3 +108,24 @@ async def test_model_is_configurable(signal: SignalInput) -> None:
     result = await client.enrich(signal)
     assert fake.requests[0]["model"] == "claude-sonnet-5-5"
     assert result.usage.model == "claude-sonnet-5-5"
+
+
+async def test_server_error_backs_off_and_retries(signal: SignalInput, no_sleep: list[float]) -> None:
+    fake = FakeAnthropic(anthropic_error(anthropic.InternalServerError, 529), "claude_ok.json")
+    result = await make(fake).enrich(signal)
+    assert result.enrichment.importance == 4
+    assert len(no_sleep) == 1
+
+
+async def test_persistent_server_error_surfaces_as_transient(signal: SignalInput, no_sleep: list[float]) -> None:
+    errors = [anthropic_error(anthropic.InternalServerError, 500) for _ in range(3)]
+    client = ClaudeClient(COMPETITORS, client=FakeAnthropic(*errors), max_rate_limit_retries=2)  # type: ignore[arg-type]
+    with pytest.raises(LlmTransientError):
+        await client.enrich(signal)
+
+
+async def test_bad_request_fails_without_retry(signal: SignalInput, no_sleep: list[float]) -> None:
+    fake = FakeAnthropic(anthropic_error(anthropic.BadRequestError, 400), "claude_ok.json")
+    with pytest.raises(LlmRequestError, match="400"):
+        await make(fake).enrich(signal)
+    assert no_sleep == [] and len(fake.requests) == 1

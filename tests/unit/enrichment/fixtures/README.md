@@ -7,6 +7,8 @@ response shape of the official SDKs (`anthropic.types.Message`, `google.genai.ty
 and the Gemini 429 error body), not captured from a live call. The tests load them through the SDKs' own
 models, so a shape mismatch fails loudly.
 
+`gemini_503_overloaded.json` is the exact error body the live API returned on 2026-10-31.
+
 The signal they describe (an Asana outage) comes from a real Bing News item fetched on 2026-10-28; the
 enrichment text is written by hand.
 

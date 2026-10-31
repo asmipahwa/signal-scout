@@ -83,7 +83,8 @@ def anthropic_error(
 
 def gemini_error(fixture: str) -> Exception:
     body = load(fixture)
-    return genai_errors.ClientError(body["error"]["code"], body)
+    code = body["error"]["code"]
+    return (genai_errors.ServerError if code >= 500 else genai_errors.ClientError)(code, body)
 
 
 @pytest.fixture

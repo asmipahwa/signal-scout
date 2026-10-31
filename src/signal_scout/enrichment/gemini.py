@@ -20,7 +20,7 @@ from google import genai
 from google.genai import errors, types
 
 from .client import BaseLLMClient
-from .errors import LlmQuotaExhaustedError, LlmRateLimitedError
+from .errors import LlmQuotaExhaustedError, LlmRateLimitedError, LlmRequestError, LlmTransientError
 from .models import LlmUsage, enrichment_json_schema
 from .pricing import paid_cost_usd
 
@@ -65,7 +65,10 @@ class GeminiClient(BaseLLMClient):
                 if "PerDay" in details:
                     raise LlmQuotaExhaustedError(f"Gemini daily quota exhausted: {exc.message}") from exc
                 raise LlmRateLimitedError(str(exc), _retry_delay_seconds(details)) from exc
-            raise
+            raise LlmRequestError(f"Gemini rejected the request: {exc.code} {exc.message}") from exc
+        except errors.ServerError as exc:
+            # 5xx after the SDK's own retries, e.g. 503 "model is experiencing high demand".
+            raise LlmTransientError(f"Gemini unavailable: {exc.code} {exc.message}") from exc
 
         m = resp.usage_metadata
         cached = (m.cached_content_token_count or 0) if m else 0

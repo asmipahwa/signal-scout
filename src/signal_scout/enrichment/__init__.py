@@ -4,7 +4,14 @@ Use `llm_client_from_env()` to get the configured client; switch providers with 
 """
 
 from .client import BaseLLMClient, LLMClient
-from .errors import LlmError, LlmOutputError, LlmQuotaExhaustedError, LlmRateLimitedError
+from .errors import (
+    LlmError,
+    LlmOutputError,
+    LlmQuotaExhaustedError,
+    LlmRateLimitedError,
+    LlmRequestError,
+    LlmTransientError,
+)
 from .factory import llm_client_from_env
 from .models import CATEGORIES, Enrichment, EnrichmentResult, LlmUsage, SignalInput
 from .prompt import PROMPT_VERSION
@@ -20,6 +27,8 @@ __all__ = [
     "LlmOutputError",
     "LlmQuotaExhaustedError",
     "LlmRateLimitedError",
+    "LlmRequestError",
+    "LlmTransientError",
     "LlmUsage",
     "SignalInput",
     "llm_client_from_env",

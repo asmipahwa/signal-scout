@@ -16,7 +16,7 @@ from typing import Any, Protocol, runtime_checkable
 
 from pydantic import ValidationError
 
-from .errors import LlmOutputError, LlmRateLimitedError
+from .errors import LlmOutputError, LlmTransientError
 from .models import Enrichment, EnrichmentResult, LlmUsage, SignalInput
 from .prompt import PROMPT_VERSION, build_system_prompt, render_signal
 from .rate_limit import RateLimiter
@@ -54,7 +54,10 @@ class BaseLLMClient(ABC):
 
     @abstractmethod
     async def _generate(self, system_prompt: str, user_message: str) -> tuple[dict[str, Any] | None, LlmUsage]:
-        """Make one call. Return (parsed JSON or None if unparseable, usage). Raise LlmRateLimitedError on 429."""
+        """Make one call and return (parsed JSON or None if unparseable, usage).
+
+        Raise LlmTransientError (or its subclass LlmRateLimitedError) when retrying may help.
+        """
 
     async def enrich(self, signal: SignalInput) -> EnrichmentResult:
         total = LlmUsage(provider=self.provider, model=self.model)
@@ -80,7 +83,7 @@ class BaseLLMClient(ABC):
             start = time.perf_counter()
             try:
                 data, usage = await self._generate(self.system_prompt, user_message)
-            except LlmRateLimitedError as exc:
+            except LlmTransientError as exc:
                 if retry == self.max_rate_limit_retries:
                     raise
                 # Honor the provider's hint if it gave one; otherwise exponential backoff with jitter.

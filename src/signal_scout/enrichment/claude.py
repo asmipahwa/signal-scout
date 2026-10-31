@@ -16,7 +16,7 @@ import anthropic
 from anthropic.types import ToolParam
 
 from .client import BaseLLMClient
-from .errors import LlmQuotaExhaustedError, LlmRateLimitedError
+from .errors import LlmQuotaExhaustedError, LlmRateLimitedError, LlmRequestError, LlmTransientError
 from .models import LlmUsage, enrichment_json_schema
 from .pricing import paid_cost_usd
 
@@ -60,6 +60,13 @@ class ClaudeClient(BaseLLMClient):
             raise LlmRateLimitedError(str(exc), float(retry_after) if retry_after else None) from exc
         except anthropic.PermissionDeniedError as exc:  # e.g. credit balance too low
             raise LlmQuotaExhaustedError(str(exc)) from exc
+        except anthropic.APIConnectionError as exc:
+            raise LlmTransientError(f"Claude connection failed: {exc}") from exc
+        except anthropic.APIStatusError as exc:
+            # 5xx and 529 (overloaded) survive the SDK's own retries only during real incidents; back off.
+            if exc.status_code >= 500:
+                raise LlmTransientError(f"Claude unavailable: {exc.status_code}") from exc
+            raise LlmRequestError(f"Claude rejected the request: {exc.status_code} {exc.message}") from exc
 
         u = resp.usage
         usage = LlmUsage(

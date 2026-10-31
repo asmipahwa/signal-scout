@@ -5,7 +5,7 @@ from __future__ import annotations
 import pytest
 from google.genai import types
 
-from signal_scout.enrichment.errors import LlmOutputError, LlmQuotaExhaustedError
+from signal_scout.enrichment.errors import LlmOutputError, LlmQuotaExhaustedError, LlmRequestError, LlmTransientError
 from signal_scout.enrichment.gemini import GeminiClient
 from signal_scout.enrichment.models import SignalInput
 from signal_scout.enrichment.pricing import paid_cost_usd
@@ -80,3 +80,23 @@ async def test_per_day_429_stops_without_retrying(signal: SignalInput, no_sleep:
         await make(fake).enrich(signal)
     assert no_sleep == []
     assert len(fake.requests) == 1
+
+
+async def test_overloaded_model_503_backs_off_and_retries(signal: SignalInput, no_sleep: list[float]) -> None:
+    fake = FakeGenai(gemini_error("gemini_503_overloaded.json"), "gemini_ok.json")
+    result = await make(fake).enrich(signal)
+    assert result.enrichment.importance == 4
+    assert len(no_sleep) == 1
+
+
+async def test_persistent_503_surfaces_as_transient(signal: SignalInput, no_sleep: list[float]) -> None:
+    fake = FakeGenai(*[gemini_error("gemini_503_overloaded.json") for _ in range(3)])
+    with pytest.raises(LlmTransientError, match="high demand"):
+        await make(fake, max_rate_limit_retries=2).enrich(signal)
+
+
+async def test_bad_request_fails_without_retry(signal: SignalInput, no_sleep: list[float]) -> None:
+    fake = FakeGenai(gemini_error("gemini_400_bad_request.json"), "gemini_ok.json")
+    with pytest.raises(LlmRequestError, match="400"):
+        await make(fake).enrich(signal)
+    assert no_sleep == [] and len(fake.requests) == 1

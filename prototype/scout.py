@@ -38,7 +38,14 @@ import feedparser
 import httpx
 from dotenv import load_dotenv
 
-from signal_scout.enrichment import BaseLLMClient, LlmError, LlmQuotaExhaustedError, SignalInput, llm_client_from_env
+from signal_scout.enrichment import (
+    BaseLLMClient,
+    LlmError,
+    LlmQuotaExhaustedError,
+    LlmTransientError,
+    SignalInput,
+    llm_client_from_env,
+)
 
 ROOT = Path(__file__).resolve().parent
 CACHE_DIR = ROOT / ".cache"
@@ -397,6 +404,9 @@ class Enricher:
             except LlmQuotaExhaustedError as exc:
                 self.stopped = str(exc)
                 s.status = "deferred"
+                return
+            except LlmTransientError as exc:  # provider outage outlasted our retries; try again next run
+                s.status, s.enrichment = "deferred", {"error": str(exc)[:300]}
                 return
             except LlmError as exc:
                 s.status, s.enrichment = "enrichment_failed", {"error": str(exc)[:300]}
