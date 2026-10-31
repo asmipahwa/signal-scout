@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - name: ruff check
+        run: uv run ruff check .
+      - name: ruff format
+        run: uv run ruff format --check .
+      - name: mypy (strict, src)
+        run: uv run mypy
+
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - name: Unit tests
+        run: uv run pytest -m "not integration" --cov --cov-report=term --cov-report=xml:coverage-unit.xml
+      # GitHub's Ubuntu runners have Docker, so testcontainers can start Postgres and MinIO.
+      - name: Integration tests
+        env:
+          REQUIRE_DOCKER: "1"  # fail instead of skipping if Docker is missing here
+        run: uv run pytest -m integration -v --cov --cov-append --cov-report=term --cov-report=xml:coverage.xml
+      - name: Coverage summary
+        if: always()
+        run: uv run coverage report >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage
+          path: coverage*.xml
