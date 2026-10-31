@@ -11,9 +11,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
-from elasticsearch import AsyncElasticsearch
+from elasticsearch import AsyncElasticsearch, TransportError
 from elasticsearch import NotFoundError as EsNotFoundError
-from elasticsearch import TransportError
 from elasticsearch.exceptions import ApiError
 from sqlalchemy import Select, func, select, tuple_
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -21,7 +20,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from ..db.models import Competitor, Insight, InsightSignal, Signal, Source
 from ..log import get_logger
 from ..metrics import SEARCH_REQUEST_SECONDS
-from ..search.mapping import versioned_index_name
+from ..search.mapping import INDEX_NAME
 from ..search.query import MAX_PAGE_SIZE, SearchParams, build_search
 from .cursor import FeedCursor, decode_cursor, encode_cursor
 from .errors import DependencyError, NotFoundError
@@ -60,7 +59,7 @@ def insight_summary(insight: Insight, competitor: str | None) -> InsightSummary:
     )
 
 
-def insights_with_competitor() -> Select[tuple[Insight, str | None]]:
+def insights_with_competitor() -> Select[Insight, str]:
     """SELECT insight, competitor name: the shape every insight listing starts from."""
     return select(Insight, Competitor.name).outerjoin(Competitor, Competitor.id == Insight.competitor_id)
 
@@ -71,11 +70,11 @@ def insight_seen_at() -> Any:
 
 
 async def search_insights(es: AsyncElasticsearch, params: SearchParams, index: str | None = None) -> SearchResult:
-    """Full-text search over the insight index, using the shared query builder in `search.query`."""
+    """Full-text search over the `insights` alias, using the shared query builder in `search.query`."""
     body = build_search(params)
     started = time.perf_counter()
     try:
-        response = await es.search(index=index or versioned_index_name(), body=body)
+        response = await es.search(index=index or INDEX_NAME, body=body)
     except EsNotFoundError:
         # No index yet (fresh install, nothing indexed): an empty result, not an error.
         return SearchResult(total=0, took_ms=0, page=max(1, params.page), size=body["size"], hits=[])

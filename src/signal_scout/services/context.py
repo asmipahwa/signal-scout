@@ -14,6 +14,7 @@ from elasticsearch import AsyncElasticsearch
 
 from ..config import Settings
 from ..db.session import SessionFactory, make_engine, make_session_factory
+from ..pipeline.common import elasticsearch_client
 from ..storage import S3BlobStore
 
 
@@ -27,23 +28,11 @@ class ServiceContext:
     blobs: S3BlobStore
 
 
-def make_es_client(settings: Settings) -> AsyncElasticsearch:
-    """Elasticsearch client; uses basic auth as user `elastic` when ELASTIC_PASSWORD is set (compose)."""
-    password = settings.elastic_password.get_secret_value()
-    return AsyncElasticsearch(
-        settings.elasticsearch_url,
-        basic_auth=("elastic", password) if password else None,
-        request_timeout=10,
-        retry_on_timeout=True,
-        max_retries=2,
-    )
-
-
 @asynccontextmanager
 async def service_context(settings: Settings) -> AsyncIterator[ServiceContext]:
     """Yield a ServiceContext and close the engine and the ES connection pool afterwards."""
     engine = make_engine(settings.sqlalchemy_url)
-    es = make_es_client(settings)
+    es = elasticsearch_client(settings)
     try:
         yield ServiceContext(
             settings=settings, sessions=make_session_factory(engine), es=es, blobs=S3BlobStore(settings)
