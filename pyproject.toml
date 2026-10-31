@@ -36,7 +36,7 @@ dev = [
     "pytest-cov>=7.1.0",
     "respx>=0.23.1",
     "ruff>=0.11",
-    "testcontainers[minio,postgres]>=4.15.0",
+    "testcontainers[elasticsearch,minio,postgres]>=4.15.0",
     "types-aioboto3[s3]>=15.5.0",
     "types-pyyaml>=6.0.12.20261030",
 ]

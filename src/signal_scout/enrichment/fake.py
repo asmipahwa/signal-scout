@@ -29,6 +29,7 @@ def _default_responder(signal: SignalInput) -> Enrichment:
 class FakeLLMClient:
     provider = "fake"
     model = "fake-model"
+    prompt_version = PROMPT_VERSION
 
     def __init__(self, responder: Callable[[SignalInput], Enrichment | None] = _default_responder) -> None:
         self.responder = responder

@@ -75,13 +75,14 @@ def _matches(filters: dict[str, Any], view: AlertInsight) -> bool:
 async def send_alerts(ctx: IngestContext, payload: dict[str, Any], run: RunStats) -> None:
     now = datetime.now(UTC)
     min_importance = int(payload.get("min_importance", ALERT_MIN_IMPORTANCE))
+    freshness = (
+        timedelta(days=float(payload["fresh_within_days"])) if "fresh_within_days" in payload else ALERT_FRESHNESS
+    )
     async with ctx.sessions() as session:
         fresh = list(
             (
                 await session.execute(
-                    select(Insight).where(
-                        Insight.importance >= min_importance, Insight.last_seen >= now - ALERT_FRESHNESS
-                    )
+                    select(Insight).where(Insight.importance >= min_importance, Insight.last_seen >= now - freshness)
                 )
             ).scalars()
         )
