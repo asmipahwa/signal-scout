@@ -1,0 +1,33 @@
+{
+  "id": "msg_fixture",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-haiku-5-5",
+  "content": [
+    {
+      "type": "tool_use",
+      "id": "toolu_fixture",
+      "name": "record_enrichment",
+      "input": {
+        "is_about_tracked_competitor": true,
+        "competitors": [
+          "Asana"
+        ],
+        "category": "outage_or_incident",
+        "summary": "Asana's work management platform was down for thousands of users, according to outage reports.",
+        "why_it_matters": "Reliability is a fair topic with prospects evaluating Asana, backed by a public incident.",
+        "importance": 4,
+        "sentiment": 3.5,
+        "confidence": 0.7
+      }
+    }
+  ],
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 212,
+    "output_tokens": 128,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1630
+  }
+}

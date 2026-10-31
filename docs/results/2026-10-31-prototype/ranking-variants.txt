@@ -1,0 +1,40 @@
+
+## A baseline (48h, all, same-category): 69 insights; multi-signal clusters: 5
+1. 0.061 [Asana | partnership | imp 2 | 1 src] Asana and Salesforce integration via Asana rules
+2. 0.050 [Notion | outage_or_incident | imp 4 | 1 src] Notion experienced a major outage lasting over three hours, leaving users unable
+3. 0.034 [Notion | product_launch | imp 4 | 2 src] Agents, rebuilt to do more for less
+4. 0.031 [Asana | other | imp 3 | 1 src] What Investors Got Wrong About Asana Before The Drop
+5. 0.028 [Notion | pricing_change | imp 4 | 1 src] Notion AI moves to 'General' and 'Designated' pricing: What I'm most excited abo
+6. 0.028 [Asana | outage_or_incident | imp 4 | 1 src] Asana, popular work management platform, down for thousands of users; what we kn
+7. 0.028 [Notion | pricing_change | imp 5 | 1 src] Notion AI Business Plan Shifts to Credit System, Agents Expand from 5 Minutes to
+8. 0.019 [ClickUp | acquisition | imp 4 | 1 src] Ora is joining ClickUp. There's a script to export attachments before 2026-10-31
+
+## B half-life 7d: 69 insights; multi-signal clusters: 5
+1. 0.474 [Notion | product_launch | imp 4 | 2 src] Agents, rebuilt to do more for less
+2. 0.336 [Notion | outage_or_incident | imp 4 | 1 src] Notion experienced a major outage lasting over three hours, leaving users unable
+3. 0.332 [Notion | pricing_change | imp 5 | 1 src] Notion AI Business Plan Shifts to Credit System, Agents Expand from 5 Minutes to
+4. 0.286 [Notion | pricing_change | imp 4 | 1 src] Notion AI moves to 'General' and 'Designated' pricing: What I'm most excited abo
+5. 0.284 [Asana | outage_or_incident | imp 4 | 1 src] Asana, popular work management platform, down for thousands of users; what we kn
+6. 0.233 [Notion | product_launch | imp 4 | 1 src] Notion upgrades AI Agent, supports computer operations and 24-hour tasks
+7. 0.232 [Notion | product_launch | imp 4 | 1 src] Notion AI Adds Two Credit Pools and Longer Agent Tasks
+8. 0.211 [ClickUp | partnership | imp 4 | 1 src] Unfold adds ClickUp to A/NZ distie portfolio
+
+## C half-life 7d + drop importance 1: 59 insights; multi-signal clusters: 5
+1. 0.474 [Notion | product_launch | imp 4 | 2 src] Agents, rebuilt to do more for less
+2. 0.336 [Notion | outage_or_incident | imp 4 | 1 src] Notion experienced a major outage lasting over three hours, leaving users unable
+3. 0.332 [Notion | pricing_change | imp 5 | 1 src] Notion AI Business Plan Shifts to Credit System, Agents Expand from 5 Minutes to
+4. 0.286 [Notion | pricing_change | imp 4 | 1 src] Notion AI moves to 'General' and 'Designated' pricing: What I'm most excited abo
+5. 0.284 [Asana | outage_or_incident | imp 4 | 1 src] Asana, popular work management platform, down for thousands of users; what we kn
+6. 0.233 [Notion | product_launch | imp 4 | 1 src] Notion upgrades AI Agent, supports computer operations and 24-hour tasks
+7. 0.232 [Notion | product_launch | imp 4 | 1 src] Notion AI Adds Two Credit Pools and Longer Agent Tasks
+8. 0.211 [ClickUp | partnership | imp 4 | 1 src] Unfold adds ClickUp to A/NZ distie portfolio
+
+## D = C + cluster across categories: 58 insights; multi-signal clusters: 6
+1. 0.474 [Notion | product_launch | imp 4 | 2 src] Agents, rebuilt to do more for less
+2. 0.420 [Notion | product_launch | imp 4 | 2 src] Notion upgrades AI Agent, supports computer operations and 24-hour tasks
+3. 0.336 [Notion | outage_or_incident | imp 4 | 1 src] Notion experienced a major outage lasting over three hours, leaving users unable
+4. 0.332 [Notion | pricing_change | imp 5 | 1 src] Notion AI Business Plan Shifts to Credit System, Agents Expand from 5 Minutes to
+5. 0.286 [Notion | pricing_change | imp 4 | 1 src] Notion AI moves to 'General' and 'Designated' pricing: What I'm most excited abo
+6. 0.284 [Asana | outage_or_incident | imp 4 | 1 src] Asana, popular work management platform, down for thousands of users; what we kn
+7. 0.232 [Notion | product_launch | imp 4 | 1 src] Notion AI Adds Two Credit Pools and Longer Agent Tasks
+8. 0.211 [ClickUp | partnership | imp 4 | 1 src] Unfold adds ClickUp to A/NZ distie portfolio

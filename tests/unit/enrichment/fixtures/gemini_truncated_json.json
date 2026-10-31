@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [
+          {
+            "text": "{\"is_about_tracked_competitor\": true, \"competitors\": [\"Asana\"], \"category\": \"out"
+          }
+        ]
+      },
+      "finish_reason": "STOP"
+    }
+  ],
+  "usage_metadata": {
+    "prompt_token_count": 1850,
+    "candidates_token_count": 140,
+    "cached_content_token_count": 1600,
+    "thoughts_token_count": 60,
+    "total_token_count": 2050
+  },
+  "model_version": "gemini-3.8-flash"
+}
