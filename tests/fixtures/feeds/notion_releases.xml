@@ -1,0 +1,935 @@
+<?xml version="1.0" ?>
+      <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+            <atom:link href="https://notion.so/releases/rss.xml" rel="self" type="application/rss+xml" />
+            <title><![CDATA[Notion - What’s New]]></title>
+            <link>https://www.notion.so/releases</link>
+            <language>en-US</language>
+            <copyright>2026 All rights reserved.</copyright>
+            
+          <item>
+            <title><![CDATA[Agents, rebuilt to do more for less]]></title>
+            <link>https://www.notion.so/releases/2026-10-19</link>
+            <pubDate>Mon Oct 19 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-10-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.8: Context for your agents  ]]></title>
+            <link>https://www.notion.so/releases/2026-10-13</link>
+            <pubDate>Tue Oct 13 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-10-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.7: Agent skills for your whole team]]></title>
+            <link>https://www.notion.so/releases/2026-09-15</link>
+            <pubDate>Tue Sep 15 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-09-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[Control which AI models your agents can use]]></title>
+            <link>https://www.notion.so/releases/2026-09-09</link>
+            <pubDate>Wed Sep 09 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-09-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[Ask your agent to suggest edits]]></title>
+            <link>https://www.notion.so/releases/2026-08-28</link>
+            <pubDate>Fri Aug 28 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-08-28</guid>
+        </item>
+          <item>
+            <title><![CDATA[Your Developer Portal, now in the sidebar]]></title>
+            <link>https://www.notion.so/releases/2026-08-19</link>
+            <pubDate>Wed Aug 19 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-08-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Model selection, simplified]]></title>
+            <link>https://www.notion.so/releases/2026-08-14</link>
+            <pubDate>Fri Aug 14 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-08-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[Share context with Custom Agents from the Share menu]]></title>
+            <link>https://www.notion.so/releases/2026-08-07</link>
+            <pubDate>Fri Aug 07 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-08-07</guid>
+        </item>
+          <item>
+            <title><![CDATA[AI Meeting Notes can now trigger Custom Agents]]></title>
+            <link>https://www.notion.so/releases/2026-07-31</link>
+            <pubDate>Fri Jul 31 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-31</guid>
+        </item>
+          <item>
+            <title><![CDATA[High contrast mode]]></title>
+            <link>https://www.notion.so/releases/2026-07-30</link>
+            <pubDate>Thu Jul 30 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-30</guid>
+        </item>
+          <item>
+            <title><![CDATA[Workers, now in your Notion credits dashboard]]></title>
+            <link>https://www.notion.so/releases/2026-07-24</link>
+            <pubDate>Fri Jul 24 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-24</guid>
+        </item>
+          <item>
+            <title><![CDATA[New calendar tools for your agent]]></title>
+            <link>https://www.notion.so/releases/2026-07-16</link>
+            <pubDate>Thu Jul 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-16</guid>
+        </item>
+          <item>
+            <title><![CDATA[Share Notion Workers across your team]]></title>
+            <link>https://www.notion.so/releases/2026-07-09</link>
+            <pubDate>Thu Jul 09 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[Meet the Notion Agents iOS app]]></title>
+            <link>https://www.notion.so/releases/2026-07-08</link>
+            <pubDate>Wed Jul 08 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.6: External Agents, HTML blocks, and more]]></title>
+            <link>https://www.notion.so/releases/2026-07-01</link>
+            <pubDate>Wed Jul 01 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-07-01</guid>
+        </item>
+          <item>
+            <title><![CDATA[Merge cells in simple tables]]></title>
+            <link>https://www.notion.so/releases/2026-05-26</link>
+            <pubDate>Tue May 26 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-26</guid>
+        </item>
+          <item>
+            <title><![CDATA[3.5: Notion Developer Platform]]></title>
+            <link>https://www.notion.so/releases/2026-05-13</link>
+            <pubDate>Wed May 13 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Plan Mode]]></title>
+            <link>https://www.notion.so/releases/2026-05-07</link>
+            <pubDate>Thu May 07 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-07</guid>
+        </item>
+          <item>
+            <title><![CDATA[New Custom Agent Directory]]></title>
+            <link>https://www.notion.so/releases/2026-05-06</link>
+            <pubDate>Wed May 06 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-06</guid>
+        </item>
+          <item>
+            <title><![CDATA[New Custom Agent controls for admins]]></title>
+            <link>https://www.notion.so/releases/2026-05-05</link>
+            <pubDate>Tue May 05 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-05</guid>
+        </item>
+          <item>
+            <title><![CDATA[A new home on mobile]]></title>
+            <link>https://www.notion.so/releases/2026-05-04</link>
+            <pubDate>Mon May 04 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-04</guid>
+        </item>
+          <item>
+            <title><![CDATA[Add Custom Agents to private Slack channels]]></title>
+            <link>https://www.notion.so/releases/2026-05-01</link>
+            <pubDate>Fri May 01 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-05-01</guid>
+        </item>
+          <item>
+            <title><![CDATA[Rollups now as currency, percent, and more]]></title>
+            <link>https://www.notion.so/releases/2026-04-27</link>
+            <pubDate>Mon Apr 27 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-27</guid>
+        </item>
+          <item>
+            <title><![CDATA[Find pages faster from the breadcrumb]]></title>
+            <link>https://www.notion.so/releases/2026-04-24</link>
+            <pubDate>Fri Apr 24 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-24</guid>
+        </item>
+          <item>
+            <title><![CDATA[Mail & Calendar, now in your settings]]></title>
+            <link>https://www.notion.so/releases/2026-04-17</link>
+            <pubDate>Fri Apr 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-17</guid>
+        </item>
+          <item>
+            <title><![CDATA[Opus 4.7, now in Notion]]></title>
+            <link>https://www.notion.so/releases/2026-04-16</link>
+            <pubDate>Thu Apr 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-16</guid>
+        </item>
+          <item>
+            <title><![CDATA[Schedule meetings with Notion Agent]]></title>
+            <link>https://www.notion.so/releases/2026-04-15</link>
+            <pubDate>Wed Apr 15 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.4, part 2]]></title>
+            <link>https://www.notion.so/releases/2026-04-14</link>
+            <pubDate>Tue Apr 14 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[Customize your tabs in databases]]></title>
+            <link>https://www.notion.so/releases/2026-04-10</link>
+            <pubDate>Fri Apr 10 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[New page cover art from timeless collections]]></title>
+            <link>https://www.notion.so/releases/2026-04-09</link>
+            <pubDate>Thu Apr 09 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[Mute discussion replies]]></title>
+            <link>https://www.notion.so/releases/2026-04-08</link>
+            <pubDate>Wed Apr 08 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[Share Notion AI chats as a link]]></title>
+            <link>https://www.notion.so/releases/2026-04-07</link>
+            <pubDate>Tue Apr 07 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-07</guid>
+        </item>
+          <item>
+            <title><![CDATA[Voice input on desktop]]></title>
+            <link>https://www.notion.so/releases/2026-04-06</link>
+            <pubDate>Mon Apr 06 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-04-06</guid>
+        </item>
+          <item>
+            <title><![CDATA[Keep pages tidy with tabs]]></title>
+            <link>https://www.notion.so/releases/2026-03-30</link>
+            <pubDate>Mon Mar 30 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-30</guid>
+        </item>
+          <item>
+            <title><![CDATA[Archive outdated pages to keep your workspace fresh]]></title>
+            <link>https://www.notion.so/releases/2026-03-27</link>
+            <pubDate>Fri Mar 27 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-27</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.4, part 1]]></title>
+            <link>https://www.notion.so/releases/2026-03-26</link>
+            <pubDate>Thu Mar 26 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-26</guid>
+        </item>
+          <item>
+            <title><![CDATA[Custom skills for Notion AI]]></title>
+            <link>https://www.notion.so/releases/2026-03-20</link>
+            <pubDate>Fri Mar 20 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-20</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion Academy & certifications, in 6 new languages]]></title>
+            <link>https://www.notion.so/releases/2026-03-19</link>
+            <pubDate>Thu Mar 19 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Custom instructions for AI Meeting Notes]]></title>
+            <link>https://www.notion.so/releases/2026-03-18</link>
+            <pubDate>Wed Mar 18 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[New consent controls for AI Meeting Notes]]></title>
+            <link>https://www.notion.so/releases/2026-03-12</link>
+            <pubDate>Thu Mar 12 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-12</guid>
+        </item>
+          <item>
+            <title><![CDATA[Search Salesforce accounts, leads, opportunities, and contacts in Notion]]></title>
+            <link>https://www.notion.so/releases/2026-03-11</link>
+            <pubDate>Wed Mar 11 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-11</guid>
+        </item>
+          <item>
+            <title><![CDATA[Visualize progress with dashboard views]]></title>
+            <link>https://www.notion.so/releases/2026-03-10</link>
+            <pubDate>Tue Mar 10 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Generate images with Notion AI]]></title>
+            <link>https://www.notion.so/releases/2026-03-09</link>
+            <pubDate>Mon Mar 09 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[GPT-5.4 is now in Notion]]></title>
+            <link>https://www.notion.so/releases/2026-03-06</link>
+            <pubDate>Fri Mar 06 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-06</guid>
+        </item>
+          <item>
+            <title><![CDATA[New “can create pages” database permission]]></title>
+            <link>https://www.notion.so/releases/2026-03-05</link>
+            <pubDate>Thu Mar 05 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-05</guid>
+        </item>
+          <item>
+            <title><![CDATA[Run Custom Agents for less with MiniMax M2.5]]></title>
+            <link>https://www.notion.so/releases/2026-03-03</link>
+            <pubDate>Tue Mar 03 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-03</guid>
+        </item>
+          <item>
+            <title><![CDATA[Present any Notion page]]></title>
+            <link>https://www.notion.so/releases/2026-03-02</link>
+            <pubDate>Mon Mar 02 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-03-02</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.3: Custom Agents]]></title>
+            <link>https://www.notion.so/releases/2026-02-24</link>
+            <pubDate>Tue Feb 24 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-02-24</guid>
+        </item>
+          <item>
+            <title><![CDATA[A home for everything in Library]]></title>
+            <link>https://www.notion.so/releases/2026-02-18</link>
+            <pubDate>Wed Feb 18 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-02-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[Claude Opus 4.6, now in Notion]]></title>
+            <link>https://www.notion.so/releases/2026-02-09</link>
+            <pubDate>Mon Feb 09 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-02-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[Search your Asana tasks and projects from Notion]]></title>
+            <link>https://www.notion.so/releases/2026-02-04</link>
+            <pubDate>Wed Feb 04 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-02-04</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.2: Mobile AI, new models, people directory]]></title>
+            <link>https://www.notion.so/releases/2026-01-20</link>
+            <pubDate>Tue Jan 20 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2026-01-20</guid>
+        </item>
+          <item>
+            <title><![CDATA[Agent can build forms]]></title>
+            <link>https://www.notion.so/releases/2025-12-03</link>
+            <pubDate>Wed Dec 03 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-12-03</guid>
+        </item>
+          <item>
+            <title><![CDATA[Gemini 3 Pro is live]]></title>
+            <link>https://www.notion.so/releases/2025-11-19</link>
+            <pubDate>Wed Nov 19 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-11-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.1]]></title>
+            <link>https://www.notion.so/releases/2025-11-17</link>
+            <pubDate>Mon Nov 17 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-11-17</guid>
+        </item>
+          <item>
+            <title><![CDATA[Page discussions in one place]]></title>
+            <link>https://www.notion.so/releases/2025-11-14</link>
+            <pubDate>Fri Nov 14 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-11-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[Agent now reads CSVs]]></title>
+            <link>https://www.notion.so/releases/2025-11-10</link>
+            <pubDate>Mon Nov 10 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-11-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 3.0: Agents ]]></title>
+            <link>https://www.notion.so/releases/2025-09-18</link>
+            <pubDate>Thu Sep 18 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-09-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.53: Offline mode ]]></title>
+            <link>https://www.notion.so/releases/2025-08-19</link>
+            <pubDate>Tue Aug 19 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-08-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion in Indonesian, Thai, and Vietnamese ]]></title>
+            <link>https://www.notion.so/releases/2025-07-22</link>
+            <pubDate>Tue Jul 22 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-07-22</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.52: Everything is database]]></title>
+            <link>https://www.notion.so/releases/2025-07-10</link>
+            <pubDate>Thu Jul 10 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-07-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.51: AI Meeting Notes, Enterprise Search & more]]></title>
+            <link>https://www.notion.so/releases/2025-05-13</link>
+            <pubDate>Tue May 13 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-05-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.50: Meet Notion Mail]]></title>
+            <link>https://www.notion.so/releases/2025-04-15</link>
+            <pubDate>Tue Apr 15 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-04-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.49: Page verification, Notion Forms with conditional logic, and more!]]></title>
+            <link>https://www.notion.so/releases/2025-03-26</link>
+            <pubDate>Wed Mar 26 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-03-26</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.48: Set up Notion in one click, Calendar updates, and more]]></title>
+            <link>https://www.notion.so/releases/2025-02-18</link>
+            <pubDate>Tue Feb 18 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2025-02-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[2.47: More automations, answers from GitHub, and easy Calendar scheduling]]></title>
+            <link>https://www.notion.so/releases/2024-12-05</link>
+            <pubDate>Thu Dec 05 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-12-05</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.46: Forms, Mail, layouts, new automations, and more!]]></title>
+            <link>https://www.notion.so/releases/2024-10-24</link>
+            <pubDate>Thu Oct 24 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-10-24</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.45: Meet the new Notion AI]]></title>
+            <link>https://www.notion.so/releases/2024-09-25</link>
+            <pubDate>Wed Sep 25 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-09-25</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.44: Introducing charts + a sneak peek at forms]]></title>
+            <link>https://www.notion.so/releases/2024-08-13</link>
+            <pubDate>Tue Aug 13 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-08-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.43: Suggested edits + new Notion AI features]]></title>
+            <link>https://www.notion.so/releases/2024-07-29</link>
+            <pubDate>Mon Jul 29 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-07-29</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion Calendar is now on Android]]></title>
+            <link>https://www.notion.so/releases/2024-07-17</link>
+            <pubDate>Wed Jul 17 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-07-17</guid>
+        </item>
+          <item>
+            <title><![CDATA[Upcoming changes coming to our Plus plan]]></title>
+            <link>https://www.notion.so/releases/2024-06-26</link>
+            <pubDate>Wed Jun 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-06-26</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.42: Introducing Notion Sites]]></title>
+            <link>https://www.notion.so/releases/2024-06-25</link>
+            <pubDate>Tue Jun 25 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-06-25</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.41: Notion AI now with Slack, GPT-4, and more!]]></title>
+            <link>https://www.notion.so/releases/2024-06-18</link>
+            <pubDate>Tue Jun 18 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-06-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.40: Home with calendar, navigate content, and organize your sidebar]]></title>
+            <link>https://www.notion.so/releases/2024-06-11</link>
+            <pubDate>Tue Jun 11 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-06-11</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.39: Improving the basics]]></title>
+            <link>https://www.notion.so/releases/2024-04-30</link>
+            <pubDate>Tue Apr 30 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-04-30</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.38: Home]]></title>
+            <link>https://www.notion.so/releases/2024-02-26</link>
+            <pubDate>Mon Feb 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-02-26</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.37: Notion Calendar]]></title>
+            <link>https://www.notion.so/releases/2024-01-17</link>
+            <pubDate>Wed Jan 17 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2024-01-17</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.36: speed improvements, better search, and upgrades to web publishing]]></title>
+            <link>https://www.notion.so/releases/2023-12-20</link>
+            <pubDate>Wed Dec 20 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-12-20</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.35: Introducing Q&A by Notion AI (now in beta)]]></title>
+            <link>https://www.notion.so/releases/2023-11-14</link>
+            <pubDate>Tue Nov 14 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-11-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.34: new enterprise features and languages]]></title>
+            <link>https://www.notion.so/releases/2023-11-07</link>
+            <pubDate>Tue Nov 07 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-11-07</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.33: Automate workflows]]></title>
+            <link>https://www.notion.so/releases/2023-09-22</link>
+            <pubDate>Fri Sep 22 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-09-22</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.32: new features for project management, AI, and more]]></title>
+            <link>https://www.notion.so/releases/2023-08-08</link>
+            <pubDate>Tue Aug 08 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-08-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.30: Project Management]]></title>
+            <link>https://www.notion.so/releases/2023-05-31</link>
+            <pubDate>Wed May 31 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-05-31</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion in Spanish and Portuguese]]></title>
+            <link>https://www.notion.so/releases/2023-04-28</link>
+            <pubDate>Fri Apr 28 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-04-28</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.23: Slack integration 2.0 + wiki page verification]]></title>
+            <link>https://www.notion.so/releases/2023-04-27</link>
+            <pubDate>Thu Apr 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-04-27</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.22: Buttons to automate manual tasks]]></title>
+            <link>https://www.notion.so/releases/2023-03-23</link>
+            <pubDate>Thu Mar 23 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-03-23</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.21: Notion AI, for everyone]]></title>
+            <link>https://www.notion.so/releases/2023-02-22</link>
+            <pubDate>Wed Feb 22 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-02-22</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.20, now with page and workspace analytics]]></title>
+            <link>https://www.notion.so/releases/2023-02-09</link>
+            <pubDate>Thu Feb 09 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2023-02-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.19, now with subtasks & dependencies]]></title>
+            <link>https://www.notion.so/releases/2022-12-15</link>
+            <pubDate>Thu Dec 15 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-12-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion in German]]></title>
+            <link>https://www.notion.so/releases/2022-12-13</link>
+            <pubDate>Tue Dec 13 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-12-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Expanded Free Plan & new Business Plan]]></title>
+            <link>https://www.notion.so/releases/2022-12-07</link>
+            <pubDate>Wed Dec 07 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-12-07</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion AI + templates to build out your workspace]]></title>
+            <link>https://www.notion.so/releases/2022-11-17</link>
+            <pubDate>Thu Nov 17 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-11-17</guid>
+        </item>
+          <item>
+            <title><![CDATA[Recurring tasks, meeting notes, and updates]]></title>
+            <link>https://www.notion.so/releases/2022-11-08</link>
+            <pubDate>Tue Nov 08 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-11-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[New connections to Box, Lucid, and more – bringing additional context and transparency to Notion]]></title>
+            <link>https://www.notion.so/releases/2022-10-27</link>
+            <pubDate>Thu Oct 27 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-10-27</guid>
+        </item>
+          <item>
+            <title><![CDATA[Public pages that automatically expire and more]]></title>
+            <link>https://www.notion.so/releases/2022-10-12</link>
+            <pubDate>Wed Oct 12 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-10-12</guid>
+        </item>
+          <item>
+            <title><![CDATA[More improvements to editing]]></title>
+            <link>https://www.notion.so/releases/2022-09-13</link>
+            <pubDate>Tue Sep 13 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-09-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.18, now with teamspaces]]></title>
+            <link>https://www.notion.so/releases/2022-08-29</link>
+            <pubDate>Mon Aug 29 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-08-29</guid>
+        </item>
+          <item>
+            <title><![CDATA[Easier database editing & more]]></title>
+            <link>https://www.notion.so/releases/2022-08-25</link>
+            <pubDate>Thu Aug 25 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-08-25</guid>
+        </item>
+          <item>
+            <title><![CDATA[Comment reactions, progress bars & more]]></title>
+            <link>https://www.notion.so/releases/2022-08-11</link>
+            <pubDate>Thu Aug 11 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-08-11</guid>
+        </item>
+          <item>
+            <title><![CDATA[Faster mobile apps, database side peek & more]]></title>
+            <link>https://www.notion.so/releases/2022-07-20</link>
+            <pubDate>Wed Jul 20 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-07-20</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.17, now with Synced Databases, status property & more]]></title>
+            <link>https://www.notion.so/releases/2022-06-29</link>
+            <pubDate>Wed Jun 29 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-06-29</guid>
+        </item>
+          <item>
+            <title><![CDATA[New API, integrations & link previews]]></title>
+            <link>https://www.notion.so/releases/2022-05-10</link>
+            <pubDate>Tue May 10 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-05-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Easier relation property setup]]></title>
+            <link>https://www.notion.so/releases/2022-05-03</link>
+            <pubDate>Tue May 03 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-05-03</guid>
+        </item>
+          <item>
+            <title><![CDATA[Link previews for Figma, Dropbox & more]]></title>
+            <link>https://www.notion.so/releases/2022-04-19</link>
+            <pubDate>Tue Apr 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-04-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.16, now with faster databases]]></title>
+            <link>https://www.notion.so/releases/2022-04-14</link>
+            <pubDate>Thu Apr 14 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-04-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.15, now with better databases]]></title>
+            <link>https://www.notion.so/releases/2022-03-15</link>
+            <pubDate>Tue Mar 15 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-03-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[Connect your tools with the API 🧰]]></title>
+            <link>https://www.notion.so/releases/2022-03-03</link>
+            <pubDate>Thu Mar 03 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-03-03</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion in French 🇫🇷🎊]]></title>
+            <link>https://www.notion.so/releases/2022-02-15</link>
+            <pubDate>Tue Feb 15 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-02-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[New database permissions 🔒]]></title>
+            <link>https://www.notion.so/releases/2022-02-08</link>
+            <pubDate>Tue Feb 08 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-02-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[Better text editing & copy/paste ⌨️]]></title>
+            <link>https://www.notion.so/releases/2022-01-19</link>
+            <pubDate>Wed Jan 19 2022 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2022-01-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Hack week 👩🏼‍💻👨🏿‍💻🧑🏽‍💻]]></title>
+            <link>https://www.notion.so/releases/2021-12-23</link>
+            <pubDate>Thu Dec 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-12-23</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.14, now with simple tables 🏓]]></title>
+            <link>https://www.notion.so/releases/2021-11-16</link>
+            <pubDate>Tue Nov 16 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-11-16</guid>
+        </item>
+          <item>
+            <title><![CDATA[Link previews 🔗]]></title>
+            <link>https://www.notion.so/releases/2021-11-02</link>
+            <pubDate>Tue Nov 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-11-02</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.13, now with database groups & sub-groups 🍱]]></title>
+            <link>https://www.notion.so/releases/2021-10-19</link>
+            <pubDate>Tue Oct 19 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-10-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion in Japanese 🇯🇵]]></title>
+            <link>https://www.notion.so/releases/2021-10-12</link>
+            <pubDate>Tue Oct 12 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-10-12</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.12, now with better comments 💬]]></title>
+            <link>https://www.notion.so/releases/2021-09-21</link>
+            <pubDate>Tue Sep 21 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-09-21</guid>
+        </item>
+          <item>
+            <title><![CDATA[Acquiring Automate.io]]></title>
+            <link>https://www.notion.so/releases/2021-09-08</link>
+            <pubDate>Wed Sep 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-09-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[Tactiq integration]]></title>
+            <link>https://www.notion.so/releases/2021-08-24</link>
+            <pubDate>Tue Aug 24 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-08-24</guid>
+        </item>
+          <item>
+            <title><![CDATA[SOC 2 compliance 🔒]]></title>
+            <link>https://www.notion.so/releases/2021-08-10</link>
+            <pubDate>Tue Aug 10 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-08-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion for non-profits ❤️]]></title>
+            <link>https://www.notion.so/releases/2021-07-27</link>
+            <pubDate>Tue Jul 27 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-07-27</guid>
+        </item>
+          <item>
+            <title><![CDATA[Better mobile apps & public pages 🌐]]></title>
+            <link>https://www.notion.so/releases/2021-07-14</link>
+            <pubDate>Wed Jul 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-07-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.11, now with Synced Blocks 🔄]]></title>
+            <link>https://www.notion.so/releases/2021-06-29</link>
+            <pubDate>Tue Jun 29 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-06-29</guid>
+        </item>
+          <item>
+            <title><![CDATA[Start building with the API 👷🏻‍♀️👷🏾‍♂️]]></title>
+            <link>https://www.notion.so/releases/2021-05-13</link>
+            <pubDate>Thu May 13 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-05-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Safari web clipper ✂️]]></title>
+            <link>https://www.notion.so/releases/2021-04-29</link>
+            <pubDate>Thu Apr 29 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-04-29</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion is faster and more reliable 🐇]]></title>
+            <link>https://www.notion.so/releases/2021-04-21</link>
+            <pubDate>Wed Apr 21 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-04-21</guid>
+        </item>
+          <item>
+            <title><![CDATA[Android widget 📱]]></title>
+            <link>https://www.notion.so/releases/2021-03-23</link>
+            <pubDate>Tue Mar 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-03-23</guid>
+        </item>
+          <item>
+            <title><![CDATA[Organize your shared pages 🧹]]></title>
+            <link>https://www.notion.so/releases/2021-03-10</link>
+            <pubDate>Wed Mar 10 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-03-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Better dark mode settings 🌘]]></title>
+            <link>https://www.notion.so/releases/2021-01-27</link>
+            <pubDate>Wed Jan 27 2021 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2021-01-27</guid>
+        </item>
+          <item>
+            <title><![CDATA[API private beta 🙊]]></title>
+            <link>https://www.notion.so/releases/2020-12-08</link>
+            <pubDate>Tue Dec 08 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-12-08</guid>
+        </item>
+          <item>
+            <title><![CDATA[Switch from Confluence 📘]]></title>
+            <link>https://www.notion.so/releases/2020-12-02</link>
+            <pubDate>Wed Dec 02 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-12-02</guid>
+        </item>
+          <item>
+            <title><![CDATA[iPhone widget 📱]]></title>
+            <link>https://www.notion.so/releases/2020-11-24</link>
+            <pubDate>Tue Nov 24 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-11-24</guid>
+        </item>
+          <item>
+            <title><![CDATA[SCIM + Bug Bash 🐛]]></title>
+            <link>https://www.notion.so/releases/2020-11-19</link>
+            <pubDate>Thu Nov 19 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-11-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.10, now with Timeline 🕗]]></title>
+            <link>https://www.notion.so/releases/2020-11-11</link>
+            <pubDate>Wed Nov 11 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-11-11</guid>
+        </item>
+          <item>
+            <title><![CDATA[October 15, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-10-15</link>
+            <pubDate>Thu Oct 15 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-10-15</guid>
+        </item>
+          <item>
+            <title><![CDATA[September 29, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-09-29</link>
+            <pubDate>Tue Sep 29 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-09-29</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.9, now with backlinks to connect your thoughts 💭]]></title>
+            <link>https://www.notion.so/releases/2020-09-17</link>
+            <pubDate>Thu Sep 17 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-09-17</guid>
+        </item>
+          <item>
+            <title><![CDATA[Bug bash 🐞]]></title>
+            <link>https://www.notion.so/releases/2020-09-02</link>
+            <pubDate>Wed Sep 02 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-09-02</guid>
+        </item>
+          <item>
+            <title><![CDATA[Multi-account login 🏠 🏢]]></title>
+            <link>https://www.notion.so/releases/2020-08-18</link>
+            <pubDate>Tue Aug 18 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-08-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion in Korean 🇰🇷 🎊]]></title>
+            <link>https://www.notion.so/releases/2020-08-10</link>
+            <pubDate>Mon Aug 10 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-08-10</guid>
+        </item>
+          <item>
+            <title><![CDATA[Sign in with Apple 🍎]]></title>
+            <link>https://www.notion.so/releases/2020-07-28</link>
+            <pubDate>Tue Jul 28 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-07-28</guid>
+        </item>
+          <item>
+            <title><![CDATA[July 2, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-07-02</link>
+            <pubDate>Thu Jul 02 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-07-02</guid>
+        </item>
+          <item>
+            <title><![CDATA[Underline]]></title>
+            <link>https://www.notion.so/releases/2020-06-23</link>
+            <pubDate>Tue Jun 23 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-06-23</guid>
+        </item>
+          <item>
+            <title><![CDATA[Inline math 🧮]]></title>
+            <link>https://www.notion.so/releases/2020-06-09</link>
+            <pubDate>Tue Jun 09 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-06-09</guid>
+        </item>
+          <item>
+            <title><![CDATA[June 4, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-06-04</link>
+            <pubDate>Thu Jun 04 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-06-04</guid>
+        </item>
+          <item>
+            <title><![CDATA[Database filters & emojis 🤓]]></title>
+            <link>https://www.notion.so/releases/2020-05-28</link>
+            <pubDate>Thu May 28 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-05-28</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.8, now free for personal use 🤘]]></title>
+            <link>https://www.notion.so/releases/2020-05-19</link>
+            <pubDate>Tue May 19 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-05-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[Faster mobile start up time]]></title>
+            <link>https://www.notion.so/releases/2020-05-13</link>
+            <pubDate>Wed May 13 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-05-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Better iPad app]]></title>
+            <link>https://www.notion.so/releases/2020-04-07</link>
+            <pubDate>Tue Apr 07 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-04-07</guid>
+        </item>
+          <item>
+            <title><![CDATA[Working from home 🏡]]></title>
+            <link>https://www.notion.so/releases/2020-03-18</link>
+            <pubDate>Wed Mar 18 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-03-18</guid>
+        </item>
+          <item>
+            <title><![CDATA[February 19, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-02-19</link>
+            <pubDate>Wed Feb 19 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-02-19</guid>
+        </item>
+          <item>
+            <title><![CDATA[February 13, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-02-13</link>
+            <pubDate>Thu Feb 13 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-02-13</guid>
+        </item>
+          <item>
+            <title><![CDATA[Notion 2.7 🎊]]></title>
+            <link>https://www.notion.so/releases/2020-01-14</link>
+            <pubDate>Tue Jan 14 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-01-14</guid>
+        </item>
+          <item>
+            <title><![CDATA[January 9, 2020]]></title>
+            <link>https://www.notion.so/releases/2020-01-09</link>
+            <pubDate>Thu Jan 09 2020 00:00:00 GMT+0000 (Coordinated Universal Time)</pubDate>
+            <guid isPermaLink="false">https://www.notion.so/releases/2020-01-09</guid>
+        </item>
+        </channel>
+      </rss>
