@@ -5,14 +5,15 @@ same eval set, the difference comes from the model, not from wording. The system
 across calls so providers can cache it (Claude explicitly, Gemini implicitly).
 
 Every version stays selectable (LLM_PROMPT_VERSION) so eval results stay reproducible and versions can
-be compared on the same labeled set. v2 is v1 plus three targeted edits; see docs/EVALS.md for why.
+be compared on the same labeled set. v2 is v1 plus three targeted edits; v3 keeps only v2's category and
+importance edits, because v2's stricter relevance rule dropped important signals. See docs/EVALS.md.
 """
 
 from __future__ import annotations
 
 from .models import CATEGORIES, SignalInput
 
-PROMPT_VERSIONS = ("v1", "v2")
+PROMPT_VERSIONS = ("v1", "v2", "v3")
 PROMPT_VERSION = "v1"  # default; changed only when an eval shows a newer version is better
 
 MAX_TEXT_CHARS = 6000  # roughly 1,500 tokens
@@ -137,10 +138,12 @@ def build_system_prompt(competitors: list[str], version: str = PROMPT_VERSION) -
     text = _v1(competitors)
     if version == "v1":
         return text
-    if version == "v2":
-        for old, new in _V2_EDITS:
+    if version in ("v2", "v3"):
+        # v3 = v1 + v2's category and importance edits, without v2's stricter relevance rule.
+        edits = _V2_EDITS if version == "v2" else _V2_EDITS[1:]
+        for old, new in edits:
             if old not in text:
-                raise AssertionError(f"v2 edit no longer applies to v1 text: {old[:60]!r}")
+                raise AssertionError(f"{version} edit no longer applies to v1 text: {old[:60]!r}")
             text = text.replace(old, new)
         return text
     raise ValueError(f"unknown prompt version {version!r}; expected one of {PROMPT_VERSIONS}")
