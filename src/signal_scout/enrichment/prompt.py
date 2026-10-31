@@ -14,7 +14,7 @@ from __future__ import annotations
 from .models import CATEGORIES, SignalInput
 
 PROMPT_VERSIONS = ("v1", "v2", "v3")
-PROMPT_VERSION = "v1"  # default; changed only when an eval shows a newer version is better
+PROMPT_VERSION = "v3"  # default; chosen by the eval in docs/EVALS.md
 
 MAX_TEXT_CHARS = 6000  # roughly 1,500 tokens
 
