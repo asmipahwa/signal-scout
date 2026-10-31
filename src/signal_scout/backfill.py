@@ -94,7 +94,7 @@ async def backfill_hn_source(
     return stored
 
 
-async def backfill_hn(since: datetime) -> None:
+async def backfill_hn(since: datetime, only: str | None = None) -> None:
     settings = get_settings()
     configure_logging(settings.log_level)
     async with ingest_context(settings) as ctx:
@@ -105,6 +105,7 @@ async def backfill_hn(since: datetime) -> None:
                     select(Source, Competitor.name)
                     .outerjoin(Competitor, Competitor.id == Source.competitor_id)
                     .where(Source.type == SourceType.hn_search, Source.enabled.is_(True))
+                    .where(Source.name == only if only else Source.id.is_not(None))
                     .order_by(Source.id)
                 )
             ).all()
@@ -140,10 +141,11 @@ def main() -> None:
     sub = parser.add_subparsers(dest="kind", required=True)
     hn = sub.add_parser("hn", help="backfill Hacker News stories for every hn_search source")
     hn.add_argument("--since", default="2016-01-01", help="earliest story date (YYYY-MM-DD)")
+    hn.add_argument("--only", help='backfill a single source by name, e.g. "HN: Linear"')
     args = parser.parse_args()
     since = datetime.fromisoformat(args.since).replace(tzinfo=UTC)
     if args.kind == "hn":
-        asyncio.run(backfill_hn(since))
+        asyncio.run(backfill_hn(since, args.only))
 
 
 if __name__ == "__main__":
