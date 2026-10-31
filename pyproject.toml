@@ -50,6 +50,9 @@ packages = ["src/signal_scout"]
 testpaths = ["tests"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "integration: needs Docker (testcontainers Postgres + MinIO); skipped cleanly when Docker is unavailable",
+]
 
 [tool.ruff]
 line-length = 120
@@ -63,8 +66,24 @@ select = ["E", "F", "I", "UP", "B", "SIM", "ASYNC"]
 "src/signal_scout/enrichment/prompt.py" = ["E501"]
 # Throwaway Sprint 1 prototype; not held to production style.
 "prototype/*" = ["E501"]
+# Alembic generates long op lines.
+"migrations/versions/*" = ["E501"]
 
 [tool.mypy]
 strict = true
 python_version = "3.12"
 files = ["src"]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+# No type information published for these.
+module = ["feedparser", "feedparser.*", "trafilatura", "trafilatura.*", "apscheduler.*"]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["src/signal_scout"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
