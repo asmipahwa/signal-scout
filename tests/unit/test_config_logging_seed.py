@@ -111,4 +111,5 @@ def test_seed_sources_are_unique_and_never_use_google_news() -> None:
         SourceType.blog_rss,
         SourceType.changelog_rss,
         SourceType.hn_search,
+        SourceType.webpage_watch,
     }

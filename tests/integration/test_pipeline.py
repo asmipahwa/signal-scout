@@ -1,7 +1,8 @@
 """The pipeline end to end on real containers: feed -> S3 + Postgres -> enrichment -> insights -> ES -> alerts.
 
-Uses testcontainers Postgres, MinIO and Elasticsearch 8.19.5, a real Notion release-notes feed saved on
-2026-10-30 (replayed with respx), and FakeLLMClient instead of a real LLM, so no API key is needed.
+Uses testcontainers Postgres, MinIO and Elasticsearch 8.19.5 (shared fixtures in conftest.py), a real
+Notion release-notes feed saved on 2026-10-30 (replayed with respx), and FakeLLMClient instead of a real
+LLM, so no API key is needed.
 
 Covers the spec's PipelineEndToEndIT, ReindexFromPostgresIT, WebhookDeliveryIT and CostGuardIT.
 """
@@ -9,7 +10,7 @@ Covers the spec's PipelineEndToEndIT, ReindexFromPostgresIT, WebhookDeliveryIT a
 from __future__ import annotations
 
 import json
-from collections.abc import AsyncIterator, Iterator
+from collections.abc import AsyncIterator
 from datetime import timedelta
 from decimal import Decimal
 from pathlib import Path
@@ -20,8 +21,6 @@ import respx
 from elasticsearch import AsyncElasticsearch
 from pydantic import SecretStr
 from sqlalchemy import func, select
-from testcontainers.core.container import DockerContainer
-from testcontainers.core.wait_strategies import HttpWaitStrategy
 
 from signal_scout.alerts.signing import IDEMPOTENCY_HEADER, SIGNATURE_HEADER, verify
 from signal_scout.config import Settings
@@ -58,22 +57,7 @@ from signal_scout.storage import S3BlobStore
 FEEDS = Path(__file__).resolve().parents[1] / "fixtures" / "feeds"
 NOTION_FEED = "https://www.notion.com/releases/rss.xml"
 SLACK_URL = "https://hooks.slack.test/services/T000/B000/XXXX"  # fake; respx intercepts it
-ES_IMAGE = "docker.elastic.co/elasticsearch/elasticsearch:8.19.5"  # same as docker-compose.yml
 ALL_HISTORY = {"window_days": 3650}
-
-
-@pytest.fixture(scope="session")
-def es_url() -> Iterator[str]:
-    container = (
-        DockerContainer(ES_IMAGE)
-        .with_env("discovery.type", "single-node")
-        .with_env("xpack.security.enabled", "false")
-        .with_env("ES_JAVA_OPTS", "-Xms512m -Xmx512m")
-        .with_exposed_ports(9200)
-        .waiting_for(HttpWaitStrategy(9200, "/_cluster/health").for_status_code(200))
-    )
-    with container:
-        yield f"http://{container.get_container_host_ip()}:{container.get_exposed_port(9200)}"
 
 
 @pytest.fixture
